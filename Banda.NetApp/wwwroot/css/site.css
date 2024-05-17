@@ -1,0 +1,107 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*VARIABLES*/
+
+:root { /*Custom variables to build design*/
+    /*NAVBAR*/
+/*    --color-navbar: #151313;
+*/    --color-navbar: #000000;
+    --color-navbar-text: #e8e8e8;
+    --color-navbar-text-hover: #a6140a;
+}
+
+/*ENDVARIABLES*/
+
+
+/*NAVBAR*/
+.navbarCustom{ /*Custom properties of my navbar*/
+    background-color: var(--color-navbar);
+    height: 12vh;
+
+}
+
+.navbarLogo {
+    width: 14vh;
+}
+
+.navbar-brand {
+    background-image: url('../img/8332396.png');
+    background-size: cover; /* Ajustar a imagem para caber dentro do elemento */
+    background-repeat: no-repeat;
+    background-position: center; /* Centralizar a imagem */
+    width: 30vh; /* Defina a largura desejada */
+    height: 11vh; /* Defina a altura desejada */
+}
+
+
+.navbarCustomLinks{ /*Custom properties to "a" links.*/
+    color: var(--color-navbar-text) !important;
+    font-size: 1.3em;
+    transition: color 0.3s ease, font-size 0.3s ease;
+    
+}
+
+.navbarCustomLinks:hover {
+    color: var(--color-navbar-text-hover) !important;
+    font-size: 1.4em;
+ }
+
+
+/*END NAVBAR*/
+
+
+/*VIDEO AREA*/
+/*Responsive options (testing)*/
+@media (max-width: 576px) {
+    .columnVideo {
+        height: 45vh; /* Mobile */
+        background-color: var(--color-navbar);
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    .columnVideo {
+        height: 50vh; /* Tablets */
+        background-color: var(--color-navbar);
+    }
+}
+
+@media (min-width: 993px) {
+    .columnVideo {
+        height: 60vh; /* desktops and laptops */
+        background-color: var(--color-navbar);
+    }
+}
+
+.videoYoutube{
+    width: 100%;
+    height: 100%;
+}
+
+/*END VIDEO AREA*/
