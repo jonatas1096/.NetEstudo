@@ -1,3 +1,4 @@
+/*#region global*/
 html {
   font-size: 14px;
 }
@@ -15,6 +16,7 @@ html {
 html {
   position: relative;
   min-height: 100%;
+
 }
 
 body {
@@ -22,8 +24,15 @@ body {
 }
 
 *{
-    margin: 0;
+   /* margin: 0 !important;
+    padding: 0 !important;*/
+   
+}
+
+.container-fluid {
     padding: 0;
+    margin: 0;
+    overflow: hidden;
 }
 
 /*VARIABLES*/
@@ -33,75 +42,120 @@ body {
 /*    --color-navbar: #151313;
 */    --color-navbar: #000000;
     --color-navbar-text: #e8e8e8;
+    --color-navbar-togglerIcon: white;
     --color-navbar-text-hover: #a6140a;
 }
 
 /*ENDVARIABLES*/
 
+/*#endregion*/
 
-/*NAVBAR*/
-.navbarCustom{ /*Custom properties of my navbar*/
-    background-color: var(--color-navbar);
-    height: 12vh;
-
-}
-
-.navbarLogo {
-    width: 14vh;
-}
-
-.navbar-brand {
-    background-image: url('../img/8332396.png');
-    background-size: cover; /* Ajustar a imagem para caber dentro do elemento */
-    background-repeat: no-repeat;
-    background-position: center; /* Centralizar a imagem */
-    width: 30vh; /* Defina a largura desejada */
-    height: 11vh; /* Defina a altura desejada */
+/*#region navbar*/
+.navbarCustom { /*Custom properties of my navbar*/
+    /*background-color: var(--color-navbar);*/
+    background-color: transparent;
+    border: none !important;
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+    border: solid red 2px;
 }
 
 
-.navbarCustomLinks{ /*Custom properties to "a" links.*/
-    color: var(--color-navbar-text) !important;
-    font-size: 1.3em;
-    transition: color 0.3s ease, font-size 0.3s ease;
-    
-}
 
-.navbarCustomLinks:hover {
-    color: var(--color-navbar-text-hover) !important;
-    font-size: 1.4em;
- }
+/*#endregion*/
 
 
-/*END NAVBAR*/
-
-
-/*VIDEO AREA*/
 /*Responsive options (testing)*/
+
+/*#region mobile*/
 @media (max-width: 576px) {
+
+    section{
+        height:30vh;
+        border: solid red 2px;
+    }
+
+    .logoDiv {
+        width: 19vh;
+        height: 8vh;
+        background-image: url(../img/teste.jpg);
+        background-size: cover;
+    }
+
+    /*.navbarLogo {
+        border: solid green 2px;
+        width: 100%;
+        height: 100%;
+        
+    }*/
+
+
+    /*VIDEO AREA*/
     .columnVideo {
         height: 45vh; /* Mobile */
         background-color: var(--color-navbar);
+        background-attachment: fixed;
+        z-index: 99;
     }
+
+    /*.nav-link{
+        background-color: orange;
+    } */
+
+    .navbar-dark .navbar-toggler-icon { /*used to change the toggle icon color (only work if do this)*/
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+     }
+
+    /*fazer focus*/
+    .custom-toggler {
+        border: none !important;
+        margin-right: 2.7vh;
+    }
+
+
 }
 
+/*#endregion*/
+
+
+/*#region Tablets*/
 @media (min-width: 577px) and (max-width: 992px) {
     .columnVideo {
-        height: 50vh; /* Tablets */
+        height: 50vh; 
         background-color: var(--color-navbar);
     }
 }
 
+/*#endregion*/
+
+
+/*#region desktops and laptops*/
 @media (min-width: 993px) {
     .columnVideo {
-        height: 60vh; /* desktops and laptops */
+        height: 60vh; 
         background-color: var(--color-navbar);
     }
+
+    .navbarCustomLinks { /*Custom properties to "a" links.*/
+        color: var(--color-navbar-text) !important;
+        font-size: 1.3em;
+    transition: color 0.3s ease, font-size 0.3s ease;
+    }
+
+    .navbarCustomLinks:hover {
+        color: var(--color-navbar-text-hover) !important;
+        font-size: 1.4em;
+    }
+
 }
 
-.videoYoutube{
+.videoTopper {
     width: 100%;
     height: 100%;
 }
 
-/*END VIDEO AREA*/
+/*#endregion*/

@@ -28,3 +28,4 @@ C:\Users\Jo\source\repos\Banda.NetApp\Banda.NetApp\obj\Debug\net8.0\refint\Banda
 C:\Users\Jo\source\repos\Banda.NetApp\Banda.NetApp\obj\Debug\net8.0\Banda.NetApp.pdb
 C:\Users\Jo\source\repos\Banda.NetApp\Banda.NetApp\obj\Debug\net8.0\Banda.NetApp.genruntimeconfig.cache
 C:\Users\Jo\source\repos\Banda.NetApp\Banda.NetApp\obj\Debug\net8.0\ref\Banda.NetApp.dll
+C:\Users\Jo\source\repos\Banda.NetApp\Banda.NetApp\obj\Debug\net8.0\Banda.NetApp.sourcelink.json

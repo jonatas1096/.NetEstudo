@@ -13,8 +13,8 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\8332396.png",
-      "PackagePath": "staticwebassets\\img\\8332396.png"
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\teste.jpg",
+      "PackagePath": "staticwebassets\\img\\teste.jpg"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\ópiologo.png",
@@ -251,6 +251,10 @@
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\øpio - Ditados Mentem (Ao Vivo).mp4",
+      "PackagePath": "staticwebassets\\video\\øpio - Ditados Mentem (Ao Vivo).mp4"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Banda.NetApp.Microsoft.AspNetCore.StaticWebAssets.props",
