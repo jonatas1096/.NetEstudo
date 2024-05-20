@@ -13,8 +13,28 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\teste.jpg",
-      "PackagePath": "staticwebassets\\img\\teste.jpg"
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\font\\Aargh! W00 Heavy.ttf",
+      "PackagePath": "staticwebassets\\font\\Aargh! W00 Heavy.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\gif\\Banda Ópio.gif",
+      "PackagePath": "staticwebassets\\gif\\Banda Ópio.gif"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\bandaopio1.jpg",
+      "PackagePath": "staticwebassets\\img\\bandaopio1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\bandaopio2.jpg",
+      "PackagePath": "staticwebassets\\img\\bandaopio2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\bandaopio3.jpg",
+      "PackagePath": "staticwebassets\\img\\bandaopio3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\nirvanalogo.png",
+      "PackagePath": "staticwebassets\\img\\nirvanalogo.png"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\ópiologo.png",
@@ -253,8 +273,8 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\øpio - Ditados Mentem (Ao Vivo).mp4",
-      "PackagePath": "staticwebassets\\video\\øpio - Ditados Mentem (Ao Vivo).mp4"
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\øpio - Ditados Mentem.mp4",
+      "PackagePath": "staticwebassets\\video\\øpio - Ditados Mentem.mp4"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Banda.NetApp.Microsoft.AspNetCore.StaticWebAssets.props",

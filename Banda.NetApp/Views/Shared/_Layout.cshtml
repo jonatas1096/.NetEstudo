@@ -4,36 +4,51 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Ópio</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Banda.NetApp.styles.css" asp-append-version="true" />
-
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark border-bottom box-shadow mb-3 navbarCustom">
+        @* Navbar *@
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark border-bottom mb-3 navbarCustom">
             <div class="container-fluid">
-                <div class="logoDiv" asp-area="" asp-controller="Home" asp-action="Index">
-@*                      <img src="~/img/ópiologo.png" class="navbarLogo" asp-area="" asp-controller="Home" asp-action="Index"></img> 
- *@                </div>
-                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                <!-- Logo -->
+                <div class="logoDiv" asp-area="" asp-controller="Home" asp-action="Index"></div>
+
+                <!-- Toggle btn -->
+                <button class="navbar-toggler custom-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon custom-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link navbarCustomLinks" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navbarCustomLinks" asp-area="" asp-controller="Home" asp-action="Videos">Videos</a>
-                        </li>
-                    </ul>
+                <!-- SideBar -->
+                <div class="offcanvas offcanvas-end d-sm-inline-flex " tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                    <div class="offcanvas-header justify-content-end">
+                        <button type="button" class="btn border-0 text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+
+                            <i class="bi bi-arrow-left btn-close-arrow"></i>
+                        </button>
+                    </div>
+                                   
+                    <div class="offcanvas-body d-flex">
+                        <!-- Sidebar Content Body -->
+                        <ul class="navbar-nav justify-content-center align-items-center flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link navbarCustomLinks" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navbarCustomLinks" asp-area="" asp-controller="Home" asp-action="Videos">Videos</a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
+
             </div>
         </nav>
     </header>
-    <div class="container-fluid">
+    <div class="container-fluid container-renderbody">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>

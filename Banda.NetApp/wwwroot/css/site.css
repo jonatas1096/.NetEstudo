@@ -1,4 +1,9 @@
 /*#region global*/
+@font-face{
+    font-family: primaryFont;
+    src: url('../font/Aargh! W00 Heavy.ttf');
+}
+
 html {
   font-size: 14px;
 }
@@ -23,10 +28,10 @@ body {
   margin-bottom: 60px;
 }
 
-*{
-   /* margin: 0 !important;
+* {
+    /* margin: 0 !important;
     padding: 0 !important;*/
-   
+
 }
 
 .container-fluid {
@@ -38,12 +43,21 @@ body {
 /*VARIABLES*/
 
 :root { /*Custom variables to build design*/
+
+    /*global colors*/
+    --color-primary-black: #000000;
+    --color-primary-white: #ffffff;
+
     /*NAVBAR*/
-/*    --color-navbar: #151313;
-*/    --color-navbar: #000000;
+    /*    --color-primary: #151313;*/
     --color-navbar-text: #e8e8e8;
     --color-navbar-togglerIcon: white;
     --color-navbar-text-hover: #a6140a;
+    /**/
+
+
+
+
 }
 
 /*ENDVARIABLES*/
@@ -61,9 +75,16 @@ body {
     padding: 0;
     margin: 0;
     z-index: 100;
-    border: solid red 2px;
 }
 
+.logoDiv {
+    width: 22vh;
+    height: 8vh;
+    background-image: url(../img/nirvanalogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 
 /*#endregion*/
@@ -74,50 +95,98 @@ body {
 /*#region mobile*/
 @media (max-width: 576px) {
 
-    section{
-        height:30vh;
-        border: solid red 2px;
-    }
-
-    .logoDiv {
-        width: 19vh;
-        height: 8vh;
-        background-image: url(../img/teste.jpg);
-        background-size: cover;
-    }
-
-    /*.navbarLogo {
-        border: solid green 2px;
-        width: 100%;
-        height: 100%;
-        
-    }*/
-
-
-    /*VIDEO AREA*/
-    .columnVideo {
-        height: 45vh; /* Mobile */
-        background-color: var(--color-navbar);
-        background-attachment: fixed;
-        z-index: 99;
-    }
-
-    /*.nav-link{
-        background-color: orange;
-    } */
-
+    /*NAVBAR CONTENT, ICONS, ETC*/
     .navbar-dark .navbar-toggler-icon { /*used to change the toggle icon color (only work if do this)*/
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
      }
 
-    /*fazer focus*/
     .custom-toggler {
-        border: none !important;
         margin-right: 2.7vh;
+        border: none;
+        outline: none;
+    }
+
+    .offcanvas {
+        width: 70%;
+        background-color: var(--color-primary-black);
+
+    }
+
+    .offcanvas-body {
+        font-size: 1.5em;
+        justify-content: center;
+    }
+
+    .btn-close-arrow {
+        color: var(--color-primary-white);
+        font-size: 2.0em;
+        margin-right: 0.3em;
+        outline: none;
     }
 
 
-}
+    .navbarCustomLinks { 
+        color: var(--color-navbar-text) !important;
+        opacity: 0.7;
+    }
+
+    .navbarCustomLinks:hover {
+        color: var(--color-navbar-text-hover) !important;
+        opacity: 1.0;
+        font-size: 1.1em;
+    }
+    /**/
+
+
+    /*VIDEO AREA*/
+    .columnVideo {
+        height: 45vh;
+        background-color: var(--color-primary-black);
+        z-index: 99;
+    }
+    
+    .columnVideo video{
+        width: 100%;
+        height: 100%;
+    }
+    /**/
+
+
+    /*OUR TEAM*/
+    section#team{
+        height: 60vh;
+        width:100%;
+    }
+    section#team .row:first-child .col {
+         height: 20vh;
+         background-color: #fbbb24;
+   }
+    section#team .row:first-child .col > h1{
+        text-align: center;
+        font-family: primaryFont;
+        font-size: 2.7em;
+        color: var(--color-primary-black);
+    }
+
+
+    .carousel-image {
+        height: 30vh;
+        background-color: var(--color-primary-black);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .bg-img-1 {
+        background-image: url(../img/bandaopio1.jpg)
+    }
+    .bg-img-2 {
+        background-image: url(../img/bandaopio2.jpg)
+    }
+    .bg-img-3 {
+        background-image: url(../img/bandaopio4.png)
+    }
+    
 
 /*#endregion*/
 
@@ -135,15 +204,19 @@ body {
 
 /*#region desktops and laptops*/
 @media (min-width: 993px) {
+
     .columnVideo {
-        height: 60vh; 
-        background-color: var(--color-navbar);
+        height: 100vh; 
+        background-color: var(--color-primary-black) !important;
+        display: flex;
+        /*align-items: center;*/
+        justify-content: center;
     }
 
-    .navbarCustomLinks { /*Custom properties to "a" links.*/
+    .navbarCustomLinks {/* Custom properties to "a" links.*/
         color: var(--color-navbar-text) !important;
         font-size: 1.3em;
-    transition: color 0.3s ease, font-size 0.3s ease;
+        transition: color 0.3s ease, font-size 0.3s ease;
     }
 
     .navbarCustomLinks:hover {
@@ -153,9 +226,4 @@ body {
 
 }
 
-.videoTopper {
-    width: 100%;
-    height: 100%;
-}
-
-/*#endregion*/
+/*/*#endregion*/
