@@ -15,7 +15,9 @@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark border-bottom mb-3 navbarCustom">
             <div class="container-fluid">
                 <!-- Logo -->
-                <div class="logoDiv" asp-area="" asp-controller="Home" asp-action="Index"></div>
+                <div class="logoDiv" asp-area="" asp-controller="Home" asp-action="Index">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index"></a>
+                </div>
 
                 <!-- Toggle btn -->
                 <button class="navbar-toggler custom-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg"

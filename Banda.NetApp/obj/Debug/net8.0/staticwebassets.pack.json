@@ -33,12 +33,16 @@
       "PackagePath": "staticwebassets\\img\\bandaopio3.jpg"
     },
     {
-      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\nirvanalogo.png",
-      "PackagePath": "staticwebassets\\img\\nirvanalogo.png"
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\bandaopio4.png",
+      "PackagePath": "staticwebassets\\img\\bandaopio4.png"
     },
     {
-      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\ópiologo.png",
-      "PackagePath": "staticwebassets\\img\\ópiologo.png"
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\logobranca.png",
+      "PackagePath": "staticwebassets\\img\\logobranca.png"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\nirvanalogo.png",
+      "PackagePath": "staticwebassets\\img\\nirvanalogo.png"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\js\\site.js",
