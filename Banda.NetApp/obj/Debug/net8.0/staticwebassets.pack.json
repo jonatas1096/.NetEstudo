@@ -17,10 +17,6 @@
       "PackagePath": "staticwebassets\\font\\Aargh! W00 Heavy.ttf"
     },
     {
-      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\gif\\Banda Ópio.gif",
-      "PackagePath": "staticwebassets\\gif\\Banda Ópio.gif"
-    },
-    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\bandaopio1.jpg",
       "PackagePath": "staticwebassets\\img\\bandaopio1.jpg"
     },
@@ -37,12 +33,32 @@
       "PackagePath": "staticwebassets\\img\\bandaopio4.png"
     },
     {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\enzo.jpg",
+      "PackagePath": "staticwebassets\\img\\enzo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\felipe.jpg",
+      "PackagePath": "staticwebassets\\img\\felipe.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\gustavo.jpg",
+      "PackagePath": "staticwebassets\\img\\gustavo.jpg"
+    },
+    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\logobranca.png",
       "PackagePath": "staticwebassets\\img\\logobranca.png"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\nirvanalogo.png",
       "PackagePath": "staticwebassets\\img\\nirvanalogo.png"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\scale_1200.jpg",
+      "PackagePath": "staticwebassets\\img\\scale_1200.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\ygor.jpg",
+      "PackagePath": "staticwebassets\\img\\ygor.jpg"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\js\\site.js",
@@ -275,6 +291,10 @@
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\teste.mp4",
+      "PackagePath": "staticwebassets\\video\\teste.mp4"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\øpio - Ditados Mentem.mp4",

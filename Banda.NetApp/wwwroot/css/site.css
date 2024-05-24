@@ -40,6 +40,7 @@ body {
     overflow: hidden;
 }
 
+
 /*VARIABLES*/
 
 :root { /*Custom variables to build design*/
@@ -91,7 +92,11 @@ body {
     width: 100%;
 }
 
-
+.columnVideo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /*#endregion*/
 
 
@@ -106,20 +111,21 @@ body {
      }
 
     .custom-toggler {
-        margin-right: 2.7vh;
+        margin-right: 0.8vh;
         border: none;
         outline: none;
+        color: var(--color-primary-white);
     }
 
     .offcanvas {
-        width: 70%;
-        background-color: var(--color-primary-black);
+        width: 40%;
+        background-color: transparent;
 
     }
 
     .offcanvas-body {
-        font-size: 1.5em;
-        justify-content: center;
+        font-size: 1.4em;
+        margin-top: 1.3em;
     }
 
     .btn-close-arrow {
@@ -142,56 +148,65 @@ body {
     }
     /**/
 
-
+    #Home{
+        position: relative;
+        z-index: 1;
+    }
     /*VIDEO AREA*/
     .columnVideo {
-        height: 45vh;
+        height: 82vh;
         background-color: var(--color-primary-black);
-        z-index: 99;
     }
     
-    .columnVideo video{
-        width: 100%;
-        height: 100%;
-    }
+    
     /**/
 
 
     /*OUR TEAM*/
-    section#team{
-        height: 60vh;
-        width:100%;
+    section#team {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        z-index: 2;
     }
+
+    section#team .row{  
+         width: 100% !important;
+         margin: 0 !important; /* Zerando a margin automatica do bootstrap */
+         border: solid red 2px;
+    }
+
     section#team .row:first-child .col {
-         height: 20vh;
-         background-color: #fbbb24;
+         height: 60vh;
+         
    }
-    section#team .row:first-child .col > h1{
-        text-align: center;
-        font-family: primaryFont;
-        font-size: 2.7em;
-        color: var(--color-primary-whi);
+
+    .rowPicture {
+        height: 40%;
+        width: 85%;
+        position: absolute;
+        top: -3.0em;
+        left: 7%;
+        z-index: 2;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .cardPicture {
+        width: 60%;
+        height: 100%;
+        justify-content: space-between;
     }
 
 
-    .carousel-image {
-        height: 30vh;
-        background-color: var(--color-primary-black);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
+    .cardPicture img{
+        width: 115%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.7em;
+        margin-right: 1.8em;
     }
 
-    .bg-img-1 {
-        background-image: url(../img/bandaopio1.jpg)
-    }
-    .bg-img-2 {
-        background-image: url(../img/bandaopio2.jpg)
-    }
-    .bg-img-3 {
-        background-image: url(../img/bandaopio4.png)
-    }
-    
 
 
     /*FOOTER AREA*/
