@@ -1,37 +1,33 @@
 /*#region global*/
-@font-face{
+@font-face {
     font-family: primaryFont;
     src: url('../font/Aargh! W00 Heavy.ttf');
 }
 
 html {
-  font-size: 14px;
+    font-size: 14px;
+    scroll-behavior: smooth !important;
 }
 
+
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
-
+    position: relative;
 }
 
 body {
-  margin-bottom: 60px;
 }
 
 * {
-    /* margin: 0 !important;
-    padding: 0 !important;*/
-
 }
 
 .container-fluid {
@@ -40,25 +36,26 @@ body {
     overflow: hidden;
 }
 
+footer {
+    z-index: 1000;
+}
+
+header {
+    z-index: 1000;
+}
 
 /*VARIABLES*/
 
 :root { /*Custom variables to build design*/
-
     /*global colors*/
     --color-primary-black: #000000;
     --color-primary-white: #ffffff;
-
     /*NAVBAR*/
     /*    --color-primary: #151313;*/
     --color-navbar-text: #e8e8e8;
     --color-navbar-togglerIcon: white;
     --color-navbar-text-hover: #a6140a;
     /**/
-
-
-
-
 }
 
 /*ENDVARIABLES*/
@@ -75,22 +72,21 @@ body {
     position: absolute;
     padding: 0;
     margin: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .logoDiv {
     width: 22vh;
     height: 8vh;
 }
-
-.logoDiv > a{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../img/logobranca.png);
-    background-position: center;
-    height: 100%;
-    width: 100%;
-}
+    .logoDiv > a {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../img/logobranca.png);
+        background-position: center;
+        height: 100%;
+        width: 100%;
+    }
 
 .columnVideo video {
     width: 100%;
@@ -108,47 +104,90 @@ body {
     /*NAVBAR CONTENT, ICONS, ETC*/
     .navbar-dark .navbar-toggler-icon { /*used to change the toggle icon color (only work if do this)*/
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-     }
+    }
+
+    .navbarCustom {
+        position: fixed;
+        transition: background-color 0.5s ease;
+    }
+
+    .navbarScrolled {
+        background-color: var(--color-primary-black);
+    }
+
+    .overlay { /*Blur effect*/
+        height: 100%;
+        width: 100%;
+        filter: none;
+        transition: 0.9s ease;
+        z-index: 999;
+    }
+
+    .shadowOverlay { /*Shadow effect*/
+        background-color: rgba(0, 0, 0, 0.55);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 999;
+        opacity: 0;
+        transition: 0.9s ease;
+        pointer-events: none;
+    }
 
     .custom-toggler {
-        margin-right: 0.8vh;
+        margin-right: 0.5vh;
         border: none;
         outline: none;
         color: var(--color-primary-white);
+        font-size: 1.09em;
+        font-weight: bold;
     }
 
-    .offcanvas {
-        width: 40%;
-        background-color: transparent;
-
+    .navbar-collapse {
+        transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+        transition: all 0.3s ease-out;
+        opacity: 0;
     }
 
-    .offcanvas-body {
-        font-size: 1.4em;
-        margin-top: 1.3em;
+    .navbar-collapse.show {
+         opacity: 1;
+     }       
+
+    .navbar-nav {
+        position: fixed;
+        right: 0;
+        width: 25%;
+        border: solid red 2px;
     }
 
-    .btn-close-arrow {
-        color: var(--color-primary-white);
-        font-size: 2.0em;
-        margin-right: 0.3em;
-        outline: none;
-    }
-
-
-    .navbarCustomLinks { 
+    .navbarCustomLinks {
         color: var(--color-navbar-text) !important;
-        opacity: 0.7;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+        color: var(--color-primary-white);
+        text-align: end;
+        margin-right: 2em;
+        font-size: 1.28em;
     }
 
-    .navbarCustomLinks:hover {
-        color: var(--color-navbar-text-hover) !important;
-        opacity: 1.0;
-        font-size: 1.1em;
+    .navbar-collapse.show .navbarCustomLinks {
+        transform: translateY(0);
+        opacity: 1;
     }
+
+     .navbarCustomLinks:hover {
+         color: var(--color-navbar-text-hover) !important;
+         opacity: 1.0;
+         font-size: 1.1em;
+        }
     /**/
 
-    #Home{
+    #Home {
         position: relative;
         z-index: 1;
     }
@@ -157,8 +196,7 @@ body {
         height: 82vh;
         background-color: var(--color-primary-black);
     }
-    
-    
+
     /**/
 
 
@@ -170,16 +208,14 @@ body {
         z-index: 2;
     }
 
-    section#team .row{  
-         width: 100% !important;
-         margin: 0 !important; /* Zerando a margin automatica do bootstrap */
-         border: solid red 2px;
-    }
+        section#team .row {
+            width: 100% !important;
+            margin: 0 !important; /* Zerando a margin automatica do bootstrap */
+        }
 
-    section#team .row:first-child .col {
-         height: 60vh;
-         
-   }
+            section#team .row:first-child .col {
+                height: 60vh;
+            }
 
     .rowPicture {
         height: 40%;
@@ -198,61 +234,59 @@ body {
         justify-content: space-between;
     }
 
-
-    .cardPicture img{
-        width: 115%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 0.7em;
-        margin-right: 1.8em;
-    }
+        .cardPicture img {
+            width: 115%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0.7em;
+            margin-right: 1.8em;
+        }
 
 
 
     /*FOOTER AREA*/
-     footer{
-         background-color: var(--color-primary-black);
-         color: var(--color-primary-white);
-         font-size: 1.1em;
-     }
+    footer {
+        background-color: var(--color-primary-black);
+        color: var(--color-primary-white);
+        font-size: 1.1em;
+    }
     /**/
 
-/*#endregion*/
+    /*#endregion*/
 
 
-/*#region Tablets*/
-@media (min-width: 577px) and (max-width: 992px) {
-    .columnVideo {
-        height: 50vh; 
-        background-color: var(--color-navbar);
-    }
-}
-
-/*#endregion*/
-
-
-/*#region desktops and laptops*/
-@media (min-width: 993px) {
-
-    .columnVideo {
-        height: 100vh; 
-        background-color: var(--color-primary-black) !important;
-        display: flex;
-        /*align-items: center;*/
-        justify-content: center;
+    /*#region Tablets*/
+    @media (min-width: 577px) and (max-width: 992px) {
+        .columnVideo {
+            height: 50vh;
+            background-color: var(--color-navbar);
+        }
     }
 
-    .navbarCustomLinks {/* Custom properties to "a" links.*/
-        color: var(--color-navbar-text) !important;
-        font-size: 1.3em;
-        transition: color 0.3s ease, font-size 0.3s ease;
+    /*#endregion*/
+
+
+    /*#region desktops and laptops*/
+    @media (min-width: 993px) {
+
+        .columnVideo {
+            height: 100vh;
+            background-color: var(--color-primary-black) !important;
+            display: flex;
+            /*align-items: center;*/
+            justify-content: center;
+        }
+
+        .navbarCustomLinks { /* Custom properties to "a" links.*/
+            color: var(--color-navbar-text) !important;
+            font-size: 1.3em;
+            transition: color 0.3s ease, font-size 0.3s ease;
+        }
+
+            .navbarCustomLinks:hover {
+                color: var(--color-navbar-text-hover) !important;
+                font-size: 1.4em;
+            }
     }
 
-    .navbarCustomLinks:hover {
-        color: var(--color-navbar-text-hover) !important;
-        font-size: 1.4em;
-    }
-
-}
-
-/*/*#endregion*/
+    /*/*#endregion*/
