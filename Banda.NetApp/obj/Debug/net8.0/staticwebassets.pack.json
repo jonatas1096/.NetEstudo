@@ -17,6 +17,14 @@
       "PackagePath": "staticwebassets\\font\\Aargh! W00 Heavy.ttf"
     },
     {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\font\\Carolineluxury.otf",
+      "PackagePath": "staticwebassets\\font\\Carolineluxury.otf"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\icons\\arrow-up-right.svg",
+      "PackagePath": "staticwebassets\\icons\\arrow-up-right.svg"
+    },
+    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\bandaopio1.jpg",
       "PackagePath": "staticwebassets\\img\\bandaopio1.jpg"
     },
@@ -27,10 +35,6 @@
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\bandaopio3.jpg",
       "PackagePath": "staticwebassets\\img\\bandaopio3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\bandaopio4.png",
-      "PackagePath": "staticwebassets\\img\\bandaopio4.png"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\enzo.jpg",
@@ -49,12 +53,12 @@
       "PackagePath": "staticwebassets\\img\\logobranca.png"
     },
     {
-      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\nirvanalogo.png",
-      "PackagePath": "staticwebassets\\img\\nirvanalogo.png"
-    },
-    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\scale_1200.jpg",
       "PackagePath": "staticwebassets\\img\\scale_1200.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\sectionsdiv.jpg",
+      "PackagePath": "staticwebassets\\img\\sectionsdiv.jpg"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\ygor.jpg",
