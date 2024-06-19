@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7LhC8jKZQv4NGgq4Qs+QpxMxGHtBhyh6mYNjunZhVzo=",
+  "Hash": "9CCozCTjl5TsJIbsgNcJmLBZ0y7n8+5y/nYbAIgn+xA=",
   "Source": "Banda.NetApp",
   "BasePath": "_content/Banda.NetApp",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\font\\Carolineluxury.otf"
+    },
+    {
+      "Identity": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\font\\Neon.ttf",
+      "SourceId": "Banda.NetApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\",
+      "BasePath": "_content/Banda.NetApp",
+      "RelativePath": "font/Neon.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\font\\Neon.ttf"
     },
     {
       "Identity": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\icons\\arrow-up-right.svg",
@@ -302,12 +321,12 @@
       "OriginalItemSpec": "wwwroot\\img\\scale_1200.jpg"
     },
     {
-      "Identity": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\sectionsdiv.jpg",
+      "Identity": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\section1.jpg",
       "SourceId": "Banda.NetApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\",
       "BasePath": "_content/Banda.NetApp",
-      "RelativePath": "img/sectionsdiv.jpg",
+      "RelativePath": "img/section1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -318,7 +337,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\sectionsdiv.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\section1.jpg"
     },
     {
       "Identity": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\ygor.jpg",

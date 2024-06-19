@@ -15,6 +15,7 @@
     /*global colors*/
     --color-primary-black: #000000;
     --color-primary-white: #ffffff;
+    --color-primary-section: #1d1c21;
     /**/
     /*global fonts*/
     --font-title: 'Caroline';
@@ -27,7 +28,8 @@
     --color-navbar-text-hover: #a6140a;
     /**/
     /*TEAM*/
-    --color-team-h2: #20598D;
+    --color-team-description: rgba(255, 20, 147, 0.8);
+
     /**/
 }
 
@@ -63,37 +65,6 @@ footer {
 header {
     z-index: 1000;
 }
-
-.section-heading {
-    width: 100%;
-    height: 9vh;
-    display: flex;
-    align-items: center;
-}
-
-    .section-heading > div {
-        background-color: #AD2F37;
-        height: 100%;
-        width: 80%;
-        box-shadow: rgba(0, 0, 0, 0.84) 6px 0px 6px;
-        z-index: 2;
-        display: flex; /* Adicionado para centralizar o texto verticalmente */
-        align-items: center; /* Adicionado para centralizar o texto verticalmente */
-        justify-content: center; 
-    }
-
-    .section-heading > div h1 {
-        font-size: 4em;
-        color: var(--color-primary-white);
-    }
-
-    .section-heading img {
-        height: 100%;
-        width: 40%;
-        object-fit: cover;
-    }
-
-
 
 
 /*#endregion*/
@@ -132,6 +103,74 @@ header {
 }
 /*#endregion*/
 
+/*#region animations*/
+
+/*neonGlow-felipe*/
+@keyframes neonGlow-felipe {
+    0%, 19.9%, 21%, 23.9%, 25%, 45.9%, 47%, 49.9%, 51%, 53.9%, 55%, 75.9%, 77%, 79.9%, 81%, 83.9%, 85%, 99.9%, 100% {
+        box-shadow: 0 0 0px rgba(255, 0, 255, 0.9), 0 0 5px rgba(255, 0, 255, 0.7), 0 0 10px rgba(255, 0, 255, 0.6), 0 0 15px rgba(255, 0, 255, 0.5), 0 0 20px rgba(255, 0, 255, 0.4), 0 0 25px rgba(255, 0, 255, 0.3), 0 0 30px rgba(255, 0, 255, 0.2);
+    }
+
+    20%, 22%, 24%, 46%, 48%, 50%, 52%, 54%, 76%, 78%, 80%, 82%, 84%, 86%, 87%, 88%, 89%, 90%, 91%, 92%, 93%, 94%, 95%, 96%, 97%, 98% {
+        box-shadow: 0 0 5px rgba(255, 0, 255, 0.7), 0 0 10px rgba(255, 0, 255, 0.7), 0 0 15px rgba(255, 0, 255, 0.6), 0 0 20px rgba(255, 0, 255, 0.5), 0 0 25px rgba(255, 0, 255, 0.4), 0 0 30px rgba(255, 0, 255, 0.3), 0 0 35px rgba(255, 0, 255, 0.2), 0 0 30px rgba(255, 0, 255, 0.1);
+    }
+}
+
+@keyframes neonGlow-gato {
+    0%, 19.9%, 21%, 23.9%, 25%, 45.9%, 47%, 49.9%, 51%, 53.9%, 55%, 75.9%, 77%, 79.9%, 81%, 83.9%, 85%, 99.9%, 100% {
+        box-shadow: 0 0 0px rgba(0, 185, 165, 0.9), 0 0 5px rgba(0, 185, 165, 0.7), 0 0 10px rgba(0, 185, 165, 0.6), 0 0 15px rgba(0, 185, 165, 0.5), 0 0 20px rgba(0, 185, 165, 0.4), 0 0 25px rgba(0, 185, 165, 0.3), 0 0 30px rgba(0, 185, 165, 0.2);
+    }
+
+    20%, 22%, 24%, 46%, 48%, 50%, 52%, 54%, 76%, 78%, 80%, 82%, 84%, 86%, 87%, 88%, 89%, 90%, 91%, 92%, 93%, 94%, 95%, 96%, 97%, 98% {
+        box-shadow: 0 0 5px rgba(0, 185, 165, 0.7), 0 0 10px rgba(0, 185, 165, 0.7), 0 0 15px rgba(0, 185, 165, 0.6), 0 0 20px rgba(0, 185, 165, 0.5), 0 0 25px rgba(0, 185, 165, 0.4), 0 0 30px rgba(0, 185, 165, 0.3), 0 0 35px rgba(0, 185, 165, 0.2), 0 0 30px rgba(0, 185, 165, 0.1);
+    }
+}
+
+
+@keyframes neonGlow-enzo {
+    0%, 19.9%, 21%, 23.9%, 25%, 45.9%, 47%, 49.9%, 51%, 53.9%, 55%, 75.9%, 77%, 79.9%, 81%, 83.9%, 85%, 99.9%, 100% {
+        box-shadow: 0 0 0px rgba(255, 20, 147, 0.9), 0 0 5px rgba(255, 20, 147, 0.7), 0 0 10px rgba(255, 20, 147, 0.6), 0 0 15px rgba(255, 20, 147, 0.5), 0 0 20px rgba(255, 20, 147, 0.4), 0 0 25px rgba(255, 20, 147, 0.3), 0 0 30px rgba(255, 20, 147, 0.2);
+    }
+
+    20%, 22%, 24%, 46%, 48%, 50%, 52%, 54%, 76%, 78%, 80%, 82%, 84%, 86%, 87%, 88%, 89%, 90%, 91%, 92%, 93%, 94%, 95%, 96%, 97%, 98% {
+        box-shadow: 0 0 5px rgba(255, 20, 147, 0.7), 0 0 10px rgba(255, 20, 147, 0.7), 0 0 15px rgba(255, 20, 147, 0.6), 0 0 20px rgba(255, 20, 147, 0.5), 0 0 25px rgba(255, 20, 147, 0.4), 0 0 30px rgba(255, 20, 147, 0.3), 0 0 35px rgba(255, 20, 147, 0.2), 0 0 30px rgba(255, 20, 147, 0.1);
+    }
+}
+
+@keyframes neonGlow-ygor {
+    0%, 19.9%, 21%, 23.9%, 25%, 45.9%, 47%, 49.9%, 51%, 53.9%, 55%, 75.9%, 77%, 79.9%, 81%, 83.9%, 85%, 99.9%, 100% {
+        box-shadow: 0 0 0px rgba(194, 0, 255, 0.9), 0 0 5px rgba(194, 0, 255, 0.7), 0 0 10px rgba(194, 0, 255, 0.6), 0 0 15px rgba(194, 0, 255, 0.5), 0 0 20px rgba(194, 0, 255, 0.4), 0 0 25px rgba(194, 0, 255, 0.3), 0 0 30px rgba(194, 0, 255, 0.2);
+    }
+
+    20%, 22%, 24%, 46%, 48%, 50%, 52%, 54%, 76%, 78%, 80%, 82%, 84%, 86%, 87%, 88%, 89%, 90%, 91%, 92%, 93%, 94%, 95%, 96%, 97%, 98% {
+        box-shadow: 0 0 5px rgba(194, 0, 255, 0.7), 0 0 10px rgba(194, 0, 255, 0.7), 0 0 15px rgba(194, 0, 255, 0.6), 0 0 20px rgba(194, 0, 255, 0.5), 0 0 25px rgba(194, 0, 255, 0.4), 0 0 30px rgba(194, 0, 255, 0.3), 0 0 35px rgba(194, 0, 255, 0.2), 0 0 30px rgba(194, 0, 255, 0.1);
+    }
+}
+
+@keyframes neonGlow-gustavo {
+    0%, 19.9%, 21%, 23.9%, 25%, 45.9%, 47%, 49.9%, 51%, 53.9%, 55%, 75.9%, 77%, 79.9%, 81%, 83.9%, 85%, 99.9%, 100% {
+        box-shadow: 0 0 0px rgba(255, 69, 0, 0.9), 0 0 5px rgba(255, 69, 0, 0.7), 0 0 10px rgba(255, 69, 0, 0.6), 0 0 15px rgba(255, 69, 0, 0.5), 0 0 20px rgba(255, 69, 0, 0.4), 0 0 25px rgba(255, 69, 0, 0.3), 0 0 30px rgba(255, 69, 0, 0.2);
+    }
+
+    20%, 22%, 24%, 46%, 48%, 50%, 52%, 54%, 76%, 78%, 80%, 82%, 84%, 86%, 87%, 88%, 89%, 90%, 91%, 92%, 93%, 94%, 95%, 96%, 97%, 98% {
+        box-shadow: 0 0 5px rgba(255, 69, 0, 0.7), 0 0 10px rgba(255, 69, 0, 0.7), 0 0 15px rgba(255, 69, 0, 0.6), 0 0 20px rgba(255, 69, 0, 0.5), 0 0 25px rgba(255, 69, 0, 0.4), 0 0 30px rgba(255, 69, 0, 0.3), 0 0 35px rgba(255, 69, 0, 0.2), 0 0 30px rgba(255, 69, 0, 0.1);
+    }
+}
+
+
+@keyframes neonGlowText {
+    from {
+        text-shadow: 0 0 5px var(--color-team-description), 0 0 10px var(--color-team-description), 0 0 15px var(--color-team-description), 0 0 20px var(--color-team-description), 0 0 25px rgba(255, 20, 147, 0.5), 0 0 30px rgba(255, 20, 147, 0.4), 0 0 35px rgba(255, 20, 147, 0.3);
+    }
+
+    to {
+        text-shadow: 0 0 10px var(--color-team-description), 0 0 20px var(--color-team-description), 0 0 30px var(--color-team-description), 0 0 40px var(--color-team-description), 0 0 50px rgba(255, 20, 147, 0.5), 0 0 60px rgba(255, 20, 147, 0.4), 0 0 70px rgba(255, 20, 147, 0.3);
+    }
+}
+
+
+/*#endregion*/
+
 
 /*Responsive options (testing)*/
 
@@ -154,11 +193,9 @@ header {
     }
 
     .overlay { /*Blur effect*/
-        height: 100%;
-        width: 100%;
         filter: none;
-        transition: 0.9s ease;
-        z-index: 999;
+        opacity: 1;
+
     }
 
     .shadowOverlay { /*Shadow effect*/
@@ -181,7 +218,7 @@ header {
         border: none;
         outline: none;
         color: var(--color-primary-white);
-        font-size: 1.20em;
+        font-size: 1.40em;
         font-weight: bold;
         font-family: var(--font-title);
     }
@@ -200,7 +237,6 @@ header {
         position: fixed;
         right: 0;
         width: 25%;
-        border: solid red 2px;
     }
 
     .navbarCustomLinks {
@@ -235,7 +271,6 @@ header {
     /*VIDEO AREA*/
     .columnVideo {
         height: 82vh;
-        background-color: var(--color-primary-black);
         padding: 0 !important;
         margin: 0 !important;
     }
@@ -248,31 +283,53 @@ header {
         height: 80vh;
         width: 100%;
         position: relative;
+        top: -2.7em;
         z-index: 2;
         font-family: var(--font-team-body);
-        margin-top: 1em;
     }
 
         section#team h2 {
-            font-size: 2.3em !important;
+            font-size: 2.8em !important;
             text-transform: uppercase;
-            color: var(--color-team-h2);
             font-weight: bold;
             font-family: var(--font-title);
+            text-align: center;
+            margin-bottom: 0.7em;
+            transform: translateY(-0.7em);
+            opacity: 0;
+            transition: opacity 0.7s ease, transform 0.7s ease;
+            /*testing*/
+            color: var(--color-team-description);
+            animation: neonGlowText 1.5s ease-in-out infinite alternate;
         }
 
+    /* Animação para simular o brilho pulsante */
+
         section#team p {
-            font-size: 1.3em;
+            font-size: 1.58em;
+            font-weight: bold;
+            text-align: justify;
+            margin-bottom: 1.1em;
+            transform: translateY(-0.7em);
+            opacity: 0;
+            transition: opacity 0.7s ease, transform 0.7s ease;
+            color: var(--color-primary-white);
         }
 
         section#team a {
-            font-size: 1.4em;
-            color: var(--color-team-h2);
+            font-size: 1.9em;
+            color: var(--color-team-pinkshock);
             text-decoration: none;
+            color: var(--color-team-description);
+            transform: translateY(-0.7em);
+            opacity: 0;
+            transition: opacity 0.7s ease, transform 0.7s ease;
+            animation: neonGlowText 1.5s ease-in-out infinite alternate;
         }
 
         section#team span {
             font-size: 0.9em;
+            animation: neonGlowText 1.5s ease-in-out infinite alternate;
         }
 
 
@@ -282,35 +339,49 @@ header {
         width: 28rem !important;
         height: 39rem !important;
         position: relative;
+        margin-bottom: 1em;
     }
 
         .tranding-slide .tranding-slide-img img {
             width: 28rem !important;
             height: 36rem !important;
-            border-radius: 2rem;
+            margin-top: 0.5em;
             object-fit: cover;
             filter: grayscale(100%);
-            transition: filter 0.9s ease, box-shadow 0.9s ease;
+            transition: filter 0.9s ease, box-shadow 0.7s ease;
         }
 
     .swiper-slide-active .tranding-slide-img img {
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        box-shadow: none;
         filter: none;
-    }   
-
-    .person-name {
-        color: white !important;
-        font-weight: bolder !important;
     }
 
+    section#team .activated{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    #team .swiper-pagination .swiper-pagination-bullet {
+        background: var(--color-primary-white);
+    }
 
     #team .swiper-pagination .swiper-pagination-bullet-active {
-        background: var(--color-primary-black);
+        background: var(--color-primary-white);
     }
 
     .swiper-slide-shadow-left,
     .swiper-slide-shadow-right {
         display: none;
+    }
+
+
+
+    .aboutMember {
+        position: relative;
+        top: -5.3em;
+        padding: 2em;
+        padding-top: 6em;
+        background-color: #1d1c21;
     }
     /**/
 
