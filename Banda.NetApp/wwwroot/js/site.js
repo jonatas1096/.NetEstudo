@@ -67,28 +67,28 @@ document.addEventListener("DOMContentLoaded", function () {
                         description: '“Felipe Takashi” vocalista, fundador da ópio, homossexual publicamente assumido, grunge e fodido financeiramente, é o antecessor de bla, lorem ipsum lorem, bla bla bla bla bla, lorem ipsum lorembla bla bla bla bla, lorem ipsum lorem"',
                         link: 'https://www.instagram.com/felipe.takashii/',
                         neonColor: 'neonGlow-felipe',
-                        color: 'rgba(255, 0, 255, 0.6)'
+                        color: 'rgba(255, 0, 255, 0.7)'
                     },
                     enzo: {
                         role: 'BATEIRISTA',
                         description: '“Batuca mucho"',
                         link: 'https://www.instagram.com/enzoispunk/',
                         neonColor: 'neonGlow-enzo',
-                        color: 'rgba(255, 20, 147, 0.6)'
+                        color: 'rgba(255, 20, 147, 0.7)'
                     },
                     ygor: {
                         role: 'GUITARRISTA',
                         description: '“Toca mucha guitarita"',
                         link: 'https://www.instagram.com/ygorleaoo_/',
                         neonColor: 'neonGlow-ygor',
-                        color: ' rgba(194, 0, 255, 0.6)'
+                        color: 'rgba(0, 255, 255, 0.8)'
                     },
                     gustavo: {
                         role: 'GUITARRISTA',
                         description: '“Toca mucha guitarita"',
                         link: 'https://www.instagram.com/gushikenmusic/',
                         neonColor: 'neonGlow-gustavo',
-                        color: 'rgba(255, 69, 0, 0.6)'
+                        color: 'rgba(255, 69, 0, 0.8)'
                     },
                     gato: {
                         role: 'GATO',
@@ -128,8 +128,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 const root = document.documentElement;
 
                 root.style.setProperty('--color-team-description', `${data.color}`);
-
+                //root.style.setProperty('--color-team-description', `rgba(232,48,109,255)`);
                 setTimeout(() => {
+
 
                     memberRole.classList.add('activated')
                     memberDescription.classList.add('activated')

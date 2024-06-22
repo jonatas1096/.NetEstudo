@@ -21,10 +21,6 @@
       "PackagePath": "staticwebassets\\font\\Carolineluxury.otf"
     },
     {
-      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\font\\Neon.ttf",
-      "PackagePath": "staticwebassets\\font\\Neon.ttf"
-    },
-    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\icons\\arrow-up-right.svg",
       "PackagePath": "staticwebassets\\icons\\arrow-up-right.svg"
     },
@@ -63,6 +59,14 @@
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\section1.jpg",
       "PackagePath": "staticwebassets\\img\\section1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\teste.jpg",
+      "PackagePath": "staticwebassets\\img\\teste.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\teste1.jpg",
+      "PackagePath": "staticwebassets\\img\\teste1.jpg"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\ygor.jpg",
