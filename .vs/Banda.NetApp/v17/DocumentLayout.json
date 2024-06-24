@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "Banda.NetApp\\wwwroot\\js\\site.js",
               "ToolTip": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\js\\site.js",
               "RelativeToolTip": "Banda.NetApp\\wwwroot\\js\\site.js",
-              "ViewState": "AQIAAG0AAAAAAAAAAAAAAGkAAABRAAAA",
+              "ViewState": "AQIAAJkAAAAAAAAAAAAUwKEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-05-30T22:13:43.654Z",
               "EditorCaption": ""
@@ -49,9 +49,10 @@
               "RelativeDocumentMoniker": "Banda.NetApp\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Banda.NetApp\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABhAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAAsAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T20:53:43.347Z"
+              "WhenOpened": "2024-05-24T20:53:43.347Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -61,9 +62,10 @@
               "RelativeDocumentMoniker": "Banda.NetApp\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Banda.NetApp\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAAAFEAAAAfAAAA",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAF4AAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-11T02:43:05.441Z"
+              "WhenOpened": "2024-06-11T02:43:05.441Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -73,7 +75,7 @@
               "RelativeDocumentMoniker": "Banda.NetApp\\wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\css\\site.css",
               "RelativeToolTip": "Banda.NetApp\\wwwroot\\css\\site.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAlAAAA",
+              "ViewState": "AQIAAK4AAAAAAAAAAAAAALYAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-05-16T02:24:54.9Z",
               "EditorCaption": ""

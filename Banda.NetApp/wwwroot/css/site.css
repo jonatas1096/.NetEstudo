@@ -9,6 +9,11 @@
     src: url('../font/Carolineluxury.otf');
 }
 
+@font-face {
+    font-family: Monckeberg;
+    src: url('../font/MonckebergAlt-Normal.ttf');
+}
+
 /*VARIABLES*/
 
 :root { /*Custom variables to build design*/
@@ -39,12 +44,14 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth !important;
+    height: 100%;
 }
 
 
 body {
     padding: 0 !important;
     margin: 0 !important;
+    height: 100%;
 }
 
 * {
@@ -65,9 +72,13 @@ header {
     z-index: 1000;
 }
 
+.intersectionDiv img {
+    height: 30vh;
+    width: 100%;
+}   
+
 
 /*#endregion*/
-
 /*#region navbar*/
 .navbarCustom { /*Custom properties of my navbar*/
     /*background-color: var(--color-navbar);*/
@@ -159,7 +170,7 @@ header {
 }
 
 
-@keyframes neonGlowText {
+@keyframes neonGlow-Text {
     from {
         text-shadow: 0 0 5px var(--color-team-description), 0 0 10px var(--color-team-description), 0 0 15px var(--color-team-description), 0 0 20px var(--color-team-description), 0 0 25px rgba(255, 20, 147, 0.5), 0 0 30px rgba(255, 20, 147, 0.4), 0 0 35px rgba(255, 20, 147, 0.3);
     }
@@ -168,6 +179,31 @@ header {
         text-shadow: 0 0 10px var(--color-team-description), 0 0 20px var(--color-team-description), 0 0 30px var(--color-team-description), 0 0 40px var(--color-team-description), 0 0 50px rgba(255, 20, 147, 0.5), 0 0 60px rgba(255, 20, 147, 0.4), 0 0 70px rgba(255, 20, 147, 0.3);
     }
 }
+
+@keyframes neonGlow-Button {
+    0%, 16%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+        color: #0e3742;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4
+    }
+}
+
+@keyframes pokeFinger {
+    0%, 20%, 40%, 100% {
+        transform: translateX(-0);
+        
+    }
+
+    10%, 30% {
+        transform: translateX(0.5em);
+        opacity: 1;
+    }
+}
+
 
 
 /*#endregion*/
@@ -243,7 +279,7 @@ header {
     }
     /*#endregion*/
 
-
+    /*#region overlay*/
     .overlay { /*Blur effect*/
         filter: none;
         opacity: 1;
@@ -263,6 +299,7 @@ header {
         transition: 0.9s ease;
         pointer-events: none;
     }
+    /*#endregion*/
 
     /*#region #Home*/
 
@@ -299,7 +336,7 @@ header {
             transition: opacity 0.7s ease, transform 0.7s ease;
             /*testing*/
             color: var(--color-team-description);
-            animation: neonGlowText 1.5s ease-in-out infinite alternate;
+            animation: neonGlow-Text 1.5s ease-in-out infinite alternate;
         }
 
         /* Animação para simular o brilho pulsante */
@@ -322,12 +359,12 @@ header {
             transform: translateY(-0.7em);
             opacity: 0;
             transition: opacity 0.7s ease, transform 0.7s ease;
-            animation: neonGlowText 1.5s ease-in-out infinite alternate;
+            animation: neonGlow-Text 1.5s ease-in-out infinite alternate;
         }
 
         section#Team span {
             font-size: 0.9em;
-            animation: neonGlowText 1.5s ease-in-out infinite alternate;
+            animation: neonGlow-Text 1.5s ease-in-out infinite alternate;
         }
 
 
@@ -344,12 +381,11 @@ header {
             margin-top: 0.5em;
             object-fit: cover;
             filter: grayscale(100%);
-            transition: filter 0.9s ease, box-shadow 0.7s ease;
+            transition: filter 0.9s ease;
         }
 
     .swiper-slide-active .tranding-slide-img img {
-        box-shadow: none;
-        filter: none;
+        filter: none !important;
     }
 
     section#Team .activated {
@@ -377,7 +413,7 @@ header {
         top: -5.3em;
         padding: 2em;
         padding-top: 6em;
-        background-color: #1d1c21;
+        background-color: var(--color-primary-section);
     }
     /*#endregion*/
 
@@ -386,23 +422,81 @@ header {
         width: 100%;
     }
 
-    #Story h1{
-       font-family: 'Times New Roman';
-       font-size: 3em;
-       margin-top: 0.5em;
-    }
+        #Story .rowStory {
+            padding: 1.2em 2em;
+        }
 
     .imgStory {
         width: 100%;
     }
-    /*#endregion*/
+
+
+    #Story h1 {
+        font-family: Monckeberg;
+        font-size: 1.7em;
+        margin-top: 0.5em;
+        text-transform: uppercase;
+        margin-bottom: 0.6em;
+        font-weight: bold;
+    }
+
+    #Story h1 span {
+        font-size: 1.7em;
+    }
+
+    #Story p {
+        font-size: 1.70em;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgba(146, 146, 146, 1)
+    }
+
+        #Story p:last-of-type {
+            text-transform: uppercase;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: rgba(126, 126, 126, 1)
+        }
+            #Story p:last-of-type span {
+                color: rgb(167,116,182);
+            }
+
+
+    .button-container {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+        .button-container button {
+            width: 32%;
+            margin-top: 0.5em;
+            padding: 0.5em;
+            background-color: var(--color-primary-black);
+            font-family: Monckeberg;
+            font-size: 1.5em;
+            font-family: 'Times New Roman';
+            font-weight: bold;
+            opacity: 0.87;
+            color: rgba(0, 255, 255, 0.9);
+            border: none;
+        }
+
+        .button-container .imgFinger {
+            width: 18%;
+            opacity: 0;
+        }
+
+            /*#endregion*/
+
+
+
 
     /*#region footer*/
-    footer {
-        background-color: var(--color-primary-black);
-        color: var(--color-primary-white);
-        font-size: 1.1em;
-    }
+            footer {
+                background-color: var(--color-primary-black);
+                color: var(--color-primary-white);
+                font-size: 1.1em;
+            }
 
     /*#endregion*/
 

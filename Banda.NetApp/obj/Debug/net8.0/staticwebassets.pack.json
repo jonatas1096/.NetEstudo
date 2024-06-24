@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\font\\Carolineluxury.otf"
     },
     {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\font\\MonckebergAlt-Normal.ttf",
+      "PackagePath": "staticwebassets\\font\\MonckebergAlt-Normal.ttf"
+    },
+    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\icons\\arrow-up-right.svg",
       "PackagePath": "staticwebassets\\icons\\arrow-up-right.svg"
     },
@@ -45,12 +49,20 @@
       "PackagePath": "staticwebassets\\img\\felipe.jpg"
     },
     {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\finger-teste.png",
+      "PackagePath": "staticwebassets\\img\\finger-teste.png"
+    },
+    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\gustavo.jpg",
       "PackagePath": "staticwebassets\\img\\gustavo.jpg"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\logobranca.png",
       "PackagePath": "staticwebassets\\img\\logobranca.png"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\neonfinger.png",
+      "PackagePath": "staticwebassets\\img\\neonfinger.png"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\scale_1200.jpg",

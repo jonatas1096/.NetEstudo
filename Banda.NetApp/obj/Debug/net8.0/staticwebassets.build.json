@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xjwLWprrqpPwxB1xEfutYe7APc5mbhufuEds3zOdWgo=",
+  "Hash": "YOqX8LFrD6pajVzUptFMo+Fa7dm9Wren34HLdNuypK8=",
   "Source": "Banda.NetApp",
   "BasePath": "_content/Banda.NetApp",
   "Mode": "Default",
@@ -131,6 +131,25 @@
       "OriginalItemSpec": "wwwroot\\font\\Carolineluxury.otf"
     },
     {
+      "Identity": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\font\\MonckebergAlt-Normal.ttf",
+      "SourceId": "Banda.NetApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\",
+      "BasePath": "_content/Banda.NetApp",
+      "RelativePath": "font/MonckebergAlt-Normal.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\font\\MonckebergAlt-Normal.ttf"
+    },
+    {
       "Identity": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\icons\\arrow-up-right.svg",
       "SourceId": "Banda.NetApp",
       "SourceType": "Discovered",
@@ -245,6 +264,25 @@
       "OriginalItemSpec": "wwwroot\\img\\felipe.jpg"
     },
     {
+      "Identity": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\finger-teste.png",
+      "SourceId": "Banda.NetApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\",
+      "BasePath": "_content/Banda.NetApp",
+      "RelativePath": "img/finger-teste.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\finger-teste.png"
+    },
+    {
       "Identity": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\gustavo.jpg",
       "SourceId": "Banda.NetApp",
       "SourceType": "Discovered",
@@ -281,6 +319,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\logobranca.png"
+    },
+    {
+      "Identity": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\neonfinger.png",
+      "SourceId": "Banda.NetApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\",
+      "BasePath": "_content/Banda.NetApp",
+      "RelativePath": "img/neonfinger.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\neonfinger.png"
     },
     {
       "Identity": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\scale_1200.jpg",

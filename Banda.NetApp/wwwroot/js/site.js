@@ -52,6 +52,10 @@ document.addEventListener("DOMContentLoaded", function () {
             modifier: 0.9,
             slideShadows: true,
         },
+        autoplay: {
+            delay: 9000, 
+            disableOnInteraction: false,
+        },
         // pagination
         pagination: {
             el: '.swiper-pagination',
@@ -64,35 +68,35 @@ document.addEventListener("DOMContentLoaded", function () {
                 const membersData = {
                     felipe: {
                         role: 'VOCALISTA',
-                        description: '“Felipe Takashi” vocalista, fundador da ópio, homossexual publicamente assumido, grunge e fodido financeiramente, é o antecessor de bla, lorem ipsum lorem, bla bla bla bla bla, lorem ipsum lorembla bla bla bla bla, lorem ipsum lorem"',
+                        description: '“Felipe Takashi” vocalista, fundador da øpio, homossexual publicamente assumido, grunge e fodido financeiramente, possui a habilidade de se tornar invisível – mas apenas quando ninguém está olhando.',
                         link: 'https://www.instagram.com/felipe.takashii/',
                         neonColor: 'neonGlow-felipe',
                         color: 'rgba(255, 0, 255, 0.7)'
                     },
                     enzo: {
                         role: 'BATEIRISTA',
-                        description: '“Batuca mucho"',
+                        description: '“Enzo" bateirista e letrista, tem o incrível poder mágico de correr 10cm acima do solo – mas sempre que corre fica pelado. Sua criatividade nas composições da banda ressoam com temas de liberdade e identidade.',
                         link: 'https://www.instagram.com/enzoispunk/',
                         neonColor: 'neonGlow-enzo',
                         color: 'rgba(255, 20, 147, 0.7)'
                     },
                     ygor: {
                         role: 'GUITARRISTA',
-                        description: '“Toca mucha guitarita"',
+                        description: '“Ygor" o guitarrista, possui a habilidade de saber exatamente quando alguém vai espirrar – mas sem conseguir avisar a tempo. Ele é a alma dos solos da banda, criando melodias hipnotizantes que fazem o público vibrar.',
                         link: 'https://www.instagram.com/ygorleaoo_/',
                         neonColor: 'neonGlow-ygor',
                         color: 'rgba(0, 255, 255, 0.8)'
                     },
                     gustavo: {
                         role: 'GUITARRISTA',
-                        description: '“Toca mucha guitarita"',
+                        description: '“Gustavo" o guitarrista, tem o poder de ter seus pensamentos narrados por Morgan Freeman – mas somente ele pode ouvir. Gustavo é frequentemente associado pelas fãs de todas as idades como o asiático mais bonito da banda.',
                         link: 'https://www.instagram.com/gushikenmusic/',
                         neonColor: 'neonGlow-gustavo',
                         color: 'rgba(255, 69, 0, 0.8)'
                     },
                     gato: {
                         role: 'GATO',
-                        description: '“Mascote oficial da banda ópio."',
+                        description: '“O gato é simplesmente o gato de terno."',
                         link: 'https://www.petz.com.br/blog/pets/gatos/perfil-de-gato/',
                         neonColor: 'neonGlow-gato',
                         color: 'rgba(0,185,165,255)'
@@ -111,7 +115,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 neonColor = data.neonColor
                 activeImg.style.animation = `${neonColor} 2.5s ease-in-out infinite alternate`;
-
 
                 //Section of member's description.
 
@@ -148,7 +151,33 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    
+
+    //
+
+
+    function pokeFingerAnimation() {
+        const pokeFinger = document.querySelector('.imgFinger');
+        const button = document.getElementById('buttonLeiaMais');
+        button.style.animation = 'neonGlow-Button ease-in-out 7s infinite';
+
+        // Function to reset pokeFinger animation
+        function resetPokeFingerAnimation() {
+            pokeFinger.style.animation = 'none';
+            setTimeout(() => {
+                pokeFinger.style.animation = 'pokeFinger 2s ease-in-out';
+            }, 50);
+        }
+
+        // Initial pokeFinger animation
+        resetPokeFingerAnimation();
+
+        // Set interval to reset pokeFinger animation every 6 seconds
+        setInterval(resetPokeFingerAnimation, 7200);
+    }
+
+    pokeFingerAnimation(); // Start the animation loop
+
+
 
 });
 
