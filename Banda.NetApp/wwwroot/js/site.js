@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-   
+
 
     //Initializing swiper carousel (library)
     const swiper = new Swiper('.swiper', {
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
             slideShadows: true,
         },
         autoplay: {
-            delay: 9000, 
+            delay: 9000,
             disableOnInteraction: false,
         },
         // pagination
@@ -144,8 +144,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     memberLink.href = data.link
 
                 }, 400)
-                
-                
+
+
 
             }
         }
@@ -158,25 +158,28 @@ document.addEventListener("DOMContentLoaded", function () {
     function pokeFingerAnimation() {
         const pokeFinger = document.querySelector('.imgFinger');
         const button = document.getElementById('buttonLeiaMais');
-        button.style.animation = 'neonGlow-Button ease-in-out 7s infinite';
 
         // Function to reset pokeFinger animation
         function resetPokeFingerAnimation() {
+            button.style.animation = 'none';
             pokeFinger.style.animation = 'none';
+
             setTimeout(() => {
-                pokeFinger.style.animation = 'pokeFinger 2s ease-in-out';
-            }, 50);
+                button.style.animation = 'neonGlow-Button ease-in-out 7s';
+
+                pokeFinger.style.animation = 'pokeFinger 1.5s ease-in-out';
+            }, 50); // Delay to avoid bug animation
         }
 
-        // Initial pokeFinger animation
         resetPokeFingerAnimation();
-
-        // Set interval to reset pokeFinger animation every 6 seconds
-        setInterval(resetPokeFingerAnimation, 7200);
     }
 
-    pokeFingerAnimation(); // Start the animation loop
+    // looping to main function
+    setInterval(() => {
+        pokeFingerAnimation();
+    }, 7000);
 
+    pokeFingerAnimation();
 
 
 });
@@ -184,23 +187,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    function blurMenuDrop() { //turn on or off the blur filter.
-
-        //Div to "blur" effect.
-        var blurState = document.querySelector('.overlay');
-        var shadowState = document.querySelector('.shadowOverlay');
-        var computedStyle = window.getComputedStyle(blurState)
-      
-
-        if (computedStyle.filter.includes("blur(3px)")) { //remove effects
-            blurState.style.filter = "none";
-            shadowState.style.opacity = "0";
-        }
-        else {
-            blurState.style.filter = "blur(3px)"; //add effects
-            shadowState.style.opacity = "1";
-        }
 
 
+
+
+document.querySelector('.custom-toggler').addEventListener('click', function () {
+
+    //First, the code to "blur" effect.
+    var blurState = document.querySelector('.overlay');
+    var shadowState = document.querySelector('.shadowOverlay');
+    var computedStyle = window.getComputedStyle(blurState)
+
+
+    if (computedStyle.filter.includes("blur(3px)")) { //remove effects
+        blurState.style.filter = "none";
+        shadowState.style.opacity = "0";
     }
+    else {
+        blurState.style.filter = "blur(3px)"; //add effects
+        shadowState.style.opacity = "1";
+    }
+    //
+
+    //Now, menudrop down:
+    const menu = document.querySelector('.navbar-collapse');
+    if (menu.classList.contains('show')) {
+        menu.classList.remove('show');
+    } else {
+        menu.classList.add('show');
+    }
+})
 

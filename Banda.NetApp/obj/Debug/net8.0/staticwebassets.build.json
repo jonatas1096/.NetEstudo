@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YOqX8LFrD6pajVzUptFMo+Fa7dm9Wren34HLdNuypK8=",
+  "Hash": "8X7xLO/5EqY8AAD12g42OW01VNMK8Ut9UtPsg8514PE=",
   "Source": "Banda.NetApp",
   "BasePath": "_content/Banda.NetApp",
   "Mode": "Default",
@@ -262,25 +262,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\felipe.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\finger-teste.png",
-      "SourceId": "Banda.NetApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\",
-      "BasePath": "_content/Banda.NetApp",
-      "RelativePath": "img/finger-teste.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\finger-teste.png"
     },
     {
       "Identity": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\gustavo.jpg",

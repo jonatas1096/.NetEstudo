@@ -243,31 +243,41 @@ header {
     .navbar-collapse {
         transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
         transition: all 0.3s ease-out;
-        opacity: 0;
+        display: none;
     }
-
         .navbar-collapse.show {
-            opacity: 1;
+            display: block;
         }
 
     .navbar-nav {
         position: fixed;
         right: 0;
         width: 25%;
+        border: solid red 2px;
     }
 
-    .navbarCustomLinks {
+    .nav-linkCustom {
         color: var(--color-navbar-text) !important;
         opacity: 0;
         transform: translateY(-20px);
         transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-        color: var(--color-primary-white);
         text-align: end;
         margin-right: 2em;
         font-size: 1.28em;
     }
 
-    .navbar-collapse.show .navbarCustomLinks {
+    .navbar-collapse.show .nav-link {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav-item {
+        transform: translateY(-20px);
+        opacity: 0;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .navbar-collapse.show .nav-item {
         transform: translateY(0);
         opacity: 1;
     }
@@ -283,22 +293,23 @@ header {
     .overlay { /*Blur effect*/
         filter: none;
         opacity: 1;
+        transition: filter 0.3s ease-out, opacity 0.3s ease-out;
     }
 
     .shadowOverlay { /*Shadow effect*/
         background-color: rgba(0, 0, 0, 0.55);
-        position: absolute;
+        position: fixed;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        height: 100%;
-        width: 100%;
         z-index: 999;
         opacity: 0;
         transition: 0.9s ease;
         pointer-events: none;
+        transition: opacity 0.3s ease-out;
     }
+
     /*#endregion*/
 
     /*#region #Home*/
@@ -338,8 +349,6 @@ header {
             color: var(--color-team-description);
             animation: neonGlow-Text 1.5s ease-in-out infinite alternate;
         }
-
-        /* Animação para simular o brilho pulsante */
 
         section#Team p {
             font-size: 1.67em;
@@ -458,6 +467,7 @@ header {
         }
             #Story p:last-of-type span {
                 color: rgb(167,116,182);
+
             }
 
 
@@ -477,7 +487,7 @@ header {
             font-family: 'Times New Roman';
             font-weight: bold;
             opacity: 0.87;
-            color: rgba(0, 255, 255, 0.9);
+            color: #0e3742;
             border: none;
         }
 
