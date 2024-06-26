@@ -156,18 +156,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     function pokeFingerAnimation() {
-        const pokeFinger = document.querySelector('.imgFinger');
-        const button = document.getElementById('buttonLeiaMais');
+        const pokeFinger = document.querySelector('.imgFinger')
+        const button = document.getElementById('buttonLeiaMais')
 
         // Function to reset pokeFinger animation
         function resetPokeFingerAnimation() {
-            button.style.animation = 'none';
-            pokeFinger.style.animation = 'none';
+            button.style.animation = 'none'
+            pokeFinger.style.animation = 'none'
 
             setTimeout(() => {
-                button.style.animation = 'neonGlow-Button ease-in-out 7s';
+                button.style.animation = 'neonGlow-Button ease-in-out 7s'
 
-                pokeFinger.style.animation = 'pokeFinger 1.5s ease-in-out';
+                pokeFinger.style.animation = 'pokeFinger 1.5s ease-in-out'
             }, 50); // Delay to avoid bug animation
         }
 
@@ -190,31 +190,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
 document.querySelector('.custom-toggler').addEventListener('click', function () {
 
-    //First, the code to "blur" effect.
+    //Var to "blur" and "shadow" effects.
     var blurState = document.querySelector('.overlay');
     var shadowState = document.querySelector('.shadowOverlay');
     var computedStyle = window.getComputedStyle(blurState)
 
 
+    const menu = document.querySelector('.navbar-collapse');
+    const menuText = document.querySelector('.custom-toggler span') //to neon animation
+    
+
     if (computedStyle.filter.includes("blur(3px)")) { //remove effects
         blurState.style.filter = "none";
         shadowState.style.opacity = "0";
+        //Disable menu dropdown:
+        menu.classList.remove('show');
+        //Disable neon text effect:
+        menuText.classList.remove('spanActivated')
     }
     else {
         blurState.style.filter = "blur(3px)"; //add effects
         shadowState.style.opacity = "1";
+        //Active menudrop down:
+        menu.classList.add('show');
+        //Effect to text:
+        menuText.classList.add('spanActivated')
     }
     //
 
-    //Now, menudrop down:
-    const menu = document.querySelector('.navbar-collapse');
-    if (menu.classList.contains('show')) {
-        menu.classList.remove('show');
-    } else {
-        menu.classList.add('show');
-    }
+    
 })
 

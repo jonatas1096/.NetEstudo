@@ -75,6 +75,7 @@ header {
 .intersectionDiv img {
     height: 30vh;
     width: 100%;
+    background-attachment: fixed;
 }   
 
 
@@ -90,6 +91,9 @@ header {
     padding: 0 !important;
     margin: 0 !important;
     z-index: 1000;
+    position: fixed;
+    transition: background-color 0.5s ease;
+    box-shadow: none !important;
 }
 
 .logoDiv {
@@ -220,53 +224,59 @@ header {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
 
-    .navbarCustom {
-        position: fixed;
-        transition: background-color 0.5s ease;
-        box-shadow: none !important;
-    }
-
     .navbarScrolled {
         background-color: var(--color-primary-black);
     }
+    
 
     .custom-toggler {
         margin-right: 0.5vh;
         border: none;
-        outline: none;
-        color: var(--color-primary-white);
-        font-size: 1.43em;
-        font-weight: bold;
-        font-family: var(--font-title);
     }
 
+    .custom-toggler span {
+        color: var(--color-primary-white);
+        font-size: 1.67em;
+        font-weight: bold;
+        font-family: var(--font-title);
+        transition: all 0.5s ease-in-out;
+    }
+        .spanActivated {
+            color: #0e3742;
+            text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4
+        }
+
     .navbar-collapse {
-        transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
-        transition: all 0.3s ease-out;
-        display: none;
+        transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+        opacity: 0;
+        overflow: hidden;
+        pointer-events: none;
     }
         .navbar-collapse.show {
-            display: block;
+            opacity: 1;
+            pointer-events: auto;
         }
 
     .navbar-nav {
         position: fixed;
         right: 0;
-        width: 25%;
-        border: solid red 2px;
+        display: flex;
+        align-items: end;
+        gap: 1em;
     }
 
     .nav-linkCustom {
+        font-size: 1.70em;
+        font-family: 'Times New Roman';
         color: var(--color-navbar-text) !important;
         opacity: 0;
         transform: translateY(-20px);
-        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+        transition: transform 0.5s ease-out, opacity 0.5s ease-out;
         text-align: end;
-        margin-right: 2em;
-        font-size: 1.28em;
+        margin-right: 0.5em;
     }
 
-    .navbar-collapse.show .nav-link {
+    .navbar-collapse.show .nav-linkCustom {
         opacity: 1;
         transform: translateY(0);
     }
@@ -274,7 +284,7 @@ header {
     .nav-item {
         transform: translateY(-20px);
         opacity: 0;
-        transition: transform 0.5s ease, opacity 0.5s ease;
+        transition: transform 0.6s ease, opacity 0.6s ease;
     }
 
     .navbar-collapse.show .nav-item {
@@ -282,11 +292,6 @@ header {
         opacity: 1;
     }
 
-    .navbarCustomLinks:hover {
-        color: var(--color-navbar-text-hover) !important;
-        opacity: 1.0;
-        font-size: 1.1em;
-    }
     /*#endregion*/
 
     /*#region overlay*/
@@ -297,7 +302,7 @@ header {
     }
 
     .shadowOverlay { /*Shadow effect*/
-        background-color: rgba(0, 0, 0, 0.55);
+        background-color: rgba(0, 0, 0, 0.65);
         position: fixed;
         top: 0;
         bottom: 0;
@@ -497,9 +502,6 @@ header {
         }
 
             /*#endregion*/
-
-
-
 
     /*#region footer*/
             footer {
