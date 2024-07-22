@@ -53,8 +53,16 @@
       "PackagePath": "staticwebassets\\img\\gustavo.jpg"
     },
     {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\ironmaiden.jpg",
+      "PackagePath": "staticwebassets\\img\\ironmaiden.jpg"
+    },
+    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\logobranca.png",
       "PackagePath": "staticwebassets\\img\\logobranca.png"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\metallica.jpg",
+      "PackagePath": "staticwebassets\\img\\metallica.jpg"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\neonfinger.png",
@@ -69,12 +77,24 @@
       "PackagePath": "staticwebassets\\img\\section1.jpg"
     },
     {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\system.jpg",
+      "PackagePath": "staticwebassets\\img\\system.jpg"
+    },
+    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\teste.jpg",
       "PackagePath": "staticwebassets\\img\\teste.jpg"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\teste1.jpg",
       "PackagePath": "staticwebassets\\img\\teste1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\testeFotoAlbum.png",
+      "PackagePath": "staticwebassets\\img\\testeFotoAlbum.png"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\testeFotoAlbum2.png",
+      "PackagePath": "staticwebassets\\img\\testeFotoAlbum2.png"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\ygor.jpg",

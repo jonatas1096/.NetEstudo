@@ -9,7 +9,6 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     //
-
     function darkNavbar() {
 
         var navbar = document.querySelector('.navbarCustom');
@@ -182,10 +181,22 @@ document.addEventListener("DOMContentLoaded", function () {
     pokeFingerAnimation();
 
 
+
+    //Initializing swiper carousel (cards spotify)
+    const swiperAlbuns = new Swiper('.swiperAlbuns', {
+        direction: 'horizontal',
+        grabCursor: true,
+        effect: 'slide',
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: 1,
+        pagination: {
+            el: '.swiper-paginationAlbuns',
+            clickable: true,
+        }
+    });
+
 });
-
-
-
 
 
 
@@ -200,7 +211,7 @@ document.querySelector('.custom-toggler').addEventListener('click', function () 
 
     const menu = document.querySelector('.navbar-collapse');
     const menuText = document.querySelector('.custom-toggler span') //to neon animation
-    
+
 
     if (computedStyle.filter.includes("blur(3px)")) { //remove effects
         blurState.style.filter = "none";
@@ -220,6 +231,8 @@ document.querySelector('.custom-toggler').addEventListener('click', function () 
     }
     //
 
-    
+
 })
+
+
 

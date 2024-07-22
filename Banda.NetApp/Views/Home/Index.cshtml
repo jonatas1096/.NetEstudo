@@ -4,20 +4,20 @@
 
 
 <div class="overlay">
-<section id="Home">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col columnVideo">
-                <video loop autoplay muted> <source src="~/video/teste.mp4" type="video/mp4"> </video>
+    <section id="Home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col columnVideo">
+                    <video loop autoplay muted> <source src="~/video/teste.mp4" type="video/mp4"> </video>
+                </div>
             </div>
+
         </div>
-
-    </div>
-</section>
+    </section>
 
 
-<section id="Team">
-    <div class="container-fluid">
+    <section id="Team">
+        <div class="container-fluid">
             <div class="swiper tranding-slider">
                 <div class="swiper-wrapper">
                     <!-- Slide-start -->
@@ -30,14 +30,14 @@
                     <!-- Slide-start -->
                     <div class="swiper-slide tranding-slide">
                         <div class="tranding-slide-img">
-                        <img src="~/img/scale_1200.jpg" id="gato" alt="Gato">
+                            <img src="~/img/scale_1200.jpg" id="gato" alt="Gato">
                         </div>
                     </div>
                     <!-- Slide-end -->
                     <!-- Slide-start -->
                     <div class="swiper-slide tranding-slide">
                         <div class="tranding-slide-img">
-                        <img src="~/img/enzo.jpg" id="enzo" alt="Enzo">
+                            <img src="~/img/enzo.jpg" id="enzo" alt="Enzo">
                         </div>
                     </div>
                     <!-- Slide-end -->
@@ -61,51 +61,179 @@
                 <div class="swiper-pagination"></div>
             </div>
 
-                <div class="aboutMember">
-                    <h2></h2>
-                    <p></p>
-                    <a href="" target="_blank">Conheça-me <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
-                </div>
-    </div>
+            <div class="aboutMember">
+                <h2></h2>
+                <p></p>
+                <a href="" target="_blank">Conheça-me <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+            </div>
+        </div>
 
 
-</section>
+    </section>
 
     <section id="Story">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                        <img src="~/img/teste1.jpg" class="imgStory" alt="Foto da banda">
-                    </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <img src="~/img/teste1.jpg" class="imgStory" alt="Foto da banda">
                 </div>
-                <div class="row rowStory">
-                    <h1><span>øpio:</span><br />O que nos faz diferente?</h1>
-                    <p>
-                        Øpio é uma banda que se destaca não só pela sua musicalidade, mas também pelo seu ativismo. Suas canções são hinos de celebração e luta pela igualdade e
-                        direitos da comunidade LGBTQIA+. Com uma sonoridade que mistura indie rock, pop e elementos eletrônicos, øpio cria uma atmosfera sonora envolvente e cheia de significado.
-                        Cada apresentação é uma declaração de amor, aceitação e resistência.
-                    </p>
+            </div>
+            <div class="row rowStory">
+                <h1><span>øpio:</span><br />O que nos faz diferente?</h1>
+                <p>
+                    Øpio é uma banda que se destaca não só pela sua musicalidade, mas também pelo seu ativismo. Suas canções são hinos de celebração e luta pela igualdade e
+                    direitos da comunidade LGBTQIA+. Com uma sonoridade que mistura indie rock, pop e elementos eletrônicos, øpio cria uma atmosfera sonora envolvente e cheia de significado.
+                    Cada apresentação é uma declaração de amor, aceitação e resistência.
+                </p>
 
-                    <p>
-                        – uma banda onde a música e a magia se encontram para fazer você, querido ouvinte, <span>sair do armário!</span> –
-                    </p>
+                <p>
+                    – uma banda onde a música e a magia se encontram para fazer você, querido ouvinte, <span>sair do armário!</span> –
+                </p>
 
                 <div class="button-container">
                     <button id="buttonLeiaMais">LEIA MAIS!</button>
                     <img src="~/img/neonfinger.png" class="imgFinger" alt="Finger pointing">
                 </div>
 
-                </div>
             </div>
+        </div>
     </section>
 
-    <div class="intersectionDiv"><img src="~/img/section1.jpg" alt="intersectionImage"></div>
+    <div class="intersectionDiv"><img src="~/img/section1.jpg" alt="intersectionImage"></div> 
+
+    <section id="Spotify">
+        <div class="container-fluid">
+            <div class="row">
+                <h1>Albuns recomendados</h1>
+            </div>
+           
+                @* <div class="row mx-auto">
+                    <div class="albuns-card col-6">
+                        <div class="albuns-card-img">
+                            <img src="~/img/testeFotoAlbum.png" class="d-block w-100 h-100" alt="">
+                        </div>
+                        <div class="albuns-card-img overlay-img">
+                            <img src="~/img/testeFotoAlbum.png" class="d-block w-100 h-100" alt="">
+                        </div>
+                        <div class="albuns-description">
+                            <p>Ciclos & Dramas</p>
+                            @* <p>Último lançamento</p> 
+                        </div>
+                    </div>
+
+                    <div class="albuns-card col-6">
+                        <div class="albuns-card-img">
+                            <img src="~/img/ironmaiden.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="albuns-card-img overlay-img">
+                            <img src="~/img/ironmaiden.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="albuns-description">
+                            <p>Iron Maiden</p>
+                            @* <p>Iron Maiden</p> 
+                        </div>
+                    </div>
+
+                    <div class="albuns-card col-6">
+                        <div class="albuns-card-img">
+                            <img src="~/img/system.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="albuns-card-img overlay-img">
+                            <img src="~/img/system.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="albuns-description">
+                            <p>TOXICITY</p>
+                        </div>
+                    </div>
+
+                    <div class="albuns-card col-6">
+                        <div class="albuns-card-img">
+                        <img src="~/img/metallica.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="albuns-card-img overlay-img">
+                            <img src="~/img/metallica.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="albuns-description">
+                            <p>Master of Puppets</p>
+                        </div>
+                    </div>
+
+                
+                </div> *@
+
+                <div class="row mx-auto text-center">
+                    <div class="albuns-card col-6">
+                        <div class="albuns-card-img">
+                            <img src="~/img/testeFotoAlbum.png" class="d-block w-100 h-100" alt="">
+                        </div>
+                        <div class="albuns-description">
+                            <p>Ciclos & Dramas</p>
+                            <p>Último lançamento • EP</p>
+                         </div>
+                    </div>
+
+                <div class="albuns-card col-6">
+                    <div class="albuns-card-img">
+                        <img src="~/img/testeFotoAlbum2.png" class="d-block w-100 h-100" alt="">
+                    </div>
+                    <div class="albuns-description">
+                        <p>PontØ FracØ</p>
+                        <p>2023 • Single</p>
+                    </div>
+                </div>
 
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <h1>Alô?</h1>
-</div>
+                    <div class="albuns-card col-6">
+                        <div class="albuns-card-img">
+                            <img src="~/img/ironmaiden.jpg" class="d-block w-100 h-100" alt="">
+                        </div>
+                        <div class="albuns-description">
+                            <p>Iron Maiden</p>
+                             <p>Álbum • 1980</p> 
+                        </div>
+                    </div>
+
+                    <div class="albuns-card col-6">
+                        <div class="albuns-card-img">
+                            <img src="~/img/metallica.jpg" class="d-block w-100 h-100" alt="">
+                        </div>
+                        <div class="albuns-description">
+                            <p>Master of Puppets</p>
+                            <p>Metallica • 1986</p>
+                    </div>
+                    </div>
+
+                <div class="albuns-card col-6">
+                    <div class="albuns-card-img">
+                        <img src="~/img/system.jpg  " class="d-block w-100 h-100" alt="">
+                    </div>
+                    <div class="albuns-description">
+                        <p>Toxicity</p>
+                        <p>2001 • Álbum</p>
+                    </div>
+                </div>
+                   
+
+                <div class="albuns-card col-6">
+                    <div class="albuns-card-img">
+                        <img src="~/img/pinkfloyd.jpg" class="d-block w-100 h-100" alt="">
+                    </div>
+                    <div class="albuns-description">
+                        <p>The Dark Side of The Moon</p>
+                        <p>1973 • Álbum</p>
+                    </div>
+                </div>
+                </div>
+            
+        </div>
+    </section>
+
+
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        <h1>Alô?</h1>
+    </div>
 
 </div>

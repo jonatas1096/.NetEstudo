@@ -1,10 +1,5 @@
 /*#region global*/
 @font-face {
-    font-family: Aargh;
-    src: url('../font/Aargh! W00 Heavy.ttf');
-}
-
-@font-face {
     font-family: Caroline;
     src: url('../font/Carolineluxury.otf');
 }
@@ -34,8 +29,8 @@
     /**/
     /*TEAM*/
     --color-team-description: rgba(255, 20, 147, 0.8);
-
     /**/
+    
 }
 
 /*ENDVARIABLES*/
@@ -55,6 +50,8 @@ body {
 }
 
 * {
+    margin: 0;
+    padding: 0;
 }
 
 .container-fluid {
@@ -75,7 +72,6 @@ header {
 .intersectionDiv img {
     height: 30vh;
     width: 100%;
-    background-attachment: fixed;
 }   
 
 
@@ -231,12 +227,13 @@ header {
 
     .custom-toggler {
         margin-right: 0.5vh;
+        padding: 0.4em;
         border: none;
     }
 
     .custom-toggler span {
         color: var(--color-primary-white);
-        font-size: 1.67em;
+        font-size: 1.80em;
         font-weight: bold;
         font-family: var(--font-title);
         transition: all 0.5s ease-in-out;
@@ -262,18 +259,18 @@ header {
         right: 0;
         display: flex;
         align-items: end;
-        gap: 1em;
+        gap: 2em;
     }
 
     .nav-linkCustom {
-        font-size: 1.70em;
+        font-size: 2em;
         font-family: 'Times New Roman';
         color: var(--color-navbar-text) !important;
         opacity: 0;
         transform: translateY(-20px);
         transition: transform 0.5s ease-out, opacity 0.5s ease-out;
         text-align: end;
-        margin-right: 0.5em;
+        padding: 0 !important;
     }
 
     .navbar-collapse.show .nav-linkCustom {
@@ -285,6 +282,8 @@ header {
         transform: translateY(-20px);
         opacity: 0;
         transition: transform 0.6s ease, opacity 0.6s ease;
+        padding: 0 !important;
+        margin-right: 0.5em;
     }
 
     .navbar-collapse.show .nav-item {
@@ -383,13 +382,13 @@ header {
 
 
     /*PICTURES AREA*/
-    .tranding-slide {
+    #Team .tranding-slide {
         width: 28rem !important;
         height: 39rem !important;
         margin-bottom: 1em;
     }
 
-        .tranding-slide .tranding-slide-img img {
+        #Team .tranding-slide .tranding-slide-img img {
             width: 28rem !important;
             height: 36rem !important;
             margin-top: 0.5em;
@@ -398,7 +397,7 @@ header {
             transition: filter 0.9s ease;
         }
 
-    .swiper-slide-active .tranding-slide-img img {
+    #Team .swiper-slide-active .tranding-slide-img img {
         filter: none !important;
     }
 
@@ -415,8 +414,8 @@ header {
         background: var(--color-primary-white);
     }
 
-    .swiper-slide-shadow-left,
-    .swiper-slide-shadow-right {
+    #Team.swiper-slide-shadow-left,
+    #Team .swiper-slide-shadow-right {
         display: none;
     }
 
@@ -450,7 +449,7 @@ header {
         font-size: 1.7em;
         margin-top: 0.5em;
         text-transform: uppercase;
-        margin-bottom: 0.6em;
+        margin-bottom: 1.8em;
         font-weight: bold;
     }
 
@@ -468,6 +467,8 @@ header {
             text-transform: uppercase;
             font-size: 1.5em;
             font-weight: bold;
+            margin-top: 0.4em;
+            margin-bottom: 2.2em;
             color: rgba(126, 126, 126, 1)
         }
             #Story p:last-of-type span {
@@ -484,7 +485,6 @@ header {
     }
         .button-container button {
             width: 32%;
-            margin-top: 0.5em;
             padding: 0.5em;
             background-color: var(--color-primary-black);
             font-family: Monckeberg;
@@ -503,8 +503,72 @@ header {
 
             /*#endregion*/
 
-    /*#region footer*/
-            footer {
+    /*#region Spotify*/
+    section#Spotify {
+        width: 100%;
+        height: 90vh;
+        /*background-color: var(--color-primary-section);*/
+        background-color: #121212;
+        padding: 0.5em;
+    }
+
+        #Spotify h1 {
+            font-family: Monckeberg;
+            font-size: 2em;
+            text-shadow: 0 0 12px #03bcf4;
+            color: var(--color-primary-white);
+            margin-top: 0.5em;
+            text-transform: uppercase;
+            margin: 0.4em 0em 1.4em 0.4em;
+            font-weight: bold;
+        }
+
+
+    .albuns-card {
+        /*padding: 1.2em !important;*/
+        position: relative;
+        margin: 0;
+        overflow: hidden;
+        /*background-color: #1F1F1F;*/
+        background-color: #121212;
+        height: 24rem;
+        border: solid green 2px;
+    }
+
+    .albuns-card-img {
+        width: 100% !important;
+        height: 70% !important;
+        /*top: 6%;
+        left: 15%;*/
+        border: solid red 2px;
+    }
+
+        .albuns-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1em;
+        }
+
+
+    .albuns-card .albuns-description p {
+        margin: 0;
+        padding: 0;
+        font-size: 1.53em;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        text-shadow: 0 0 12px #03bcf4;
+        color: #1cd364;
+    }
+    .albuns-card .albuns-description p:last-child {
+        font-size: 1.65em;
+        color: #ededed;
+    }
+
+
+    /*#endregion*/
+        /*#region footer*/
+        footer {
                 background-color: var(--color-primary-black);
                 color: var(--color-primary-white);
                 font-size: 1.1em;
