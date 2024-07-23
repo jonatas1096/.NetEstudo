@@ -13,10 +13,6 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\font\\Aargh! W00 Heavy.ttf",
-      "PackagePath": "staticwebassets\\font\\Aargh! W00 Heavy.ttf"
-    },
-    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\font\\Carolineluxury.otf",
       "PackagePath": "staticwebassets\\font\\Carolineluxury.otf"
     },
@@ -69,6 +65,10 @@
       "PackagePath": "staticwebassets\\img\\neonfinger.png"
     },
     {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\pinkfloyd.jpg",
+      "PackagePath": "staticwebassets\\img\\pinkfloyd.jpg"
+    },
+    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\scale_1200.jpg",
       "PackagePath": "staticwebassets\\img\\scale_1200.jpg"
     },
@@ -77,12 +77,16 @@
       "PackagePath": "staticwebassets\\img\\section1.jpg"
     },
     {
-      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\system.jpg",
-      "PackagePath": "staticwebassets\\img\\system.jpg"
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\section2.jpg",
+      "PackagePath": "staticwebassets\\img\\section2.jpg"
     },
     {
-      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\teste.jpg",
-      "PackagePath": "staticwebassets\\img\\teste.jpg"
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\section3.png",
+      "PackagePath": "staticwebassets\\img\\section3.png"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\system.jpg",
+      "PackagePath": "staticwebassets\\img\\system.jpg"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\teste1.jpg",

@@ -16,6 +16,7 @@
     --color-primary-black: #000000;
     --color-primary-white: #ffffff;
     --color-primary-section: #1d1c21;
+    --color-album-title: #1cd364;
     /**/
     /*global fonts*/
     --font-title: 'Caroline';
@@ -30,7 +31,9 @@
     /*TEAM*/
     --color-team-description: rgba(255, 20, 147, 0.8);
     /**/
-    
+    /*SECTION*/
+    --color-section: #121212;
+    /**/
 }
 
 /*ENDVARIABLES*/
@@ -72,10 +75,12 @@ header {
 .intersectionDiv img {
     height: 30vh;
     width: 100%;
-}   
+    animation: intersectionDiv 5.2s ease-in-out infinite alternate;
+}
 
 
 /*#endregion*/
+
 /*#region navbar*/
 .navbarCustom { /*Custom properties of my navbar*/
     /*background-color: var(--color-navbar);*/
@@ -136,7 +141,6 @@ header {
     }
 }
 
-
 @keyframes neonGlow-enzo {
     0%, 19.9%, 21%, 23.9%, 25%, 45.9%, 47%, 49.9%, 51%, 53.9%, 55%, 75.9%, 77%, 79.9%, 81%, 83.9%, 85%, 99.9%, 100% {
         box-shadow: 0 0 0px rgba(255, 20, 147, 0.9), 0 0 5px rgba(255, 20, 147, 0.7), 0 0 10px rgba(255, 20, 147, 0.6), 0 0 15px rgba(255, 20, 147, 0.5), 0 0 20px rgba(255, 20, 147, 0.4), 0 0 25px rgba(255, 20, 147, 0.3), 0 0 30px rgba(255, 20, 147, 0.2);
@@ -146,7 +150,6 @@ header {
         box-shadow: 0 0 10px rgba(255, 20, 147, 0.7), 0 0 15px rgba(255, 20, 147, 0.7), 0 0 20px rgba(255, 20, 147, 0.6), 0 0 25px rgba(255, 20, 147, 0.5), 0 0 30px rgba(255, 20, 147, 0.4), 0 0 35px rgba(255, 20, 147, 0.3), 0 0 40px rgba(255, 20, 147, 0.2), 0 0 30px rgba(255, 20, 147, 0.1);
     }
 }
-
 
 @keyframes neonGlow-ygor {
     0%, 19.9%, 21%, 23.9%, 25%, 45.9%, 47%, 49.9%, 51%, 53.9%, 55%, 75.9%, 77%, 79.9%, 81%, 83.9%, 85%, 99.9%, 100% {
@@ -158,7 +161,6 @@ header {
     }
 }
 
-
 @keyframes neonGlow-gustavo {
     0%, 19.9%, 21%, 23.9%, 25%, 45.9%, 47%, 49.9%, 51%, 53.9%, 55%, 75.9%, 77%, 79.9%, 81%, 83.9%, 85%, 99.9%, 100% {
         box-shadow: 0 0 0px rgba(255, 69, 0, 0.9), 0 0 5px rgba(255, 69, 0, 0.7), 0 0 10px rgba(255, 69, 0, 0.6), 0 0 15px rgba(255, 69, 0, 0.5), 0 0 20px rgba(255, 69, 0, 0.4), 0 0 25px rgba(255, 69, 0, 0.3), 0 0 30px rgba(255, 69, 0, 0.2);
@@ -169,6 +171,17 @@ header {
     }
 }
 
+@keyframes neonGlow-Icon {
+    0%, 100% {
+        opacity: 0.9;
+        text-shadow:0 0 2px var(--color-team-description), 0 0 3px var(--color-team-description), 0 0 4px rgba(255, 20, 147, 0.2), 0 0 5px rgba(255, 20, 147, 0.15), 0 0 6px rgba(255, 20, 147, 0.1);
+    }
+
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 4px var(--color-team-description), 0 0 6px var(--color-team-description), 0 0 8px rgba(255, 20, 147, 0.2), 0 0 10px rgba(255, 20, 147, 0.15), 0 0 12px rgba(255, 20, 147, 0.1);
+    }
+}
 
 @keyframes neonGlow-Text {
     from {
@@ -202,8 +215,27 @@ header {
         transform: translateX(0.5em);
         opacity: 1;
     }
+
+
 }
 
+@keyframes intersectionDiv {
+    0% {
+        filter: grayscale(0%) brightness(100%) contrast(100%);
+    }
+    25% {
+        filter: grayscale(40%) brightness(110%) contrast(105%);
+    }
+    50% {
+        filter: grayscale(80%) brightness(90%) contrast(110%);
+    }
+    75% {
+        filter: grayscale(40%) brightness(110%) contrast(105%);
+    }
+    100% {
+        filter: grayscale(0%) brightness(100%) contrast(100%);
+    }
+}
 
 
 /*#endregion*/
@@ -223,7 +255,7 @@ header {
     .navbarScrolled {
         background-color: var(--color-primary-black);
     }
-    
+
 
     .custom-toggler {
         margin-right: 0.5vh;
@@ -231,17 +263,18 @@ header {
         border: none;
     }
 
-    .custom-toggler span {
-        color: var(--color-primary-white);
-        font-size: 1.80em;
-        font-weight: bold;
-        font-family: var(--font-title);
-        transition: all 0.5s ease-in-out;
-    }
-        .spanActivated {
-            color: #0e3742;
-            text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4
+        .custom-toggler span {
+            color: var(--color-primary-white);
+            font-size: 1.80em;
+            font-weight: bold;
+            font-family: var(--font-title);
+            transition: all 0.5s ease-in-out;
         }
+
+    .spanActivated {
+        color: #0e3742;
+        text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4
+    }
 
     .navbar-collapse {
         transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
@@ -249,6 +282,7 @@ header {
         overflow: hidden;
         pointer-events: none;
     }
+
         .navbar-collapse.show {
             opacity: 1;
             pointer-events: auto;
@@ -266,6 +300,7 @@ header {
         font-size: 2em;
         font-family: 'Times New Roman';
         color: var(--color-navbar-text) !important;
+        text-shadow: 0 0 12px #03bcf4;
         opacity: 0;
         transform: translateY(-20px);
         transition: transform 0.5s ease-out, opacity 0.5s ease-out;
@@ -318,8 +353,24 @@ header {
 
     /*#region #Home*/
 
-    #Home {
+    #Home .row:first-child {
+        position: relative;
     }
+
+    .columnIcons {
+        display: flex;
+        position: absolute;
+        bottom: 5rem;
+        left: 62%;
+    }
+
+        .columnIcons .fa-brands {
+            font-size: 3.5em;
+            margin: 0em 0.3em 0em 0em;
+            color: var(--color-team-description);
+            animation: neonGlow-Icon 1.5s ease-in-out infinite alternate;
+            transition: all 1s;
+        }
     /*#endregion*/
 
     /*#region Video*/
@@ -328,17 +379,19 @@ header {
         padding: 0 !important;
         margin: 0 !important;
     }
-
-    /*#endregion*/
+        
+     /*#endregion*/
 
     /*#region OurTeam*/
-    section#Team {
-        width: 100%;
-        position: relative;
-        top: -2.7em;
-        z-index: 2;
-        font-family: var(--font-team-body);
-    }
+
+        section#Team {
+            width: 100%;
+            position: relative;
+            top: -2.7em;
+            z-index: 2;
+            font-family: var(--font-team-body);
+        }
+
         section#Team h2 {
             font-size: 2.8em !important;
             text-transform: uppercase;
@@ -431,7 +484,7 @@ header {
     /*#endregion*/
 
     /*#region Story*/
-    #Story{
+    #Story {
         width: 100%;
     }
 
@@ -453,9 +506,9 @@ header {
         font-weight: bold;
     }
 
-    #Story h1 span {
-        font-size: 1.7em;
-    }
+        #Story h1 span {
+            font-size: 1.7em;
+        }
 
     #Story p {
         font-size: 1.70em;
@@ -471,9 +524,9 @@ header {
             margin-bottom: 2.2em;
             color: rgba(126, 126, 126, 1)
         }
+
             #Story p:last-of-type span {
                 color: rgb(167,116,182);
-
             }
 
 
@@ -483,6 +536,7 @@ header {
         padding: 0;
         margin: 0;
     }
+
         .button-container button {
             width: 32%;
             padding: 0.5em;
@@ -501,52 +555,40 @@ header {
             opacity: 0;
         }
 
-            /*#endregion*/
+    /*#endregion*/
 
     /*#region Spotify*/
     section#Spotify {
         width: 100%;
-        height: 90vh;
-        /*background-color: var(--color-primary-section);*/
-        background-color: #121212;
-        padding: 0.5em;
+        background-color: var(--color-section);
+        padding: 2.5em 0.36em 0em 0.36em;
     }
 
-        #Spotify h1 {
-            font-family: Monckeberg;
-            font-size: 2em;
-            text-shadow: 0 0 12px #03bcf4;
-            color: var(--color-primary-white);
-            margin-top: 0.5em;
-            text-transform: uppercase;
-            margin: 0.4em 0em 1.4em 0.4em;
-            font-weight: bold;
-        }
+    #Spotify h1, #Form h1 { /*(both h1 designs)*/
+        font-family: Monckeberg;
+        font-size: 2.3em;
+        text-shadow: 0 0 12px #03bcf4;
+        color: var(--color-primary-white);
+        text-transform: uppercase;
+        margin: 0.4em 0em 1.4em 0.4em;
+        font-weight: bold;
+    }
 
 
     .albuns-card {
-        /*padding: 1.2em !important;*/
-        position: relative;
-        margin: 0;
-        overflow: hidden;
-        /*background-color: #1F1F1F;*/
-        background-color: #121212;
+        padding: 0 !important;
         height: 24rem;
-        border: solid green 2px;
     }
 
     .albuns-card-img {
         width: 100% !important;
         height: 70% !important;
-        /*top: 6%;
-        left: 15%;*/
-        border: solid red 2px;
+        padding: 0.3em;
     }
 
         .albuns-card-img img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
             border-radius: 1em;
         }
 
@@ -558,26 +600,48 @@ header {
         font-family: 'Times New Roman', Times, serif;
         font-weight: bold;
         text-shadow: 0 0 12px #03bcf4;
-        color: #1cd364;
+        color: var(--color-album-title)
     }
-    .albuns-card .albuns-description p:last-child {
-        font-size: 1.65em;
-        color: #ededed;
+
+        .albuns-card .albuns-description p:last-child {
+            font-size: 1.65em;
+            color: #ededed;
+            text-shadow: none;
+        }
+
+    section#Spotify iframe {
+        margin: 4em 0em 2.2em 0em;
+    }
+    /*#endregion*/
+
+    /*#region Form*/
+
+    section#Form {
+        width: 100%;
+        background-color: var(--color-section);
+        padding: 2.5em 0.36em 0em 0.36em;
+        position: relative;
+    }
+
+    .formArea {
+        width: 100%;
+        height: 100%;            
     }
 
 
     /*#endregion*/
-        /*#region footer*/
-        footer {
-                background-color: var(--color-primary-black);
-                color: var(--color-primary-white);
-                font-size: 1.1em;
-            }
+
+    /*#region footer*/
+    footer {
+        background-color: var(--color-primary-black);
+        color: var(--color-primary-white);
+        font-size: 1.1em;
+    }
 
     /*#endregion*/
 
-/*#endregion*/
-
+    /*#endregion*/
+}
 /*#region Tablets*/
     @media (min-width: 577px) and (max-width: 992px) {
         .columnVideo {
