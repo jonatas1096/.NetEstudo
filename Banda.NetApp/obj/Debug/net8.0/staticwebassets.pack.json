@@ -25,8 +25,32 @@
       "PackagePath": "staticwebassets\\icons\\arrow-up-right.svg"
     },
     {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\Design sem nome.png",
+      "PackagePath": "staticwebassets\\img\\Design sem nome.png"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\Untitled (1).png",
+      "PackagePath": "staticwebassets\\img\\Untitled (1).png"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\Untitled (2).png",
+      "PackagePath": "staticwebassets\\img\\Untitled (2).png"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\Untitled (3).png",
+      "PackagePath": "staticwebassets\\img\\Untitled (3).png"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\Untitled.png",
+      "PackagePath": "staticwebassets\\img\\Untitled.png"
+    },
+    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\bandaopio1.jpg",
       "PackagePath": "staticwebassets\\img\\bandaopio1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\bandaopio2-fotor-ai-art-effects-20240724193204.jpg",
+      "PackagePath": "staticwebassets\\img\\bandaopio2-fotor-ai-art-effects-20240724193204.jpg"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\bandaopio2.jpg",
@@ -91,6 +115,10 @@
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\teste1.jpg",
       "PackagePath": "staticwebassets\\img\\teste1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\teste2.jpg",
+      "PackagePath": "staticwebassets\\img\\teste2.jpg"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\testeFotoAlbum.png",

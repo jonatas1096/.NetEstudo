@@ -181,27 +181,22 @@ document.addEventListener("DOMContentLoaded", function () {
     pokeFingerAnimation();
 
 
+    function setupGlowInput(inputId) {
+        const input = document.getElementById(inputId);
+        const inputForm = input.parentElement;
 
-    //Initializing swiper carousel (cards spotify)
-    const swiperAlbuns = new Swiper('.swiperAlbuns', {
-        direction: 'horizontal',
-        grabCursor: true,
-        effect: 'slide',
-        loop: true,
-        centeredSlides: true,
-        slidesPerView: 1,
-        pagination: {
-            el: '.swiper-paginationAlbuns',
-            clickable: true,
-        }
-    });
+        input.addEventListener('focus', function () {
+            inputForm.classList.add('expanded');
+        });
 
+        input.addEventListener('blur', function () {
+            inputForm.classList.remove('expanded');
+        });
+    }
+    setupGlowInput('emailInput');
+    setupGlowInput('nameInput');
 
- 
 });
-
-
-
 
 document.querySelector('.custom-toggler').addEventListener('click', function () {
 
@@ -235,6 +230,3 @@ document.querySelector('.custom-toggler').addEventListener('click', function () 
 
 
 })
-
-
-

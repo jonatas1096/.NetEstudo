@@ -105,12 +105,12 @@
         </div>
     </section>
 
-    <div class="intersectionDiv"><img src="~/img/section1.jpg" alt="intersectionImage"></div> 
+    @* <div class="intersectionDiv"><img src="~/img/section1.jpg" alt="intersectionImage"></div>  *@
 
     <section id="Spotify">
         <div class="container-fluid">
-            <div class="row">
-                <h1>Albuns recomendados</h1>
+            <div class="row text-center">
+                <h1>Nossas recomendações</h1>
             </div>       
                 @* Albuns *@
                 <div class="row mx-auto text-center">
@@ -190,33 +190,34 @@
         </div>
     </section>
 
-    <div class="intersectionDiv"><img src="~/img/section2.jpg" alt="intersectionImage"></div>
+    @* <div class="intersectionDiv"><img src="~/img/section2.jpg" alt="intersectionImage"></div> *@
 
     <section id="Form">
-        <div class="container-fluid">
-            <div class="row">
+        <div class="container-fluid ">
+            <div class="row text-center">
                 <h1>Entre em contato</h1>
             </div>
 
-            <div class="row formArea">
-                <div class="mb-3">
+            <div class="row formArea justify-content-center align-center">
+                <div class="mb-4 inputForm" id="teste" onclick="glowInput()">
                     <label for="emailInput" class="form-label">Email</label>
                     <input type="email" class="form-control" id="emailInput" placeholder="Fãdaopionumero1@exemplo.com">
                 </div>
-                <div class="mb-3">
-                    <label for="nameInput" class="form-label">Email</label>
+                <div class="mb-4 inputForm" onclick="glowInputText()">
+                    <label for="nameInput" class="form-label">Nome</label>
                     <input type="text" class="form-control" id="nameInput" placeholder="Nome">
+                </div>
+
+                <div class="btnForm justify-content-start">
+                    <button type="submit" class="btn">Enviar</button>
                 </div>
             </div>
          </div>
     </section>
 
-
-
-    <div class="text-center">
-        <h1 class="display-4">Welcome</h1>
-        <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-        <h1>Alô?</h1>
+    @* testing *@
+    <div class="container-fluid full-height flex-column teste justify-content-center align-items-center">
+            <img src="~/img/backgroundBody.png" class="img-fluid-fit" alt="background-image">
+           
     </div>
-
 </div>

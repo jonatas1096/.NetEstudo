@@ -27,6 +27,7 @@
     --color-navbar-text: #e8e8e8;
     --color-navbar-togglerIcon: white;
     --color-navbar-text-hover: #a6140a;
+    --color-footer-text: #e8e8e8;
     /**/
     /*TEAM*/
     --color-team-description: rgba(255, 20, 147, 0.8);
@@ -50,9 +51,10 @@ body {
     padding: 0 !important;
     margin: 0 !important;
     height: 100%;
+    z-index: 2;
 }
 
-* {
+* { 
     margin: 0;
     padding: 0;
 }
@@ -63,6 +65,9 @@ body {
     overflow: hidden;
 }
 
+.pb-3 { /*to remove padding bottom in "b-soft2nw8xi", role="main" I think it's bootstrap property..*/
+    padding-bottom: 0 !important;
+}
 
 footer {
     z-index: 1000;
@@ -73,11 +78,27 @@ header {
 }
 
 .intersectionDiv img {
-    height: 30vh;
+    height: 10%;
     width: 100%;
-    animation: intersectionDiv 5.2s ease-in-out infinite alternate;
+    animation: intersectionDiv 7.3s ease-in-out infinite alternate;
 }
 
+.teste {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-fluid-fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ou 'contain', dependendo do efeito desejado */
+}
 
 /*#endregion*/
 
@@ -237,9 +258,7 @@ header {
     }
 }
 
-
 /*#endregion*/
-
 
 /*Responsive options (testing)*/
 
@@ -248,7 +267,7 @@ header {
 
     /*#region navbar*/
     /*NAVBAR CONTENT, ICONS, ETC*/
-    .navbar-dark .navbar-toggler-icon { /*used to change the toggle icon color (only work if do this)*/
+    .navbar-dark .navbar-toggler-icon { /*used to change the toggle icon color (only work if i do this)*/
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
 
@@ -262,6 +281,9 @@ header {
         padding: 0.4em;
         border: none;
     }
+        .custom-toggler:focus {
+            box-shadow: none !important; /* To remove outline shadow when click*/
+        }
 
         .custom-toggler span {
             color: var(--color-primary-white);
@@ -270,6 +292,7 @@ header {
             font-family: var(--font-title);
             transition: all 0.5s ease-in-out;
         }
+    
 
     .spanActivated {
         color: #0e3742;
@@ -303,7 +326,7 @@ header {
         text-shadow: 0 0 12px #03bcf4;
         opacity: 0;
         transform: translateY(-20px);
-        transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+        transition: all 0.5s ease-out, opacity 0.5s ease-out;
         text-align: end;
         padding: 0 !important;
     }
@@ -333,6 +356,8 @@ header {
         filter: none;
         opacity: 1;
         transition: filter 0.3s ease-out, opacity 0.3s ease-out;
+        height: 100%;
+   
     }
 
     .shadowOverlay { /*Shadow effect*/
@@ -486,10 +511,12 @@ header {
     /*#region Story*/
     #Story {
         width: 100%;
+        margin-bottom: 80%;
     }
 
         #Story .rowStory {
             padding: 1.2em 2em;
+            background-color: var(--color-primary-white);
         }
 
     .imgStory {
@@ -562,6 +589,7 @@ header {
         width: 100%;
         background-color: var(--color-section);
         padding: 2.5em 0.36em 0em 0.36em;
+        margin-bottom: 80%;
     }
 
     #Spotify h1, #Form h1 { /*(both h1 designs)*/
@@ -570,7 +598,7 @@ header {
         text-shadow: 0 0 12px #03bcf4;
         color: var(--color-primary-white);
         text-transform: uppercase;
-        margin: 0.4em 0em 1.4em 0.4em;
+        margin: 0.4em 0em 1.9em 0em;
         font-weight: bold;
     }
 
@@ -610,7 +638,7 @@ header {
         }
 
     section#Spotify iframe {
-        margin: 4em 0em 2.2em 0em;
+        margin: 3em 0em 3.5em 0em;
     }
     /*#endregion*/
 
@@ -620,28 +648,103 @@ header {
         width: 100%;
         background-color: var(--color-section);
         padding: 2.5em 0.36em 0em 0.36em;
-        position: relative;
+        color: white;
+        font-family: 'Times New Roman';
+
     }
 
     .formArea {
         width: 100%;
-        height: 100%;            
+        height: 100%;  
+    }
+        .formArea label {
+            font-size: 1.5em;
+        }
+        .formArea input {
+            background-color: transparent;
+            border: 0;
+            border-bottom: solid var(--color-primary-white) 1px;
+        }
+            .formArea input::placeholder {
+                color: var(--color-primary-white);
+            }
+            .formArea input[type="text"], input[type="email"] {
+                color: var(--color-primary-white);
+                text-decoration: none;
+                font-size: 1.8em;
+                line-height: 1.2 !important;
+                padding: 0.2em !important;
+            }
+            .formArea input[type="text"]:focus, input[type="email"]:focus {
+                outline: none !important;
+                border: none !important;
+                animation: neonGlow-ygor ease-in-out infinite 1.5s;
+                background-color: var(--color-primary-white);
+                color: var(--color-primary-black);
+                font-size: 2em;                
+            }
+
+    .inputForm {
+        width: 75%;
+        transition: width 0.4s ease;
+    }
+        .inputForm.expanded {
+            width: 85%;
+        }
+
+    #Form .btnForm{
+        width: 75%;
+        border: solid red 2px;
     }
 
-
+    .btnForm .btn{
+        color: white;
+    }
     /*#endregion*/
 
     /*#region footer*/
-    footer {
-        background-color: var(--color-primary-black);
+    #Footer {
+        background-color: var(--color-section);
         color: var(--color-primary-white);
-        font-size: 1.1em;
+        font-size: 1.6em;
+        font-family: 'Times New Roman';
+        padding-top: 4em;
     }
 
+    #Footer p{
+        margin: 1em 0em 1em 0em;
+    }
+        #Footer .fa-brands {
+            font-size: 2em;
+            margin: 0.8em 0.3em 0.8em 0.3em;
+            color: white;
+        }
+        
+    #Footer li{
+        list-style: none;
+        margin-bottom: 1.2em
+    }
+
+        #Footer li a {
+            color: var(--color-footer-text);
+            text-decoration: none;
+            font-size: 1.1em;
+            margin: 0em 0.64em 0em 0.64em;
+        }
+
+    .footerCopyright{
+        background-color: var(--color-primary-black);
+    }
+        .footerCopyright a {
+            color: rgba(255, 0, 255, 0.7);
+            text-shadow: 0 0 10px rgba(255, 0, 255, 0.9);
+            text-decoration: none;
+        }
     /*#endregion*/
 
-    /*#endregion*/
 }
+    /*#endregion*/
+
 /*#region Tablets*/
     @media (min-width: 577px) and (max-width: 992px) {
         .columnVideo {

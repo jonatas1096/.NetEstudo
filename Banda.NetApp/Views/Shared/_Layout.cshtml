@@ -13,7 +13,7 @@
 
 </head>
 <body>
-    
+
     <header>
         @* Navbar *@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark border-bottom mb-3 navbarCustom">
@@ -49,19 +49,41 @@
         </nav>
 
     </header>
+    <div class="container-fluid">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer id="Footer" class="col-12 text-center d-flex">
         <div class="container-fluid">
-            <main role="main" class="pb-3">
-            
-                @RenderBody()
-            </main>
-        </div>
-        <footer class="">
-            <div class="container">
-                &copy; 2024 - Banda Ópio - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="justify-content-center align-items-center">
+                <a href="https://open.spotify.com/intl-pt/artist/3TFDfV2km0JB0KRWyEXW5a?go=1&sp_cid=1494ab4d0c4d39e75ef31340e358b7cc&utm_source=embed_player_p&utm_medium=desktop&nd=1&dlsi=7085b034a1864c21" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                <a href="https://www.youtube.com/%40bandaopio" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/banda.opio/" target="_blank"><i class="fa-brands fa-instagram icon-reflex"></i></a>
             </div>
-        </footer>
+            <div>
+                <ul class="d-flex justify-content-center align-items-center">
+                    <li class="">
+                        <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="">
+                        <a asp-area="" asp-controller="Home" asp-action="Videos">Videos</a>
+                    </li>
+                    <li class="">
+                        <a asp-area="" asp-controller="Home" asp-action="Camisetas">Camisetas</a>
+                    </li>
+                    <li class="">
+                        <a asp-area="" asp-controller="Home" asp-action="">Fotos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row footerCopyright">
+                <p>&copy; 2024 - Banda Ópio - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></p>
+            </div>
+        </div>
+    </footer>
 
-        <div class="shadowOverlay"></div>
+    <div class="shadowOverlay"></div>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
