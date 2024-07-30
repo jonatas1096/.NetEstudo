@@ -5,8 +5,6 @@
 
 
 
-
-
 document.addEventListener("DOMContentLoaded", function () {
     //
     function darkNavbar() {
@@ -227,6 +225,7 @@ document.querySelector('.custom-toggler').addEventListener('click', function () 
         menuText.classList.add('spanActivated')
     }
     //
+
 
 
 })
