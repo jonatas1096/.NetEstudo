@@ -1,0 +1,7 @@
+C:\Users\Jo\source\repos\Banda.NetApp\Banda.NetApp\obj\Release\net8.0\PubTmp\Out\Banda.NetApp.exe
+C:\Users\Jo\source\repos\Banda.NetApp\Banda.NetApp\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\Jo\source\repos\Banda.NetApp\Banda.NetApp\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\Jo\source\repos\Banda.NetApp\Banda.NetApp\obj\Release\net8.0\PubTmp\Out\Banda.NetApp.dll
+C:\Users\Jo\source\repos\Banda.NetApp\Banda.NetApp\obj\Release\net8.0\PubTmp\Out\Banda.NetApp.deps.json
+C:\Users\Jo\source\repos\Banda.NetApp\Banda.NetApp\obj\Release\net8.0\PubTmp\Out\Banda.NetApp.runtimeconfig.json
+C:\Users\Jo\source\repos\Banda.NetApp\Banda.NetApp\obj\Release\net8.0\PubTmp\Out\Banda.NetApp.pdb

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RT3D0JyWOMySRgrP9pZGmLdmVhtk9VXnfq8/nxWQ1xc=",
+  "Hash": "CSpz4UkuZUppLm3kJmSbSzgF/Kr6QkGHzWzyXiFBJIs=",
   "Source": "Banda.NetApp",
   "BasePath": "_content/Banda.NetApp",
   "Mode": "Default",
@@ -547,6 +547,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\js\\videos.js",
+      "SourceId": "Banda.NetApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\",
+      "BasePath": "_content/Banda.NetApp",
+      "RelativePath": "js/videos.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\videos.js"
     },
     {
       "Identity": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

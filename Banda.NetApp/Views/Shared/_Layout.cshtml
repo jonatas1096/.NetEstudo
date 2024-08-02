@@ -35,10 +35,10 @@
                             <a class="nav-link nav-linkCustom" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-linkCustom" asp-area="" asp-controller="Home" asp-action="Videos">Videos</a>
+                            <a class="nav-link nav-linkCustom" asp-area="" asp-controller="Videos" asp-action="Videos">Videos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-linkCustom" asp-area="" asp-controller="Home" asp-action="Camisetas">Camisetas</a>
+                            <a class="nav-link nav-linkCustom" asp-area="" asp-controller="Products" asp-action="Products">Produtos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav-linkCustom" asp-area="" asp-controller="Home" asp-action="">Formulário e fotos</a>
@@ -49,11 +49,13 @@
         </nav>
 
     </header>
+
     <div class="container-fluid">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
+
     <footer id="Footer" class="col-12 text-center d-flex">
         <div class="container-fluid">
             <div class="justify-content-center align-items-center">
@@ -67,13 +69,13 @@
                         <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                     </li>
                     <li class="">
-                        <a asp-area="" asp-controller="Home" asp-action="Videos">Videos</a>
+                        <a asp-area="" asp-controller="Videos" asp-action="Videos">Videos</a>
                     </li>
                     <li class="">
-                        <a asp-area="" asp-controller="Home" asp-action="Camisetas">Camisetas</a>
+                        <a asp-area="" asp-controller="Products" asp-action="Products">Produtos</a>
                     </li>
                     <li class="">
-                        <a asp-area="" asp-controller="Home" asp-action="">Fotos</a>
+                        <a asp-area="" asp-controller="" asp-action="">Fotos</a>
                     </li>
                 </ul>
             </div>

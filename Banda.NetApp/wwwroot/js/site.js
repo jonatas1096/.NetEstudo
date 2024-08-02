@@ -7,15 +7,24 @@
 
 document.addEventListener("DOMContentLoaded", function () {
     //
+
+    const currentPath = window.location.pathname //to get the current page
+    console.log(currentPath)
+
+    /*DARK NAVBAR FUNCTIONS*/
     function darkNavbar() {
-
-        var navbar = document.querySelector('.navbarCustom');
-
         // Function to add or remove navbarScrolled class
         function checkScroll() {
-            if (window.scrollY > 400) {
+
+            var navbar = document.querySelector('.navbarCustom')
+
+            if (currentPath === '/' && window.scrollY > 400) {
                 navbar.classList.add('navbarScrolled');
-            } else {
+            }
+            else if (currentPath === '/Videos/Videos' && window.scrollY > 100) {
+                navbar.classList.add('navbarScrolled');
+            }
+            else {
                 navbar.classList.remove('navbarScrolled');
             }
         }
@@ -27,6 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
         window.addEventListener('scroll', checkScroll);
     }
     darkNavbar();
+    //}
+
 
     //
 
@@ -152,47 +163,55 @@ document.addEventListener("DOMContentLoaded", function () {
     //
 
 
-    function pokeFingerAnimation() {
-        const pokeFinger = document.querySelector('.imgFinger')
-        const button = document.getElementById('buttonLeiaMais')
 
-        // Function to reset pokeFinger animation
-        function resetPokeFingerAnimation() {
-            button.style.animation = 'none'
-            pokeFinger.style.animation = 'none'
+    /*POKE FINGER ANIMATION*/
+    if (currentPath === '/') {
+        function pokeFingerAnimation() {
+            const pokeFinger = document.querySelector('.imgFinger')
+            const button = document.getElementById('buttonLeiaMais')
 
-            setTimeout(() => {
-                button.style.animation = 'neonGlow-Button ease-in-out 7s'
+            // Function to reset pokeFinger animation
+            function resetPokeFingerAnimation() {
+                button.style.animation = 'none'
+                pokeFinger.style.animation = 'none'
 
-                pokeFinger.style.animation = 'pokeFinger 1.5s ease-in-out'
-            }, 50); // Delay to avoid bug animation
+                setTimeout(() => {
+                    button.style.animation = 'neonGlow-Button ease-in-out 7s'
+
+                    pokeFinger.style.animation = 'pokeFinger 1.5s ease-in-out'
+                }, 50); // Delay to avoid bug animation
+            }
+
+            resetPokeFingerAnimation();
         }
 
-        resetPokeFingerAnimation();
-    }
+        // looping to main function
+        setInterval(() => {
+            pokeFingerAnimation();
+        }, 7000);
 
-    // looping to main function
-    setInterval(() => {
         pokeFingerAnimation();
-    }, 7000);
-
-    pokeFingerAnimation();
-
-
-    function setupGlowInput(inputId) {
-        const input = document.getElementById(inputId);
-        const inputForm = input.parentElement;
-
-        input.addEventListener('focus', function () {
-            inputForm.classList.add('expanded');
-        });
-
-        input.addEventListener('blur', function () {
-            inputForm.classList.remove('expanded');
-        });
     }
-    setupGlowInput('emailInput');
-    setupGlowInput('nameInput');
+
+
+    /*GLOW INPUT*/
+    if (currentPath === '/') {
+        function setupGlowInput(inputId) {
+            const input = document.getElementById(inputId);
+            const inputForm = input.parentElement;
+
+            input.addEventListener('focus', function () {
+                inputForm.classList.add('expanded');
+            });
+
+            input.addEventListener('blur', function () {
+                inputForm.classList.remove('expanded');
+            });
+        }
+        setupGlowInput('emailInput');
+        setupGlowInput('nameInput');
+    }
+
 
 });
 

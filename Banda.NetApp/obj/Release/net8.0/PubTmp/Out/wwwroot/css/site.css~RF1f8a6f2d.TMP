@@ -1,0 +1,788 @@
+/*#region global*/
+@font-face {
+    font-family: Caroline;
+    src: url('../font/Carolineluxury.otf');
+}
+
+@font-face {
+    font-family: Monckeberg;
+    src: url('../font/MonckebergAlt-Normal.ttf');
+}
+
+/*VARIABLES*/
+
+:root { /*Custom variables to build design*/
+    /*global colors*/
+    --color-primary-black: #000000;
+    --color-primary-white: #ffffff;
+    --color-primary-section: #1d1c21;
+    --color-album-title: #1cd364;
+    /**/
+    /*global fonts*/
+    --font-title: 'Caroline';
+    --font-team-body: 'Times New Roman', serif;
+    /**/
+    /*NAVBAR*/
+    /*    --color-primary: #151313;*/
+    --color-navbar-text: #e8e8e8;
+    --color-navbar-togglerIcon: white;
+    --color-navbar-text-hover: #a6140a;
+    --color-footer-text: #e8e8e8;
+    /**/
+    /*TEAM*/
+    --color-team-description: rgba(255, 20, 147, 0.8);
+    /**/
+    /*SECTION*/
+    --color-section: #121212;
+    /**/
+}
+
+/*ENDVARIABLES*/
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth !important;
+    height: 100%;
+}
+
+
+body {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100%;
+    z-index: 2;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.pb-3 { /*to remove padding bottom in "b-soft2nw8xi", role="main" I think it's bootstrap property..*/
+    padding-bottom: 0 !important;
+}
+
+footer {
+    z-index: 1000;
+}
+
+header {
+    z-index: 1000;
+}
+
+.intersectionDiv img {
+    height: 10%;
+    width: 100%;
+    animation: intersectionDiv 7.3s ease-in-out infinite alternate;
+}
+
+.teste {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-fluid-fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ou 'contain', dependendo do efeito desejado */
+}
+
+/*#endregion*/
+
+/*#region navbar*/
+.navbarCustom { /*Custom properties of my navbar*/
+    /*background-color: var(--color-navbar);*/
+    background-color: transparent;
+    border: none !important;
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    padding: 0 !important;
+    margin: 0 !important;
+    z-index: 1000;
+    position: fixed;
+    transition: background-color 0.5s ease;
+    box-shadow: none !important;
+}
+
+.logoDiv {
+    width: 22vh;
+    height: 8vh;
+}
+
+    .logoDiv > a {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../img/logobranca.png);
+        background-position: center;
+        height: 100%;
+        width: 100%;
+    }
+
+.columnVideo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*#endregion*/
+
+/*#region animations*/
+
+/*neonGlow-felipe*/
+@keyframes neonGlow-felipe {
+    0%, 19.9%, 21%, 23.9%, 25%, 45.9%, 47%, 49.9%, 51%, 53.9%, 55%, 75.9%, 77%, 79.9%, 81%, 83.9%, 85%, 99.9%, 100% {
+        box-shadow: 0 0 0px rgba(255, 0, 255, 0.9), 0 0 5px rgba(255, 0, 255, 0.7), 0 0 10px rgba(255, 0, 255, 0.6), 0 0 15px rgba(255, 0, 255, 0.5), 0 0 20px rgba(255, 0, 255, 0.4), 0 0 25px rgba(255, 0, 255, 0.3), 0 0 30px rgba(255, 0, 255, 0.2);
+    }
+
+    20%, 22%, 24%, 46%, 48%, 50%, 52%, 54%, 76%, 78%, 80%, 82%, 84%, 86%, 87%, 88%, 89%, 90%, 91%, 92%, 93%, 94%, 95%, 96%, 97%, 98% {
+        box-shadow: 0 0 10px rgba(255, 0, 255, 0.7), 0 0 15px rgba(255, 0, 255, 0.7), 0 0 20px rgba(255, 0, 255, 0.6), 0 0 25px rgba(255, 0, 255, 0.5), 0 0 30px rgba(255, 0, 255, 0.4), 0 0 35px rgba(255, 0, 255, 0.3), 0 0 40px rgba(255, 0, 255, 0.2), 0 0 30px rgba(255, 0, 255, 0.1);
+    }
+}
+
+@keyframes neonGlow-gato {
+    0%, 19.9%, 21%, 23.9%, 25%, 45.9%, 47%, 49.9%, 51%, 53.9%, 55%, 75.9%, 77%, 79.9%, 81%, 83.9%, 85%, 99.9%, 100% {
+        box-shadow: 0 0 0px rgba(0, 185, 165, 0.9), 0 0 5px rgba(0, 185, 165, 0.7), 0 0 10px rgba(0, 185, 165, 0.6), 0 0 15px rgba(0, 185, 165, 0.5), 0 0 20px rgba(0, 185, 165, 0.4), 0 0 25px rgba(0, 185, 165, 0.3), 0 0 30px rgba(0, 185, 165, 0.2);
+    }
+
+    20%, 22%, 24%, 46%, 48%, 50%, 52%, 54%, 76%, 78%, 80%, 82%, 84%, 86%, 87%, 88%, 89%, 90%, 91%, 92%, 93%, 94%, 95%, 96%, 97%, 98% {
+        box-shadow: 0 0 10px rgba(0, 185, 165, 0.7), 0 0 15px rgba(0, 185, 165, 0.7), 0 0 20px rgba(0, 185, 165, 0.6), 0 0 25px rgba(0, 185, 165, 0.5), 0 0 30px rgba(0, 185, 165, 0.4), 0 0 35px rgba(0, 185, 165, 0.3), 0 0 40px rgba(0, 185, 165, 0.2), 0 0 30px rgba(0, 185, 165, 0.1);
+    }
+}
+
+@keyframes neonGlow-enzo {
+    0%, 19.9%, 21%, 23.9%, 25%, 45.9%, 47%, 49.9%, 51%, 53.9%, 55%, 75.9%, 77%, 79.9%, 81%, 83.9%, 85%, 99.9%, 100% {
+        box-shadow: 0 0 0px rgba(255, 20, 147, 0.9), 0 0 5px rgba(255, 20, 147, 0.7), 0 0 10px rgba(255, 20, 147, 0.6), 0 0 15px rgba(255, 20, 147, 0.5), 0 0 20px rgba(255, 20, 147, 0.4), 0 0 25px rgba(255, 20, 147, 0.3), 0 0 30px rgba(255, 20, 147, 0.2);
+    }
+
+    20%, 22%, 24%, 46%, 48%, 50%, 52%, 54%, 76%, 78%, 80%, 82%, 84%, 86%, 87%, 88%, 89%, 90%, 91%, 92%, 93%, 94%, 95%, 96%, 97%, 98% {
+        box-shadow: 0 0 10px rgba(255, 20, 147, 0.7), 0 0 15px rgba(255, 20, 147, 0.7), 0 0 20px rgba(255, 20, 147, 0.6), 0 0 25px rgba(255, 20, 147, 0.5), 0 0 30px rgba(255, 20, 147, 0.4), 0 0 35px rgba(255, 20, 147, 0.3), 0 0 40px rgba(255, 20, 147, 0.2), 0 0 30px rgba(255, 20, 147, 0.1);
+    }
+}
+
+@keyframes neonGlow-ygor {
+    0%, 19.9%, 21%, 23.9%, 25%, 45.9%, 47%, 49.9%, 51%, 53.9%, 55%, 75.9%, 77%, 79.9%, 81%, 83.9%, 85%, 99.9%, 100% {
+        box-shadow: 0 0 0px rgba(0, 255, 255, 0.9), 0 0 5px rgba(0, 255, 255, 0.7), 0 0 10px rgba(0, 255, 255, 0.6), 0 0 15px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.4), 0 0 25px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
+    }
+
+    20%, 22%, 24%, 46%, 48%, 50%, 52%, 54%, 76%, 78%, 80%, 82%, 84%, 86%, 87%, 88%, 89%, 90%, 91%, 92%, 93%, 94%, 95%, 96%, 97%, 98% {
+        box-shadow: 0 0 5px rgba(0, 255, 255, 0.7), 0 0 10px rgba(0, 255, 255, 0.7), 0 0 15px rgba(0, 255, 255, 0.6), 0 0 20px rgba(0, 255, 255, 0.5), 0 0 25px rgba(0, 255, 255, 0.4), 0 0 30px rgba(0, 255, 255, 0.3), 0 0 35px rgba(0, 255, 255, 0.2), 0 0 30px rgba(0, 255, 255, 0.1);
+    }
+}
+
+@keyframes neonGlow-gustavo {
+    0%, 19.9%, 21%, 23.9%, 25%, 45.9%, 47%, 49.9%, 51%, 53.9%, 55%, 75.9%, 77%, 79.9%, 81%, 83.9%, 85%, 99.9%, 100% {
+        box-shadow: 0 0 0px rgba(255, 69, 0, 0.9), 0 0 5px rgba(255, 69, 0, 0.7), 0 0 10px rgba(255, 69, 0, 0.6), 0 0 15px rgba(255, 69, 0, 0.5), 0 0 20px rgba(255, 69, 0, 0.4), 0 0 25px rgba(255, 69, 0, 0.3), 0 0 30px rgba(255, 69, 0, 0.2);
+    }
+
+    20%, 22%, 24%, 46%, 48%, 50%, 52%, 54%, 76%, 78%, 80%, 82%, 84%, 86%, 87%, 88%, 89%, 90%, 91%, 92%, 93%, 94%, 95%, 96%, 97%, 98% {
+        box-shadow: 0 0 5px rgba(255, 69, 0, 0.7), 0 0 10px rgba(255, 69, 0, 0.7), 0 0 15px rgba(255, 69, 0, 0.6), 0 0 20px rgba(255, 69, 0, 0.5), 0 0 25px rgba(255, 69, 0, 0.4), 0 0 30px rgba(255, 69, 0, 0.3), 0 0 35px rgba(255, 69, 0, 0.2), 0 0 30px rgba(255, 69, 0, 0.1);
+    }
+}
+
+@keyframes neonGlow-Icon {
+    0%, 100% {
+        opacity: 0.9;
+        text-shadow:0 0 2px var(--color-team-description), 0 0 3px var(--color-team-description), 0 0 4px rgba(255, 20, 147, 0.2), 0 0 5px rgba(255, 20, 147, 0.15), 0 0 6px rgba(255, 20, 147, 0.1);
+    }
+
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 4px var(--color-team-description), 0 0 6px var(--color-team-description), 0 0 8px rgba(255, 20, 147, 0.2), 0 0 10px rgba(255, 20, 147, 0.15), 0 0 12px rgba(255, 20, 147, 0.1);
+    }
+}
+
+@keyframes neonGlow-Text {
+    from {
+        text-shadow: 0 0 5px var(--color-team-description), 0 0 10px var(--color-team-description), 0 0 15px var(--color-team-description), 0 0 20px var(--color-team-description), 0 0 25px rgba(255, 20, 147, 0.5), 0 0 30px rgba(255, 20, 147, 0.4), 0 0 35px rgba(255, 20, 147, 0.3);
+    }
+
+    to {
+        text-shadow: 0 0 10px var(--color-team-description), 0 0 20px var(--color-team-description), 0 0 30px var(--color-team-description), 0 0 40px var(--color-team-description), 0 0 50px rgba(255, 20, 147, 0.5), 0 0 60px rgba(255, 20, 147, 0.4), 0 0 70px rgba(255, 20, 147, 0.3);
+    }
+}
+
+@keyframes neonGlow-Button {
+    0%, 16%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+        color: #0e3742;
+        text-shadow: none;
+    }
+
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4
+    }
+}
+
+@keyframes pokeFinger {
+    0%, 20%, 40%, 100% {
+        transform: translateX(-0);
+        
+    }
+
+    10%, 30% {
+        transform: translateX(0.5em);
+        opacity: 1;
+    }
+
+
+}
+
+@keyframes intersectionDiv {
+    0% {
+        filter: grayscale(0%) brightness(100%) contrast(100%);
+    }
+    25% {
+        filter: grayscale(40%) brightness(110%) contrast(105%);
+    }
+    50% {
+        filter: grayscale(80%) brightness(90%) contrast(110%);
+    }
+    75% {
+        filter: grayscale(40%) brightness(110%) contrast(105%);
+    }
+    100% {
+        filter: grayscale(0%) brightness(100%) contrast(100%);
+    }
+}
+
+/*#endregion*/
+
+/*Responsive options (testing)*/
+
+/*#region mobile*/
+@media (max-width: 576px) {
+
+    /*#region navbar*/
+    /*NAVBAR CONTENT, ICONS, ETC*/
+    .navbar-dark .navbar-toggler-icon { /*used to change the toggle icon color (only work if i do this)*/
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .navbarScrolled {
+        background-color: var(--color-primary-black);
+    }
+
+
+    .custom-toggler {
+        margin-right: 0.5vh;
+        padding: 0.4em;
+        border: none;
+    }
+        .custom-toggler:focus {
+            box-shadow: none !important; /* To remove outline shadow when click*/
+        }
+
+        .custom-toggler span {
+            color: var(--color-primary-white);
+            font-size: 1.80em;
+            font-weight: bold;
+            font-family: var(--font-title);
+            transition: all 0.5s ease-in-out;
+        }
+    
+
+    .spanActivated {
+        color: #0e3742;
+        text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4
+    }
+
+    .navbar-collapse {
+        transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+        opacity: 0;
+        overflow: hidden;
+        pointer-events: none;
+    }
+
+        .navbar-collapse.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+    .navbar-nav {
+        position: fixed;
+        right: 0;
+        display: flex;
+        align-items: end;
+        gap: 2em;
+    }
+
+    .nav-linkCustom {
+        font-size: 2em;
+        font-family: 'Times New Roman';
+        color: var(--color-navbar-text) !important;
+        text-shadow: 0 0 12px #03bcf4;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: all 0.5s ease-out, opacity 0.5s ease-out;
+        text-align: end;
+        padding: 0 !important;
+    }
+
+    .navbar-collapse.show .nav-linkCustom {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav-item {
+        transform: translateY(-20px);
+        opacity: 0;
+        transition: transform 0.6s ease, opacity 0.6s ease;
+        padding: 0 !important;
+        margin-right: 0.5em;
+    }
+
+    .navbar-collapse.show .nav-item {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    /*#endregion*/
+
+    /*#region overlay*/
+    .overlay { /*Blur effect*/
+        filter: none;
+        opacity: 1;
+        transition: filter 0.3s ease-out, opacity 0.3s ease-out;
+        height: 100%;
+   
+    }
+
+    .shadowOverlay { /*Shadow effect*/
+        background-color: rgba(0, 0, 0, 0.65);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        opacity: 0;
+        transition: 0.9s ease;
+        pointer-events: none;
+        transition: opacity 0.3s ease-out;
+    }
+
+    /*#endregion*/
+
+    /*#region #Home*/
+
+    #Home .row:first-child {
+        position: relative;
+    }
+
+    .columnIcons {
+        display: flex;
+        position: absolute;
+        bottom: 5rem;
+        left: 62%;
+    }
+
+        .columnIcons .fa-brands {
+            font-size: 3.5em;
+            margin: 0em 0.3em 0em 0em;
+            color: var(--color-team-description);
+            animation: neonGlow-Icon 1.5s ease-in-out infinite alternate;
+            transition: all 1s;
+        }
+    /*#endregion*/
+
+    /*#region Video*/
+    .columnVideo {
+        height: 82vh;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+        
+     /*#endregion*/
+
+    /*#region OurTeam*/
+
+    section#Team {
+        width: 100%;
+        position: relative;
+        top: -2.7em;
+        z-index: 2;
+        font-family: var(--font-team-body);
+        background-color: var(--color-primary-white);
+    }
+
+        section#Team h2 {
+            font-size: 2.8em !important;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: var(--font-title);
+            text-align: center;
+            margin-bottom: 0.7em;
+            transform: translateY(-0.7em);
+            opacity: 0;
+            transition: opacity 0.7s ease, transform 0.7s ease;
+            /*testing*/
+            color: var(--color-team-description);
+            animation: neonGlow-Text 1.5s ease-in-out infinite alternate;
+        }
+
+        section#Team p {
+            font-size: 1.67em;
+            text-align: justify;
+            margin-bottom: 1.1em;
+            transform: translateY(-0.7em);
+            opacity: 0;
+            transition: opacity 0.7s ease, transform 0.7s ease;
+            color: var(--color-primary-white);
+        }
+
+        section#Team a {
+            font-size: 1.9em;
+            color: var(--color-team-pinkshock);
+            text-decoration: none;
+            color: var(--color-team-description);
+            transform: translateY(-0.7em);
+            opacity: 0;
+            transition: opacity 0.7s ease, transform 0.7s ease;
+            animation: neonGlow-Text 1.5s ease-in-out infinite alternate;
+        }
+
+        section#Team span {
+            font-size: 0.9em;
+            animation: neonGlow-Text 1.5s ease-in-out infinite alternate;
+        }
+
+
+    /*PICTURES AREA*/
+    #Team .tranding-slide {
+        width: 28rem !important;
+        height: 39rem !important;
+        margin-bottom: 1em;
+    }
+
+        #Team .tranding-slide .tranding-slide-img img {
+            width: 28rem !important;
+            height: 36rem !important;
+            margin-top: 0.5em;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: filter 0.9s ease;
+        }
+
+    #Team .swiper-slide-active .tranding-slide-img img {
+        filter: none !important;
+    }
+
+    section#Team .activated {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    #Team .swiper-pagination .swiper-pagination-bullet {
+        background: var(--color-primary-white);
+    }
+
+    #Team .swiper-pagination .swiper-pagination-bullet-active {
+        background: var(--color-primary-white);
+    }
+
+    #Team.swiper-slide-shadow-left,
+    #Team .swiper-slide-shadow-right {
+        display: none;
+    }
+
+
+
+    .aboutMember {
+        position: relative;
+        top: -5.3em;
+        padding: 2em;
+        padding-top: 6em;
+        background-color: var(--color-primary-section);
+    }
+    
+    .testeDiv{
+        background-color: var(--color-primary-white);
+        position: absolute;
+        bottom: -3em;
+        width: 100%;
+        height: 5%;
+    }
+    /*#endregion*/
+
+    /*#region Story*/
+    #Story {
+        width: 100%;
+        margin-bottom: 80%;
+    }
+
+        #Story .rowStory {
+            padding: 1.2em 2em;
+            background-color: var(--color-primary-white);
+        }
+
+    .imgStory {
+        width: 100%;
+    }
+
+
+    #Story h1 {
+        font-family: Monckeberg;
+        font-size: 1.7em;
+        margin-top: 0.5em;
+        text-transform: uppercase;
+        margin-bottom: 1.8em;
+        font-weight: bold;
+    }
+
+        #Story h1 span {
+            font-size: 1.7em;
+        }
+
+    #Story p {
+        font-size: 1.70em;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgba(146, 146, 146, 1)
+    }
+
+        #Story p:last-of-type {
+            text-transform: uppercase;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 0.4em;
+            margin-bottom: 2.2em;
+            color: rgba(126, 126, 126, 1)
+        }
+
+            #Story p:last-of-type span {
+                color: rgb(167,116,182);
+            }
+
+
+    .button-container {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+        .button-container button {
+            width: 32%;
+            padding: 0.5em;
+            background-color: var(--color-primary-black);
+            font-family: Monckeberg;
+            font-size: 1.5em;
+            font-family: 'Times New Roman';
+            font-weight: bold;
+            opacity: 0.87;
+            color: #0e3742;
+            border: none;
+        }
+
+        .button-container .imgFinger {
+            width: 18%;
+            opacity: 0;
+        }
+
+    /*#endregion*/
+
+    /*#region Spotify*/
+    section#Spotify {
+        width: 100%;
+        background-color: var(--color-section);
+        padding: 2.5em 0.36em 0em 0.36em;
+        margin-bottom: 80%;
+    }
+
+    #Spotify h1, #Form h1 { /*(both h1 designs)*/
+        font-family: Monckeberg;
+        font-size: 2.3em;
+        text-shadow: 0 0 12px #03bcf4;
+        color: var(--color-primary-white);
+        text-transform: uppercase;
+        margin: 0.4em 0em 1.9em 0em;
+        font-weight: bold;
+    }
+
+
+    .albuns-card {
+        padding: 0 !important;
+        height: 24rem;
+    }
+
+    .albuns-card-img {
+        width: 100% !important;
+        height: 70% !important;
+        padding: 0.3em;
+    }
+
+        .albuns-card-img img {
+            width: 100%;
+            height: 100%;
+            border-radius: 1em;
+        }
+
+
+    .albuns-card .albuns-description p {
+        margin: 0;
+        padding: 0;
+        font-size: 1.53em;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        text-shadow: 0 0 12px #03bcf4;
+        color: var(--color-album-title)
+    }
+
+        .albuns-card .albuns-description p:last-child {
+            font-size: 1.65em;
+            color: #ededed;
+            text-shadow: none;
+        }
+
+    section#Spotify iframe {
+        margin: 3em 0em 3.5em 0em;
+    }
+    /*#endregion*/
+
+    /*#region Form*/
+
+    section#Form {
+        width: 100%;
+        background-color: var(--color-section);
+        padding: 2.5em 0.36em 0em 0.36em;
+        color: white;
+        font-family: 'Times New Roman';
+
+    }
+
+    .formArea {
+        width: 100%;
+        height: 100%;  
+    }
+        .formArea label {
+            font-size: 1.5em;
+        }
+        .formArea input {
+            background-color: transparent;
+            border: 0;
+            border-bottom: solid var(--color-primary-white) 1px;
+        }
+            .formArea input::placeholder {
+                color: var(--color-primary-white);
+            }
+            .formArea input[type="text"], input[type="email"] {
+                color: var(--color-primary-white);
+                text-decoration: none;
+                font-size: 1.8em;
+                line-height: 1.2 !important;
+                padding: 0.2em !important;
+            }
+            .formArea input[type="text"]:focus, input[type="email"]:focus {
+                outline: none !important;
+                border: none !important;
+                animation: neonGlow-ygor ease-in-out infinite 1.5s;
+                background-color: var(--color-primary-white);
+                color: var(--color-primary-black);
+                font-size: 2em;                
+            }
+
+    .inputForm {
+        width: 75%;
+        transition: width 0.4s ease;
+    }
+        .inputForm.expanded {
+            width: 85%;
+        }
+
+    #Form .btnForm{
+        width: 75%;
+        border: solid red 2px;
+    }
+
+    .btnForm .btn{
+        color: white;
+    }
+    /*#endregion*/
+
+    /*#region footer*/
+    #Footer {
+        background-color: var(--color-section);
+        color: var(--color-primary-white);
+        font-size: 1.6em;
+        font-family: 'Times New Roman';
+        padding-top: 4em;
+    }
+
+    #Footer p{
+        margin: 1em 0em 1em 0em;
+    }
+        #Footer .fa-brands {
+            font-size: 2em;
+            margin: 0.8em 0.3em 0.8em 0.3em;
+            color: white;
+        }
+        
+    #Footer li{
+        list-style: none;
+        margin-bottom: 1.2em
+    }
+
+        #Footer li a {
+            color: var(--color-footer-text);
+            text-decoration: none;
+            font-size: 1.1em;
+            margin: 0em 0.64em 0em 0.64em;
+        }
+
+    .footerCopyright{
+        background-color: var(--color-primary-black);
+    }
+        .footerCopyright a {
+            color: rgba(255, 0, 255, 0.7);
+            text-shadow: 0 0 10px rgba(255, 0, 255, 0.9);
+            text-decoration: none;
+        }
+    /*#endregion*/
+
+}
+    /*#endregion*/
+
+/*#region Tablets*/
+    @media (min-width: 577px) and (max-width: 992px) {
+        .columnVideo {
+            height: 50vh;
+            background-color: var(--color-navbar);
+        }
+    }
+/*#endregion*/
+
+/*#region desktop*/
+    @media (min-width: 993px) {
+
+        .columnVideo {
+            height: 100vh;
+            background-color: var(--color-primary-black) !important;
+            display: flex;
+            /*align-items: center;*/
+            justify-content: center;
+        }
+
+        .navbarCustomLinks { /* Custom properties to "a" links.*/
+            color: var(--color-navbar-text) !important;
+            font-size: 1.3em;
+            transition: color 0.3s ease, font-size 0.3s ease;
+        }
+
+            .navbarCustomLinks:hover {
+                color: var(--color-navbar-text-hover) !important;
+                font-size: 1.4em;
+            }
+    }
+/*#endregion*/

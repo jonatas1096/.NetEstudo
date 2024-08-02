@@ -15,8 +15,8 @@
     /*global colors*/
     --color-primary-black: #000000;
     --color-primary-white: #ffffff;
-    --color-primary-section: #1d1c21;
     --color-album-title: #1cd364;
+    --color-primary-section: #1d1c21;
     /**/
     /*global fonts*/
     --font-title: 'Caroline';
@@ -83,7 +83,7 @@ header {
     animation: intersectionDiv 7.3s ease-in-out infinite alternate;
 }
 
-.teste {
+.backgroundBody {
     position: fixed;
     top: 0;
     left: 0;
@@ -97,21 +97,18 @@ header {
 .img-fluid-fit {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ou 'contain', dependendo do efeito desejado */
+    object-fit: cover; 
 }
 
 /*#endregion*/
 
 /*#region navbar*/
 .navbarCustom { /*Custom properties of my navbar*/
-    /*background-color: var(--color-navbar);*/
     background-color: transparent;
     border: none !important;
     width: 100%;
     height: 10vh;
     position: absolute;
-    padding: 0 !important;
-    margin: 0 !important;
     z-index: 1000;
     position: fixed;
     transition: background-color 0.5s ease;
@@ -316,19 +313,19 @@ header {
         right: 0;
         display: flex;
         align-items: end;
-        gap: 2em;
+        gap: 2.9em;
     }
 
     .nav-linkCustom {
         font-size: 2em;
         font-family: 'Times New Roman';
         color: var(--color-navbar-text) !important;
-        text-shadow: 0 0 12px #03bcf4;
         opacity: 0;
         transform: translateY(-20px);
         transition: all 0.5s ease-out, opacity 0.5s ease-out;
         text-align: end;
         padding: 0 !important;
+        line-height: 1em;
     }
 
     .navbar-collapse.show .nav-linkCustom {
@@ -376,6 +373,7 @@ header {
 
     /*#endregion*/
 
+    /*HOME PAGE*/
     /*#region #Home*/
     #Home .row:first-child {
         position: relative;
@@ -414,8 +412,6 @@ header {
         top: -2.7em;
         z-index: 2;
         font-family: var(--font-team-body);
-        /*background-color: var(--color-primary-white);*/
-        /*border: solid green 2px;*/
     }
 
         section#Team h2 {
@@ -588,7 +584,7 @@ header {
         }
 
         .button-container .imgFinger {
-            width: 18%;
+            width: 15%;
             opacity: 0;
         }
 
@@ -616,6 +612,7 @@ header {
     .albuns-card {
         padding: 0 !important;
         height: 24rem;
+        text-decoration: none;
     }
 
     .albuns-card-img {
@@ -657,14 +654,13 @@ header {
     section#Form {
         width: 100%;
         background-color: var(--color-section);
-        padding: 2.5em 0.36em 0em 0.36em;
+        padding: 2.5em 2.5em 0em 2.5em;
         color: white;
         font-family: 'Times New Roman';
-
+        padding-bottom: 2em;
     }
 
     .formArea {
-        width: 100%;
         height: 100%;  
     }
         .formArea label {
@@ -695,20 +691,26 @@ header {
             }
 
     .inputForm {
-        width: 75%;
+        width: 80%;
         transition: width 0.4s ease;
     }
         .inputForm.expanded {
-            width: 85%;
+            width: 95%;
         }
 
-    #Form .btnForm{
-        width: 75%;
-        border: solid red 2px;
+    #Form .btnForm {
+        width: 25%;
+        margin: 1.6em 0 0 3.8em;
+        border: solid 2px;
+        padding: 0.2em
     }
 
-    .btnForm .btn{
-        color: white;
+    .btnForm .btn {
+        color: var(--color-primary-white);
+        font-size: 2em;
+        font-weight: bold;
+        line-height: 1 !important;
+        box-shadow: none !important
     }
     /*#endregion*/
 
@@ -721,9 +723,9 @@ header {
         padding-top: 4em;
     }
 
-    #Footer p{
-        margin: 1em 0em 1em 0em;
-    }
+        #Footer p {
+            margin: 1em 0em 1em 0em;
+        }
         #Footer .fa-brands {
             font-size: 2em;
             margin: 0.8em 0.3em 0.8em 0.3em;
@@ -752,6 +754,36 @@ header {
         }
     /*#endregion*/
 
+    /*VIDEOS PAGE*/
+    /*#region Videos*/
+    #Videos {
+        width: 100%;
+        padding-top: 30%;
+        background-color: var(--color-primary-section);
+    }
+
+    #Videos h1{
+        color: var(--color-primary-white);
+    }
+
+    .toggleFilter div {
+        border: solid red 2px;
+    }
+    #Videos button{
+        background-color: transparent;
+        width: 100%;
+        border: none;
+    }
+
+    #Videos p {
+        font-size: 2em;
+    }
+    #Videos .fa-brands{
+        font-size: 3.3em;
+    }
+
+
+    /*#endregion*/
 }
     /*#endregion*/
 
