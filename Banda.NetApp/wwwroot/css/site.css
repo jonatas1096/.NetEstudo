@@ -259,8 +259,7 @@ header {
 
 /*Responsive options (testing)*/
 
-/*#region mobile*/
-@media (max-width: 576px) {
+/*#region global structure*/
 
     /*#region navbar*/
     /*NAVBAR CONTENT, ICONS, ETC*/
@@ -758,33 +757,65 @@ header {
     /*#region Videos*/
     #Videos {
         width: 100%;
+        height: 100%;
         padding-top: 30%;
         background-color: var(--color-primary-section);
     }
+        #Videos h1 {
+            color: var(--color-primary-white);
+        }
 
-    #Videos h1{
-        color: var(--color-primary-white);
-    }
-
-    .toggleFilter div {
-        border: solid red 2px;
-    }
     #Videos button{
         background-color: transparent;
         width: 100%;
         border: none;
     }
 
-    #Videos p {
-        font-size: 2em;
-    }
     #Videos .fa-brands{
         font-size: 3.3em;
+        transition: all ease-in-out 0.4s;
     }
 
+        #Videos .activatedFilter {
+            transform: scale(1.2);
+            color: white;
+        }
 
-    /*#endregion*/
+        #Videos p {
+            font-size: 2em !important;
+        }
+
+    #channel-videos {
+        display: flex;
+        flex-direction: column;
+        height: 62vh;
+        overflow-y: auto;
+        padding: 1em;
+        padding-top: 2em;
+        gap: 3em;
+        opacity: 1;
+        transition: all ease-in-out 0.9s;
+    }
+        #channel-videos.notVisible {
+            opacity: 0;
+        }
+
+        #channel-videos iframe {
+            width: 100%;
+            height: 24vh;
+        }
+
+
+#instagram-videos, #todos-videos {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
+
+    #instagram-videos.notVisible, #todos-videos.notVisible {
+        opacity: 0;
+    }
+    /*#endregion*/
+/*}*/
     /*#endregion*/
 
 /*#region Tablets*/
