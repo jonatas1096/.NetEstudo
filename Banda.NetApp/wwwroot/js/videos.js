@@ -172,8 +172,60 @@ youtubeArea()
 
 
 function instagramArea() {
+    const videoData = [
+        { url: "https://www.instagram.com/reel/C9qRDaBJHT9/", id: "video1" },
+        { url: "https://www.instagram.com/reel/C9rXYZABC12/", id: "video2" },
+        // Adicione mais vídeos conforme necessário
+    ];
 
 }
+
+function createInstagramEmbed(url, id) {
+    return `
+    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="${url}?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+        <div style="padding:16px;">
+            <a href="${url}?utm_source=ig_embed&amp;utm_campaign=loading" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                <!-- Conteúdo do bloco de incorporação -->
+            </a>
+        </div>
+    </blockquote>
+  `;
+}
+
+
+function loadVideo(video) {
+    const container = document.getElementById(video.id);
+    container.innerHTML = createInstagramEmbed(video.url, video.id);
+    // Reexecute o script de incorporação do Instagram para garantir que os vídeos sejam incorporados corretamente
+    if (window.instgrm) {
+        instgrm.Embeds.process();
+    }
+}
+
+function lazyLoadVideos(videos) {
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                loadVideo(entry.target.dataset);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    videos.forEach(video => {
+        const videoElement = document.createElement('div');
+        videoElement.setAttribute('id', video.id);
+        videoElement.setAttribute('data-url', video.url);
+        videoElement.style.minHeight = '500px'; // Ajuste conforme necessário para espaço reservado
+        document.body.appendChild(videoElement);
+        observer.observe(videoElement);
+    });
+}
+
+// Chame a função com seu array de dados
+lazyLoadVideos(videoData);
+
+
 
 //Change filter (youtube,instagram,etc)
 function toggleFilterFunction(event) {
