@@ -9,19 +9,16 @@ document.addEventListener("DOMContentLoaded", function () {
     //
 
     const currentPath = window.location.pathname //to get the current page
-    console.log(currentPath)
-
     /*DARK NAVBAR FUNCTIONS*/
     function darkNavbar() {
         // Function to add or remove navbarScrolled class
         function checkScroll() {
-
             var navbar = document.querySelector('.navbarCustom')
 
             if (currentPath === '/' && window.scrollY > 400) {
                 navbar.classList.add('navbarScrolled');
             }
-            else if (currentPath === '/Videos/Videos' && window.scrollY > 100) {
+            else if (currentPath === '/Videos/Videos') {
                 navbar.classList.add('navbarScrolled');
             }
             else {

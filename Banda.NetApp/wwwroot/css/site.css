@@ -237,7 +237,7 @@ header {
 
 }
 
-@keyframes intersectionDiv {
+/*@keyframes intersectionDiv {
     0% {
         filter: grayscale(0%) brightness(100%) contrast(100%);
     }
@@ -252,6 +252,38 @@ header {
     }
     100% {
         filter: grayscale(0%) brightness(100%) contrast(100%);
+    }
+}*/ /*keyframes div*/
+
+@keyframes neonVideosButton {
+    0% {
+        color: rgba(255, 20, 147, 0.2);
+        text-shadow: 0 0 2px rgba(255, 20, 147, 0.1);
+    }
+
+    20% {
+        color: rgba(255, 20, 147, 0.4);
+        text-shadow: 0 0 4px rgba(255, 20, 147, 0.2);
+    }
+
+    40% {
+        color: rgba(255, 20, 147, 0.6);
+        text-shadow: 0 0 6px rgba(255, 20, 147, 0.3);
+    }
+
+    60% {
+        color: rgba(255, 20, 147, 0.8);
+        text-shadow: 0 0 8px rgba(255, 20, 147, 0.4);
+    }
+
+    80% {
+        color: rgba(255, 20, 147, 0.9);
+        text-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+    }
+
+    100% {
+        color: rgba(255, 20, 147, 1);
+        text-shadow: 0 0 12px rgba(255, 20, 147, 0.6);
     }
 }
 
@@ -645,7 +677,10 @@ header {
 
     section#Spotify iframe {
         margin: 3em 0em 3.5em 0em;
+        width: 100%;
     }
+
+
     /*#endregion*/
 
     /*#region Form*/
@@ -761,6 +796,10 @@ header {
         padding-top: 30%;
         background-color: var(--color-primary-section);
     }
+        #Videos .row:last-child {
+            position: relative;
+            height: 62vh;
+        }
         #Videos h1 {
             color: var(--color-primary-white);
         }
@@ -774,46 +813,54 @@ header {
     #Videos .fa-brands{
         font-size: 3.3em;
         transition: all ease-in-out 0.4s;
+        color: black;
+        margin: 0.1em;
     }
 
         #Videos .activatedFilter {
             transform: scale(1.2);
-            color: white;
+            color: rgba(255, 20, 147, 0.9);
+            animation: neonVideosButton 0.8s normal;
+            text-shadow: 0 0 12px rgba(255, 20, 147, 0.6)
+        }
+        #Videos .activatedFilter .fa-heart{
+            transform: scale(1.15);
         }
 
-        #Videos p {
-            font-size: 2em !important;
-        }
-
-    #channel-videos {
-        display: flex;
-        flex-direction: column;
-        height: 62vh;
-        overflow-y: auto;
-        padding: 1em;
-        padding-top: 2em;
-        gap: 3em;
-        opacity: 1;
-        transition: all ease-in-out 0.9s;
-    }
-        #channel-videos.notVisible {
-            opacity: 0;
-        }
-
-        #channel-videos iframe {
-            width: 100%;
-            height: 24vh;
-        }
-
-
-#instagram-videos, #todos-videos {
+#channel-videos, #instagram-videos, #favorite-videos {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1em;
+    padding-top: 2em;
+    gap: 3em;
     opacity: 1;
-    transition: opacity 1s ease-in-out;
+    transform: translateX(0);
+    transition: opacity 0.5s ease-in-out, transform 0.9s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-    #instagram-videos.notVisible, #todos-videos.notVisible {
-        opacity: 0;
+    #channel-videos iframe {
+        width: 100%;
+        height: 26vh;
     }
+
+#instagram-videos, #favorite-videos {
+    opacity: 1;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+    #channel-videos.notVisible, #instagram-videos.notVisible, #favorite-videos.notVisible {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+
     /*#endregion*/
 /*}*/
     /*#endregion*/

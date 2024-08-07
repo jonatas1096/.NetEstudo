@@ -341,12 +341,32 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\teste.mp4",
-      "PackagePath": "staticwebassets\\video\\teste.mp4"
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\apertadinhos.com.br.mp4",
+      "PackagePath": "staticwebassets\\video\\apertadinhos.com.br.mp4"
     },
     {
-      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\øpio - Ditados Mentem.mp4",
-      "PackagePath": "staticwebassets\\video\\øpio - Ditados Mentem.mp4"
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\cachedoshow.mp4",
+      "PackagePath": "staticwebassets\\video\\cachedoshow.mp4"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\felipeuberfodase.mp4",
+      "PackagePath": "staticwebassets\\video\\felipeuberfodase.mp4"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\masquepoha.mp4",
+      "PackagePath": "staticwebassets\\video\\masquepoha.mp4"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\masquepoha2.mp4",
+      "PackagePath": "staticwebassets\\video\\masquepoha2.mp4"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\pinkMoneyTrack.mp4",
+      "PackagePath": "staticwebassets\\video\\pinkMoneyTrack.mp4"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\teste.mp4",
+      "PackagePath": "staticwebassets\\video\\teste.mp4"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Banda.NetApp.Microsoft.AspNetCore.StaticWebAssets.props",
