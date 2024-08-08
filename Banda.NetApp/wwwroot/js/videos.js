@@ -6,7 +6,7 @@ const instagramVideos = document.getElementById('instagram-videos');
 const favoriteVideos = document.getElementById('favorite-videos');
 
 // Setting youtube to main column (disable all others).
-instagramVideos.style.display = 'none' 
+instagramVideos.style.display = 'none'
 favoriteVideos.style.display = 'none'
 function youtubeArea() {
 
@@ -197,7 +197,7 @@ function favoriteArea() {
     // Função para criar o elemento de vídeo
     function createVideoElement(videoSrc) {
         const videoElement = document.createElement('div')
-        videoElement.className = 'videoDivl'
+        videoElement.className = 'col-6 mb-3'
         videoElement.innerHTML = `
         <video data-video-src="${videoSrc}" controls preload="none" style="width: 100%; height: auto;">
             <!-- Erro ao carregar o vídeo. -->
@@ -238,6 +238,7 @@ function favoriteArea() {
 
 }
 favoriteArea()
+
 
 
 //Change filter (youtube,instagram,etc)
@@ -292,4 +293,3 @@ function showSection(showElement, hideElement1, hideElement2) {
         hideElement2.style.display = 'none';
     }, 600));
 }
-

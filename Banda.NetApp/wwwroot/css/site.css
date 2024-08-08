@@ -794,10 +794,9 @@ header {
         width: 100%;
         height: 100%;
         padding-top: 30%;
-        background-color: var(--color-primary-section);
+        background-color: var(--color-primary-black);
     }
         #Videos .row:last-child {
-            position: relative;
             height: 62vh;
         }
         #Videos h1 {
@@ -813,7 +812,7 @@ header {
     #Videos .fa-brands{
         font-size: 3.3em;
         transition: all ease-in-out 0.4s;
-        color: black;
+        color: var(--color-primary-white);
         margin: 0.1em;
     }
 
@@ -827,7 +826,7 @@ header {
             transform: scale(1.15);
         }
 
-#channel-videos, #instagram-videos, #favorite-videos {
+#channel-videos, #instagram-videos{
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -839,16 +838,20 @@ header {
     opacity: 1;
     transform: translateX(0);
     transition: opacity 0.5s ease-in-out, transform 0.9s ease-in-out;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+   
 }
 
     #channel-videos iframe {
         width: 100%;
         height: 26vh;
     }
+
+
+#favorite-videos {
+    padding-top: 2em;
+    transform: translateX(0);
+    overflow-y: auto;
+}
 
 #instagram-videos, #favorite-videos {
     opacity: 1;
@@ -860,14 +863,17 @@ header {
         transform: translateX(30px);
     }
 
+#Videos video, iframe {
+    box-shadow: 0 0 7px rgba(255, 20, 147, 0.9)
+}
 
-    /*#endregion*/
+
+/*#endregion*/
 /*}*/
-    /*#endregion*/
-
+/*#endregion*/
 /*#region Tablets*/
-    @media (min-width: 577px) and (max-width: 992px) {
-        .columnVideo {
+@media (min-width: 577px) and (max-width: 992px) {
+    .columnVideo {
             height: 50vh;
             background-color: var(--color-navbar);
         }
