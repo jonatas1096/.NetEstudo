@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|c:\\users\\jo\\source\\repos\\banda.netapp\\banda.netapp\\wwwroot\\js\\videos.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|solutionrelative:banda.netapp\\wwwroot\\js\\videos.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|c:\\users\\jo\\source\\repos\\banda.netapp\\banda.netapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|solutionrelative:banda.netapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|c:\\users\\jo\\source\\repos\\banda.netapp\\banda.netapp\\views\\story\\story.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|solutionrelative:banda.netapp\\views\\story\\story.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|c:\\users\\jo\\source\\repos\\banda.netapp\\banda.netapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|solutionrelative:banda.netapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|c:\\users\\jo\\source\\repos\\banda.netapp\\banda.netapp\\views\\videos\\videos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|solutionrelative:banda.netapp\\views\\videos\\videos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,55 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Banda.NetApp\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Banda.NetApp\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-08T00:25:10.285Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "videos.js",
-              "DocumentMoniker": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\js\\videos.js",
-              "RelativeDocumentMoniker": "Banda.NetApp\\wwwroot\\js\\videos.js",
-              "ToolTip": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\js\\videos.js",
-              "RelativeToolTip": "Banda.NetApp\\wwwroot\\js\\videos.js",
-              "ViewState": "AQIAAGsAAAAAAAAAAAAQwLQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-02T01:01:49.184Z",
+              "Title": "Story.cshtml",
+              "DocumentMoniker": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\Views\\Story\\Story.cshtml",
+              "RelativeDocumentMoniker": "Banda.NetApp\\Views\\Story\\Story.cshtml",
+              "ToolTip": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\Views\\Story\\Story.cshtml",
+              "RelativeToolTip": "Banda.NetApp\\Views\\Story\\Story.cshtml",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAcwBwAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-09T03:12:43.435Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Videos.cshtml",
-              "DocumentMoniker": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\Views\\Videos\\Videos.cshtml",
-              "RelativeDocumentMoniker": "Banda.NetApp\\Views\\Videos\\Videos.cshtml",
-              "ToolTip": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\Views\\Videos\\Videos.cshtml",
-              "RelativeToolTip": "Banda.NetApp\\Views\\Videos\\Videos.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAB0AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-05T03:08:43.404Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "Banda.NetApp\\wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\css\\site.css",
               "RelativeToolTip": "Banda.NetApp\\wwwroot\\css\\site.css",
-              "ViewState": "AQIAAFIDAAAAAAAAAAAAAGIDAAAAAAAA",
+              "ViewState": "AQIAAJEDAAAAAAAAAAAAAKcDAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-08-02T01:13:58.356Z",
               "EditorCaption": ""

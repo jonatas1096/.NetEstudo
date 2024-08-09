@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Banda.NetApp.styles.css" asp-append-version="true" />
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 </head>
 <body>
 
@@ -38,11 +40,15 @@
                             <a class="nav-link nav-linkCustom" asp-area="" asp-controller="Videos" asp-action="Videos">Videos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-linkCustom" asp-area="" asp-controller="Products" asp-action="Products">Produtos</a>
+                            <a class="nav-link nav-linkCustom" asp-area="" asp-controller="Pictures" asp-action="Pictures">Fotos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-linkCustom" asp-area="" asp-controller="Home" asp-action="">Formulário e fotos</a>
+                            <a class="nav-link nav-linkCustom" asp-area="" asp-controller="Story" asp-action="Story">História</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-linkCustom" asp-area="" asp-controller="Products" asp-action="Products">Produtos</a>
+                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -91,6 +97,9 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

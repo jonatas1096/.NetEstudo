@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (currentPath === '/' && window.scrollY > 400) {
                 navbar.classList.add('navbarScrolled');
             }
-            else if (currentPath === '/Videos/Videos') {
+            else if (currentPath === '/Videos/Videos' || currentPath === '/Pictures/Pictures' || currentPath === '/Story/Story') {
                 navbar.classList.add('navbarScrolled');
             }
             else {

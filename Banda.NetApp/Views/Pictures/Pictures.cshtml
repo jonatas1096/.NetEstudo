@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Videos";
+}
+
+<div class="overlay">
+    <section id="Pictures" class="">
+        <div class="container-fluid">
+            <div class="row picturesContainer mx-auto">
+                <div id="picturesGrid" class="row mx-auto"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Form">
+        <div class="container-fluid ">
+            <div class="row text-center">
+                <h1>Entre em contato</h1>
+            </div>
+
+            <div class="row formArea justify-content-center align-center">
+                <div class="mb-4 inputForm" id="teste">
+                    <label for="emailInput" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="Fãdaopionumero1@exemplo.com">
+                </div>
+                <div class="mb-4 inputForm">
+                    <label for="nameInput" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nameInput" placeholder="Nome">
+                </div>
+
+            </div>
+            <div class="btnForm text-center">
+                <button type="submit" class="btn">Enviar</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="~/js/pictures.js"></script>
