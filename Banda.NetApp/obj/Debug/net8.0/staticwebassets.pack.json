@@ -49,6 +49,14 @@
       "PackagePath": "staticwebassets\\img\\bandaopio3.png"
     },
     {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\bandaopio4.jpg",
+      "PackagePath": "staticwebassets\\img\\bandaopio4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\bandaopio5.jpg",
+      "PackagePath": "staticwebassets\\img\\bandaopio5.jpg"
+    },
+    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\dengue.jpg",
       "PackagePath": "staticwebassets\\img\\dengue.jpg"
     },

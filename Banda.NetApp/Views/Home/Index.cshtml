@@ -100,7 +100,10 @@
                 </p>
 
                 <div class="button-container">
-                    <button id="buttonLeiaMais">LEIA MAIS!</button>
+                    <a id="buttonLeiaMais" asp-area="" asp-controller="Story" asp-action="Story">
+                        LEIA MAIS!
+                    </a>
+
                     <img src="~/img/neonfinger.png" class="imgFinger" alt="Finger pointing">
                 </div>
 
@@ -211,13 +214,13 @@
             </div>
 
             <div class="row formArea justify-content-center align-center">
-                <div class="mb-4 inputForm" id="teste">
+                <div class="mb-4 inputForm">
                     <label for="emailInput" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="emailInput" placeholder="Fãdaopionumero1@exemplo.com">
+                    <input type="email" class="form-control" id="emailInput" name="user_email" placeholder="Fãdaopionumero1@exemplo.com" required>
                 </div>
                 <div class="mb-4 inputForm">
                     <label for="nameInput" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="nameInput" placeholder="Nome">
+                    <input type="text" class="form-control" id="nameInput" name="user_name" placeholder="Nome">
                 </div>
 
             </div>

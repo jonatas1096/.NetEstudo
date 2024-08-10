@@ -3,7 +3,6 @@
         const pictureElement = document.createElement('div');
         pictureElement.className = 'col-4 mb-1 divPicture';
 
-        // Envolva a imagem em um link com os atributos do Fancybox
         pictureElement.innerHTML = `
             <a href="${pictureSrc}" data-fancybox="gallery" data-caption="${alt}">
                 <img src="/img/logobranca.png" data-src="${pictureSrc}" alt="${alt}" class="lazy-image" loading="lazy">
@@ -76,4 +75,7 @@
     });
 }
 
-picturesLoad();
+document.addEventListener('DOMContentLoaded', () => {
+    picturesLoad();
+});
+
