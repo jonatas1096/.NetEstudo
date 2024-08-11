@@ -98,8 +98,27 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="https://cdn.jsdelivr.net/npm/@@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script async src="//www.instagram.com/embed.js"></script>
+    
+    <script>
+    var tag = document.createElement('script');
 
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    </script>
+
+    @*Email js*@
+    <script src="~/js/emailFunction.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "Ys9BaxOv2MlpTKY8P",
+            });
+        })();
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

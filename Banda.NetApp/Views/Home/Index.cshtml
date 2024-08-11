@@ -123,7 +123,7 @@
 
                 <a href="https://open.spotify.com/intl-pt/album/1fT5c6Rhyh0Rvwk20ueV3F?si=UHlJZbptRjC3pZHBRtrmbg" target="_blank" class="albuns-card col-6">
                     <div class="albuns-card-img">
-                        <img src="~/img/testeFotoAlbum.png" class="d-block w-100 h-100" alt="">
+                        <img src="~/img/Ciclos & Dramas (Lado B).jpg" class="d-block w-100 h-100" alt="">
                     </div>
                     <div class="albuns-description">
                         <p>Ciclos & Dramas (Lado B)</p>
@@ -134,7 +134,7 @@
 
                 <a href="https://open.spotify.com/intl-pt/album/32FSBnr6JOdE5zC7Fi6cHs?si=wNO2hj2MRrCb1HXEA-_NNQ" target="_blank" class="albuns-card col-6">
                     <div class="albuns-card-img">
-                        <img src="~/img/testeFotoAlbum2.png" class="d-block w-100 h-100" alt="">
+                        <img src="~/img/PØNTØ FRACØ.jpg" class="d-block w-100 h-100" alt="">
                     </div>
                     <div class="albuns-description">
                         <p>PontØ FracØ</p>
@@ -214,19 +214,22 @@
             </div>
 
             <div class="row formArea justify-content-center align-center">
-                <div class="mb-4 inputForm">
-                    <label for="emailInput" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="emailInput" name="user_email" placeholder="Fãdaopionumero1@exemplo.com" required>
-                </div>
-                <div class="mb-4 inputForm">
-                    <label for="nameInput" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="nameInput" name="user_name" placeholder="Nome">
-                </div>
-
+                <form id="contactForm" class="mx-auto">
+                    <div class="mb-4 inputForm ">
+                        <label for="emailInput" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="Fãdaopionumero1@exemplo.com" required>
+                    </div>
+                    <div class="mb-4 inputForm">
+                        <label for="nameInput" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="Nome">
+                    </div>
+                    <div class="btnForm text-center">
+                        <button type="submit" class="btn" onclick="sendEmail()">Enviar</button>
+                    </div>
+                </form>
+                
             </div>
-                <div class="btnForm text-center">
-                    <button type="submit" class="btn">Enviar</button>
-                </div>
+                
          </div>
     </section>
 

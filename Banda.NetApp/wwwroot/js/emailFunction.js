@@ -1,17 +1,10 @@
-﻿// Inicialize o EmailJS com seu User ID
-emailjs.init('service_p4z3j2l');
+﻿// EmailJS  ID
+function sendEmail() {
+    let params = {
+        name: document.getElementById('nameInput').value,
+        email: document.getElementById('emailInput').value,
+    }
 
-// Manipule o envio do formulário
-document.getElementById('contactForm').addEventListener('submit', function (event) {
-    event.preventDefault(); // Evita o comportamento padrão do formulário
+    emailjs.send('service_p4z3j2l', 'template_pn2q2up', params).then(alert('Entraremos em contato com você!'))
 
-    // Envia o formulário com EmailJS
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
-        .then(function (response) {
-            alert('E-mail enviado com sucesso!');
-            console.log('Success:', response);
-        }, function (error) {
-            alert('Erro ao enviar o e-mail.');
-            console.log('Error:', error);
-        });
-});
+}

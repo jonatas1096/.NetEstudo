@@ -201,9 +201,9 @@ function favoriteArea() {
 
     function createVideoElement(videoSrc) {
         const videoElement = document.createElement('div')
-        videoElement.className = 'col-6 mb-3'
+        videoElement.className = 'col-6 mb-3 videoSrc'
         videoElement.innerHTML = `
-        <video data-video-src="${videoSrc}" controls preload="none" style="width: 100%; height: auto;">
+        <video data-video-src="${videoSrc}" controls preload="none" style="width: 100%; height: 100%;">
             <!-- Erro ao carregar o vídeo. -->
             Seu navegador não suporta o elemento de vídeo.
         </video>
@@ -230,6 +230,8 @@ function favoriteArea() {
     document.addEventListener('DOMContentLoaded', () => {
         const videoLinks = [
             { src: '/video/pinkMoneyTrack.mp4' },
+            { src: '/video/bandatocando.mp4' },
+            { src: '/video/ocarataempolgado.mp4' },
             { src: '/video/masquepoha.mp4' },
             { src: '/video/masquepoha2.mp4' },
             { src: '/video/apertadinhos.com.br.mp4' },
