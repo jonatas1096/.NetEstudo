@@ -85,6 +85,10 @@
       "PackagePath": "staticwebassets\\img\\enzo.jpg"
     },
     {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\enzoPaper(texture).png",
+      "PackagePath": "staticwebassets\\img\\enzoPaper(texture).png"
+    },
+    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\felipe.jpg",
       "PackagePath": "staticwebassets\\img\\felipe.jpg"
     },
@@ -97,6 +101,10 @@
       "PackagePath": "staticwebassets\\img\\felipePaper(texture).png"
     },
     {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\felipePaper(texture-and-neon).png",
+      "PackagePath": "staticwebassets\\img\\felipePaper(texture-and-neon).png"
+    },
+    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\felipePaper.png",
       "PackagePath": "staticwebassets\\img\\felipePaper.png"
     },
@@ -107,6 +115,10 @@
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\gustavo.jpg",
       "PackagePath": "staticwebassets\\img\\gustavo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\gustavoPaper(texture).png",
+      "PackagePath": "staticwebassets\\img\\gustavoPaper(texture).png"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\ironmaiden.jpg",
@@ -195,6 +207,10 @@
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\ygor.jpg",
       "PackagePath": "staticwebassets\\img\\ygor.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\ygorPaper(texture).png",
+      "PackagePath": "staticwebassets\\img\\ygorPaper(texture).png"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\js\\emailFunction.js",

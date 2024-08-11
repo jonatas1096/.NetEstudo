@@ -288,20 +288,43 @@ header {
 @keyframes neonGlow-Felipe-Story {
     from {
         text-shadow: 0 0 5px rgba(255, 0, 255, 1), 0 0 10px rgba(255, 0, 255, 1), 0 0 15px rgba(255, 0, 255, 1), 0 0 20px rgba(255, 0, 255, 1), 0 0 25px rgba(255, 20, 147, 0.5), 0 0 30px rgba(255, 20, 147, 0.4), 0 0 35px rgba(255, 20, 147, 0.3);
-        color: rgba(255, 0, 255, 0.9);
     }
 
     to {
         text-shadow: 0 0 10px rgba(255, 0, 255, 1), 0 0 20px rgba(255, 0, 255, 1), 0 0 30px rgba(255, 0, 255, 1), 0 0 40px rgba(255, 0, 255, 1), 0 0 50px rgba(255, 20, 147, 0.5), 0 0 60px rgba(255, 20, 147, 0.4), 0 0 70px rgba(255, 20, 147, 0.3);
     }
 }
+@keyframes neonGlow-Enzo-Story {
+    from {
+        text-shadow: 0 0 5px rgba(255, 20, 147, 1), 0 0 10px rgba(255, 20, 147, 1), 0 0 15px rgba(255, 20, 147, 1), 0 0 20px rgba(255, 20, 147, 1), 0 0 25px rgba(255, 20, 147, 0.5), 0 0 30px rgba(255, 20, 147, 0.4), 0 0 35px rgba(255, 20, 147, 0.3);
+    }
+
+    to {
+        text-shadow: 0 0 10px rgba(255, 20, 147, 1), 0 0 20px rgba(255, 20, 147, 1), 0 0 30px rgba(255, 20, 147, 1), 0 0 40px rgba(255, 20, 147, 1), 0 0 50px rgba(255, 20, 147, 0.5), 0 0 60px rgba(255, 20, 147, 0.4), 0 0 70px rgba(255, 20, 147, 0.3);
+    }
+}
+@keyframes neonGlow-Ygor-Story {
+    from {
+        text-shadow: 0 0 5px rgba(0, 255, 255, 0.9), 0 0 10px rgba(0, 255, 255, 0.9), 0 0 15px rgba(0, 255, 255, 0.9), 0 0 20px rgba(0, 255, 255, 0.9), 0 0 25px rgba(255, 20, 147, 0.5), 0 0 30px rgba(255, 20, 147, 0.4), 0 0 35px rgba(255, 20, 147, 0.3);
+    }
+
+    to {
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.9), 0 0 20px rgba(0, 255, 255, 0.9), 0 0 30px rgba(0, 255, 255, 0.9), 0 0 40px rgba(0, 255, 255, 0.9), 0 0 50px rgba(255, 20, 147, 0.5), 0 0 60px rgba(255, 20, 147, 0.4), 0 0 70px rgba(255, 20, 147, 0.3);
+    }
+}
+@keyframes neonGlow-Gustavo-Story {
+    from {
+        text-shadow: 0 0 5px rgba(255, 69, 0, 0.9), 0 0 10px rgba(255, 69, 0, 0.9), 0 0 15px rgba(255, 69, 0, 0.9), 0 0 20px rgba(255, 69, 0, 0.9), 0 0 25px rgba(255, 20, 147, 0.5), 0 0 30px rgba(255, 20, 147, 0.4), 0 0 35px rgba(255, 20, 147, 0.3);
+    }
+
+    to {
+        text-shadow: 0 0 10px rgba(255, 69, 0, 0.9), 0 0 20px rgba(255, 69, 0, 0.9), 0 0 30px rgba(255, 69, 0, 0.9), 0 0 40px rgba(255, 69, 0, 0.9), 0 0 50px rgba(255, 20, 147, 0.5), 0 0 60px rgba(255, 20, 147, 0.4), 0 0 70px rgba(255, 20, 147, 0.3);
+    }
+}
 
 /*#endregion*/
-
 /*Responsive options (testing)*/
-
 /*#region global structure*/
-
 /*#region navbar*/
 /*NAVBAR CONTENT, ICONS, ETC*/
 .navbar-dark .navbar-toggler-icon { /*used to change the toggle icon color (only work if i do this)*/
@@ -936,7 +959,7 @@ section#Form {
 /*#region StoryPage*/
 
 .firstImage {
-    margin-top: 17%; 
+    margin-top: 16.5%; 
     background-image: url('../img/bandaopio4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -963,13 +986,12 @@ section#Form {
     background-image: url('../img/dengue.jpg');
 }
 
-
 #StoryArea, #AlbumArea, #OurValues, #OurTeam {
-    padding: 10% 2%;
-    text-align: center
+    padding: 10% 3%;
+    text-align: justify;
 }
 
-    #StoryArea h1, #AlbumArea h1, #OurValues h1, #OurTeam h1 {
+    #StoryArea h1, #AlbumArea h1, #OurValues h1, #OurTeam h1, #Conclusion h1 {
         font-size: 2.2em;
         font-family: var(--font-vanilla);
         font-weight: bold;
@@ -1001,17 +1023,17 @@ section#Form {
     margin-top: 1em;
 }
 
-    #StoryArea p, #AlbumArea p, #OurValues p {
+    #StoryArea p, #AlbumArea p, #OurValues p, #Conclusion p {
         font-size: 1.70em;
         margin-top: 0.2em;
         font-family: var(--font-team-body);
         color: rgba(146, 146, 146, 1)
     }
 
-    #StoryArea span, #AlbumArea span, #OurValues span {
-        font-weight: bold;
-        color: rgb(167,116,182);
-    }
+        #StoryArea span, #AlbumArea span, #OurValues span {
+            font-weight: bold;
+            color: rgb(167,116,182);
+        }
 
     #StoryArea iframe, #AlbumArea iframe, .track iframe {
         border-radius: 16px;
@@ -1036,50 +1058,58 @@ section#Form {
 
     #OurTeam {
         background-color: var(--color-primary-black);
+        padding-left: 0;
     }
 
         #OurTeam h1 {
             color: var(--color-primary-white);
             margin-bottom: 2.1em;
         }
+   
 
-        #OurTeam p {
-            color: var(--color-primary-white);
-            font-size: 1.7em;
-            font-family: var(--font-team-body);
-        }
-
-        #OurTeam .container-team {
-            display: flex;
-            position: relative;
-        }
-        #OurTeam .glowFelipe {
-            font-size: 1.8em;
+        /*#OurTeam .container-team {
+        }*/
+        #OurTeam .glow {
+            font-size: 1.9em;
             font-weight: bold;
             font-family: var(--font-vanilla);
-            color: rgba(255, 0, 255, 0.9);
-            animation: ease-in-out neonGlow-Felipe-Story 1.5s infinite alternate;
-            position: absolute;
-            top: 20%;
-            left: 20%;
+        }
+            #OurTeam .felipe {
+                color: rgba(255, 0, 255, 0.9);
+                animation: ease-in-out neonGlow-Felipe-Story 1.5s infinite alternate;
+            }
+
+            #OurTeam .enzo {
+                color: rgba(255, 20, 147, 0.9);
+                animation: ease-in-out neonGlow-Enzo-Story 1.5s infinite alternate;
+            }
+            #OurTeam .ygor {
+                color: rgba(0, 255, 255, 0.9);
+                animation: ease-in-out neonGlow-Ygor-Story 1.5s infinite alternate;
+            }
+            #OurTeam .gustavo {
+                color: rgba(255, 69, 0, 0.9);
+                animation: ease-in-out neonGlow-Gustavo-Story 1.5s infinite alternate;
+            }
+        
+            
+        #OurTeam p {
+            color: var(--color-primary-white);
+            font-size: 1.6em;
+            font-family: var(--font-team-body);
         }
         #OurTeam .description-team {
-            position: absolute;
             text-align: justify;
-            top: 40%;
-            left: 50%;
-            width: 45%;
         }
 
-        #OurTeam .card{
-            display: flex !important;
-            background-color: transparent;
+        .container-end{
+            margin-left: 33%;
         }
-        /*#endregion*/
-        /*#endregion*/
-        /*#region Tablets*/
-        @media (min-width: 577px) and (max-width: 992px) {
-            .columnVideo
+/*#endregion*/
+/*#endregion*/
+/*#region Tablets*/
+@media (min-width: 577px) and (max-width: 992px) {
+    .columnVideo
 
 {
     height: 50vh;
