@@ -29,6 +29,22 @@
       "PackagePath": "staticwebassets\\icons\\arrow-up-right.svg"
     },
     {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\Ciclos & Dramas (Lado B).jpg",
+      "PackagePath": "staticwebassets\\img\\Ciclos & Dramas (Lado B).jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\Ela (Desculpa).jpg",
+      "PackagePath": "staticwebassets\\img\\Ela (Desculpa).jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\PØNTØ FRACØ.jpg",
+      "PackagePath": "staticwebassets\\img\\PØNTØ FRACØ.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\Untitled (9).png",
+      "PackagePath": "staticwebassets\\img\\Untitled (9).png"
+    },
+    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\backgroundBody.png",
       "PackagePath": "staticwebassets\\img\\backgroundBody.png"
     },
@@ -41,16 +57,72 @@
       "PackagePath": "staticwebassets\\img\\bandaopio2.jpg"
     },
     {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\bandaopio3(quadrado).jpg",
+      "PackagePath": "staticwebassets\\img\\bandaopio3(quadrado).jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\bandaopio3.png",
+      "PackagePath": "staticwebassets\\img\\bandaopio3.png"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\bandaopio4.jpg",
+      "PackagePath": "staticwebassets\\img\\bandaopio4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\bandaopio5.jpg",
+      "PackagePath": "staticwebassets\\img\\bandaopio5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\bandaopio6.jpg",
+      "PackagePath": "staticwebassets\\img\\bandaopio6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\dengue.jpg",
+      "PackagePath": "staticwebassets\\img\\dengue.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\doninha.jpg",
+      "PackagePath": "staticwebassets\\img\\doninha.jpg"
+    },
+    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\enzo.jpg",
       "PackagePath": "staticwebassets\\img\\enzo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\enzoPaper(texture).png",
+      "PackagePath": "staticwebassets\\img\\enzoPaper(texture).png"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\felipe.jpg",
       "PackagePath": "staticwebassets\\img\\felipe.jpg"
     },
     {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\felipe2.jpg",
+      "PackagePath": "staticwebassets\\img\\felipe2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\felipePaper(texture).png",
+      "PackagePath": "staticwebassets\\img\\felipePaper(texture).png"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\felipePaper(texture-and-neon).png",
+      "PackagePath": "staticwebassets\\img\\felipePaper(texture-and-neon).png"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\felipePaper.png",
+      "PackagePath": "staticwebassets\\img\\felipePaper.png"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\felipedengoso.jpg",
+      "PackagePath": "staticwebassets\\img\\felipedengoso.jpg"
+    },
+    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\gustavo.jpg",
       "PackagePath": "staticwebassets\\img\\gustavo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\gustavoPaper(texture).png",
+      "PackagePath": "staticwebassets\\img\\gustavoPaper(texture).png"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\ironmaiden.jpg",
@@ -61,8 +133,28 @@
       "PackagePath": "staticwebassets\\img\\logobranca.png"
     },
     {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\manoelgomes.jpg",
+      "PackagePath": "staticwebassets\\img\\manoelgomes.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\mcpipokinha.jpg",
+      "PackagePath": "staticwebassets\\img\\mcpipokinha.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\messi.jpg",
+      "PackagePath": "staticwebassets\\img\\messi.jpg"
+    },
+    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\metallica.jpg",
       "PackagePath": "staticwebassets\\img\\metallica.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\namorados.jpg",
+      "PackagePath": "staticwebassets\\img\\namorados.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\namorados2.jpg",
+      "PackagePath": "staticwebassets\\img\\namorados2.jpg"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\neonfinger.png",
@@ -73,6 +165,22 @@
       "PackagePath": "staticwebassets\\img\\pinkfloyd.jpg"
     },
     {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\primeiroalbum1.png",
+      "PackagePath": "staticwebassets\\img\\primeiroalbum1.png"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\primeiroalbum2.png",
+      "PackagePath": "staticwebassets\\img\\primeiroalbum2.png"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\primeiroalbum3.png",
+      "PackagePath": "staticwebassets\\img\\primeiroalbum3.png"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\primeiroalbum4.png",
+      "PackagePath": "staticwebassets\\img\\primeiroalbum4.png"
+    },
+    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\scale_1200.jpg",
       "PackagePath": "staticwebassets\\img\\scale_1200.jpg"
     },
@@ -81,8 +189,12 @@
       "PackagePath": "staticwebassets\\img\\section1.jpg"
     },
     {
-      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\section2.jpg",
-      "PackagePath": "staticwebassets\\img\\section2.jpg"
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\skylab.jpg",
+      "PackagePath": "staticwebassets\\img\\skylab.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\sonicfeio.jpg",
+      "PackagePath": "staticwebassets\\img\\sonicfeio.jpg"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\system.jpg",
@@ -93,20 +205,28 @@
       "PackagePath": "staticwebassets\\img\\teste1.jpg"
     },
     {
-      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\testeFotoAlbum.png",
-      "PackagePath": "staticwebassets\\img\\testeFotoAlbum.png"
-    },
-    {
-      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\testeFotoAlbum2.png",
-      "PackagePath": "staticwebassets\\img\\testeFotoAlbum2.png"
-    },
-    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\ygor.jpg",
       "PackagePath": "staticwebassets\\img\\ygor.jpg"
     },
     {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\img\\ygorPaper(texture).png",
+      "PackagePath": "staticwebassets\\img\\ygorPaper(texture).png"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\js\\emailFunction.js",
+      "PackagePath": "staticwebassets\\js\\emailFunction.js"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\js\\pictures.js",
+      "PackagePath": "staticwebassets\\js\\pictures.js"
+    },
+    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\js\\videos.js",
+      "PackagePath": "staticwebassets\\js\\videos.js"
     },
     {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\lib\\bootstrap\\LICENSE",
@@ -337,12 +457,40 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\teste.mp4",
-      "PackagePath": "staticwebassets\\video\\teste.mp4"
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\apertadinhos.com.br.mp4",
+      "PackagePath": "staticwebassets\\video\\apertadinhos.com.br.mp4"
     },
     {
-      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\øpio - Ditados Mentem.mp4",
-      "PackagePath": "staticwebassets\\video\\øpio - Ditados Mentem.mp4"
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\bandatocando.mp4",
+      "PackagePath": "staticwebassets\\video\\bandatocando.mp4"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\cachedoshow.mp4",
+      "PackagePath": "staticwebassets\\video\\cachedoshow.mp4"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\felipeuberfodase.mp4",
+      "PackagePath": "staticwebassets\\video\\felipeuberfodase.mp4"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\masquepoha.mp4",
+      "PackagePath": "staticwebassets\\video\\masquepoha.mp4"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\masquepoha2.mp4",
+      "PackagePath": "staticwebassets\\video\\masquepoha2.mp4"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\ocarataempolgado.mp4",
+      "PackagePath": "staticwebassets\\video\\ocarataempolgado.mp4"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\pinkMoneyTrack.mp4",
+      "PackagePath": "staticwebassets\\video\\pinkMoneyTrack.mp4"
+    },
+    {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\teste.mp4",
+      "PackagePath": "staticwebassets\\video\\teste.mp4"
     },
     {
       "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.Banda.NetApp.Microsoft.AspNetCore.StaticWebAssets.props",

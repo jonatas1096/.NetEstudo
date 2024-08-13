@@ -986,7 +986,7 @@ section#Form {
     background-image: url('../img/dengue.jpg');
 }
 
-#StoryArea, #AlbumArea, #OurValues, #OurTeam {
+#StoryArea, #AlbumArea, #OurValues, #OurTeam, #Conclusion {
     padding: 10% 3%;
     text-align: justify;
 }

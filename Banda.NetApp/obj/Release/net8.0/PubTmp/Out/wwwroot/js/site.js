@@ -9,34 +9,32 @@ document.addEventListener("DOMContentLoaded", function () {
     //
 
     const currentPath = window.location.pathname //to get the current page
+    /*DARK NAVBAR FUNCTIONS*/
+    function darkNavbar() {
+        // Function to add or remove navbarScrolled class
+        function checkScroll() {
+            var navbar = document.querySelector('.navbarCustom')
 
-    
-    /*DARK NAVBAR OF HOME PAGE*/
-    if (currentPath === '/') {
-        function darkNavbar() {
-
-            // Function to add or remove navbarScrolled class
-            function checkScroll() {
-
-
-                var navbar = document.querySelector('.navbarCustom')
-
-                if (window.scrollY > 400) {
-                    navbar.classList.add('navbarScrolled');
-                } else {
-                    navbar.classList.remove('navbarScrolled');
-                }
+            if (currentPath === '/' && window.scrollY > 400) {
+                navbar.classList.add('navbarScrolled');
             }
-
-            // 
-            checkScroll();
-
-            // 
-            window.addEventListener('scroll', checkScroll);
+            else if (currentPath === '/Videos/Videos' || currentPath === '/Pictures/Pictures' || currentPath === '/Story/Story') {
+                navbar.classList.add('navbarScrolled');
+            }
+            else {
+                navbar.classList.remove('navbarScrolled');
+            }
         }
-        darkNavbar();
+
+        // 
+        checkScroll();
+
+        // 
+        window.addEventListener('scroll', checkScroll);
     }
-   
+    darkNavbar();
+    //}
+
 
     //
 
@@ -191,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         pokeFingerAnimation();
     }
-    
+
 
     /*GLOW INPUT*/
     if (currentPath === '/') {
@@ -210,12 +208,12 @@ document.addEventListener("DOMContentLoaded", function () {
         setupGlowInput('emailInput');
         setupGlowInput('nameInput');
     }
-    
+
 
 });
 
 document.querySelector('.custom-toggler').addEventListener('click', function () {
-  
+
     //Var to "blur" and "shadow" effects.
     var blurState = document.querySelector('.overlay');
     var shadowState = document.querySelector('.shadowOverlay');
