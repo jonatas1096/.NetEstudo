@@ -4,8 +4,8 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project>
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Users\Jo\Documents\PublishOpio</_PublishTargetUrl>
-    <History>True|2024-08-11T23:29:41.3465197Z;</History>
+    <_PublishTargetUrl>C:\Users\Jo\Documents\publish</_PublishTargetUrl>
+    <History>True|2024-08-15T01:20:00.1034237Z;True|2024-08-14T22:09:41.6286105-03:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>
