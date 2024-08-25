@@ -44,17 +44,11 @@
             { src: '/img/dengue.jpg', alt: 'a dengue esperando você sair' },
             { src: '/img/felipedengoso.jpg', alt: 'felipe com dengue' },
             { src: '/img/manoelgomes.jpg', alt: 'manoel gomes vídeos' },
-            { src: '/img/namorados.jpg', alt: 'namorados' },
             { src: '/img/felipe.jpg', alt: 'integrante felipe' },
             { src: '/img/enzo.jpg', alt: 'integrante enzo' },
             { src: '/img/ygor.jpg', alt: 'integrante ygor' },
             { src: '/img/gustavo.jpg', alt: 'integrante gustavo' },
             { src: '/img/namorados2.jpg', alt: 'namorados2' },
-            { src: '/img/sonicfeio.jpg', alt: 'sonic feio' },
-            { src: '/img/messi.jpg', alt: 'melhor jogador da história' },
-            { src: '/img/doninha.jpg', alt: 'doninha kkkkkkkk' },
-            { src: '/img/skylab.jpg', alt: 'grande poeta.' },
-            { src: '/img/mcpipokinha.jpg', alt: 'grande poeta 2.' },
         ]
 
         loadPicturesFromObject(pictures)

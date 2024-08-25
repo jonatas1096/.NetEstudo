@@ -98,14 +98,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         link: 'https://www.instagram.com/gushikenmusic/',
                         neonColor: 'neonGlow-gustavo',
                         color: 'rgba(255, 69, 0, 0.8)'
-                    },
-                    gato: {
-                        role: 'GATO',
-                        description: '“O gato é simplesmente o gato de terno."',
-                        link: 'https://www.petz.com.br/blog/pets/gatos/perfil-de-gato/',
-                        neonColor: 'neonGlow-gato',
-                        color: 'rgba(0,185,165,255)'
-
                     }
                 };
 
@@ -221,7 +213,6 @@ document.querySelector('.custom-toggler').addEventListener('click', function () 
 
 
     const menu = document.querySelector('.navbar-collapse');
-    const menuText = document.querySelector('.custom-toggler span') //to neon animation
 
 
     if (computedStyle.filter.includes("blur(3px)")) { //remove effects
@@ -229,16 +220,12 @@ document.querySelector('.custom-toggler').addEventListener('click', function () 
         shadowState.style.opacity = "0";
         //Disable menu dropdown:
         menu.classList.remove('show');
-        //Disable neon text effect:
-        menuText.classList.remove('spanActivated')
     }
     else {
         blurState.style.filter = "blur(3px)"; //add effects
         shadowState.style.opacity = "1";
         //Active menudrop down:
         menu.classList.add('show');
-        //Effect to text:
-        menuText.classList.add('spanActivated')
     }
     //
 
