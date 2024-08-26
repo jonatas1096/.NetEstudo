@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iNy4XVuc1qjtQhE+JpEuo2nGSSVN4umuZ7wHlnbP2fI=",
+  "Hash": "qWrZjQCwURSOP/R2JxdJoHTBs4IWGg0RypBhcBRbVRI=",
   "Source": "Banda.NetApp",
   "BasePath": "_content/Banda.NetApp",
   "Mode": "Default",
@@ -2048,6 +2048,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\video\\ocarataempolgado.mp4"
+    },
+    {
+      "Identity": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\OcarataempolgadoHome.webm",
+      "SourceId": "Banda.NetApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\",
+      "BasePath": "_content/Banda.NetApp",
+      "RelativePath": "video/OcarataempolgadoHome.webm",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\video\\OcarataempolgadoHome.webm"
     },
     {
       "Identity": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\pinkMoneyTrack.mp4",

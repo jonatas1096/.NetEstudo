@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Banda.NetApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f27146c66a960561f1c93d4df59f7c080c49b4e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+776b0705f860de1d762f10dc84d16b3f274f6841")]
 [assembly: System.Reflection.AssemblyProductAttribute("Banda.NetApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Banda.NetApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

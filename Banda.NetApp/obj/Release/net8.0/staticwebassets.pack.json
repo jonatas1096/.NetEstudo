@@ -397,6 +397,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\OcarataempolgadoHome.webm",
+      "PackagePath": "staticwebassets\\video\\OcarataempolgadoHome.webm"
+    },
+    {
       "Id": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\video\\apertadinhos.com.br.mp4",
       "PackagePath": "staticwebassets\\video\\apertadinhos.com.br.mp4"
     },

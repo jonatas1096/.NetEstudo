@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|c:\\users\\jo\\source\\repos\\banda.netapp\\banda.netapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|solutionrelative:banda.netapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|c:\\users\\jo\\source\\repos\\banda.netapp\\banda.netapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|solutionrelative:banda.netapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|c:\\users\\jo\\source\\repos\\banda.netapp\\banda.netapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|solutionrelative:banda.netapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|c:\\users\\jo\\source\\repos\\banda.netapp\\banda.netapp\\views\\story\\story.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -17,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|c:\\users\\jo\\source\\repos\\banda.netapp\\banda.netapp\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|solutionrelative:banda.netapp\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|c:\\users\\jo\\source\\repos\\banda.netapp\\banda.netapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|solutionrelative:banda.netapp\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C3E04D6-9497-4331-BE16-0E00B9EF78C5}|Banda.NetApp\\Banda.NetApp.csproj|c:\\users\\jo\\source\\repos\\banda.netapp\\banda.netapp\\wwwroot\\js\\pictures.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -38,21 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Banda.NetApp\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Banda.NetApp\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-25T05:48:52.209Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -63,11 +46,12 @@
               "RelativeToolTip": "Banda.NetApp\\Views\\Story\\Story.cshtml",
               "ViewState": "AQIAAJkAAAAAAAAAAAAAAKUAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-25T04:44:25.821Z"
+              "WhenOpened": "2024-08-25T04:44:25.821Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "pictures.js",
               "DocumentMoniker": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\js\\pictures.js",
               "RelativeDocumentMoniker": "Banda.NetApp\\wwwroot\\js\\pictures.js",
@@ -91,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Banda.NetApp\\Views\\Shared\\_Layout.cshtml",
@@ -103,28 +87,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Banda.NetApp\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Banda.NetApp\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAWAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-25T02:48:31.566Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "Banda.NetApp\\wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\Jo\\source\\repos\\Banda.NetApp\\Banda.NetApp\\wwwroot\\css\\site.css",
               "RelativeToolTip": "Banda.NetApp\\wwwroot\\css\\site.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGIAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-02T01:13:58.356Z"
+              "WhenOpened": "2024-08-02T01:13:58.356Z",
+              "EditorCaption": ""
             }
           ]
         }
