@@ -1,0 +1,35 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches:
+      - master  # branch deploy
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'  # Ajuste para a versão do .NET que você está usando
+
+      - name: Publish .NET Core app
+        run: dotnet publish -c Release -o ./published
+
+      - name: Deploy to VPS via SSH
+        uses: appleboy/ssh-action@v0.1.5
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          password: ${{ secrets.VPS_PASSWORD }}
+          script: |
+            cd /var/www/banda-opio
+            sudo rm -rf /var/www/banda-opio/*
+            rsync -avz --delete ./published/ /var/www/banda-opio/
+            sudo systemctl restart nginx
+            sudo systemctl restart banda-opio
