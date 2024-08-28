@@ -8,3 +8,5 @@ function sendEmail() {
     emailjs.send('service_p4z3j2l', 'template_pn2q2up', params).then(alert('Entraremos em contato com você!'))
 
 }
+
+

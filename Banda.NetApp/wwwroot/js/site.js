@@ -3,46 +3,53 @@
 
 // Write your JavaScript code.
 
-
-
 document.addEventListener("DOMContentLoaded", function () {
-    //
-
     const currentPath = window.location.pathname //to get the current page
-    /*DARK NAVBAR FUNCTIONS*/
-    function darkNavbar() {
-        // Function to add or remove navbarScrolled class
-        function checkScroll() {
-            var navbar = document.querySelector('.navbarCustom')
 
-            if (currentPath === '/' && window.scrollY > 400) {
-                navbar.classList.add('navbarScrolled');
-            }
-            else if (currentPath === '/Videos/Videos' || currentPath === '/Pictures/Pictures' || currentPath === '/Story/Story') {
-                navbar.classList.add('navbarScrolled');
-            }
-            else {
-                navbar.classList.remove('navbarScrolled');
-            }
-        }
-
-        // 
-        checkScroll();
-
-        // 
-        window.addEventListener('scroll', checkScroll);
-    }
-    darkNavbar();
-    //}
-
+    //
+    if (currentPath === '/' && window.scrollY > 400) {
+        fixedNavbar()
+     }
+    //
+    initializeSwiper()
 
     //
 
+    pokeFingerAnimation(currentPath)
+    
+    //
+
+    glowInputAnimation(currentPath)
 
 
+});
 
 
-    //Initializing swiper carousel (library)
+/*DARK NAVBAR FUNCTIONS*/
+function fixedNavbar() {
+    // Function to add or remove navbarScrolled class
+    function checkScroll() {
+        var navbar = document.querySelector('.navbarCustom')
+
+        if (window.scrollY > 400) {
+            navbar.classList.add('navbarScrolled');
+        }
+        else {
+            navbar.classList.remove('navbarScrolled');
+
+        }
+    }
+
+    // 
+    checkScroll();
+
+    // 
+    window.addEventListener('scroll', checkScroll);
+}
+
+
+//Initializing swiper carousel (library)
+function initializeSwiper(){
     const swiper = new Swiper('.swiper', {
         direction: 'horizontal',
         loop: true,
@@ -50,6 +57,10 @@ document.addEventListener("DOMContentLoaded", function () {
         centeredSlides: true,
         grabCursor: true,
         slidesPerView: 'auto',
+        lazy: {
+            loadPrevNext: true, 
+            loadPrevNextAmount: 1,
+        },
         coverflowEffect: {
             rotate: 50,
             stretch: 0,
@@ -58,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
             slideShadows: true,
         },
         autoplay: {
-            delay: 9000,
+            delay: 7000,
             disableOnInteraction: false,
         },
         // pagination
@@ -147,13 +158,11 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     });
+}
 
 
-    //
-
-
-
-    /*POKE FINGER ANIMATION*/
+//PokeFinger Animation
+function pokeFingerAnimation(currentPath) {
     if (currentPath === '/') {
         function pokeFingerAnimation() {
             const pokeFinger = document.querySelector('.imgFinger')
@@ -181,9 +190,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         pokeFingerAnimation();
     }
+}
 
+/*GLOW INPUT*/
+function glowInputAnimation(currentPath) {
 
-    /*GLOW INPUT*/
     if (currentPath === '/') {
         function setupGlowInput(inputId) {
             const input = document.getElementById(inputId);
@@ -201,9 +212,10 @@ document.addEventListener("DOMContentLoaded", function () {
         setupGlowInput('nameInput');
     }
 
+}
 
-});
 
+/*To turns on overlay effect when click on menudrop button.*/
 document.querySelector('.custom-toggler').addEventListener('click', function () {
 
     //Var to "blur" and "shadow" effects.
@@ -232,3 +244,5 @@ document.querySelector('.custom-toggler').addEventListener('click', function () 
 
 
 })
+
+

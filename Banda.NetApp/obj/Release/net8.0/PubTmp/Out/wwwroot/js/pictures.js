@@ -44,10 +44,10 @@
             { src: '/img/dengue.jpg', alt: 'a dengue esperando você sair' },
             { src: '/img/felipedengoso.jpg', alt: 'felipe com dengue' },
             { src: '/img/manoelgomes.jpg', alt: 'manoel gomes vídeos' },
-            { src: '/img/felipe.jpg', alt: 'integrante felipe' },
-            { src: '/img/enzo.jpg', alt: 'integrante enzo' },
-            { src: '/img/ygor.jpg', alt: 'integrante ygor' },
-            { src: '/img/gustavo.jpg', alt: 'integrante gustavo' },
+            { src: '/img/felipe.webp', alt: 'integrante felipe' },
+            { src: '/img/enzo.webp', alt: 'integrante enzo' },
+            { src: '/img/ygor.webp', alt: 'integrante ygor' },
+            { src: '/img/gustavo.webp', alt: 'integrante gustavo' },
             { src: '/img/namorados2.jpg', alt: 'namorados2' },
         ]
 

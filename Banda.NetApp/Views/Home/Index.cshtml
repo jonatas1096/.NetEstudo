@@ -2,13 +2,17 @@
     ViewData["Title"] = "Home Page";
 }
 
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
 
 <div class="overlay">
     <section id="Home">
         <div class="container-fluid">
             <div class="row">
                 <div class="col columnVideo">
-                    <video loop autoplay muted playsinline preload="none">
+                    <video loop autoplay muted playsinline preload="auto" poster="~/img/This Is ØPIO.webp">
                         <source src="~/video/OcarataempolgadoHome.webm" type="video/webm">
                         Seu navegador não suporta a reprodução de vídeos.
                     </video>
@@ -32,28 +36,28 @@
                     <!-- Slide-start -->
                     <div class="swiper-slide tranding-slide">
                         <div class="tranding-slide-img">
-                            <img src="~/img/felipe.jpg" id="felipe" alt="Felipe">
+                            <img src="~/img/felipe.webp" id="felipe" alt="Felipe" loading="lazy">
                         </div>
                     </div>
                     <!-- Slide-end -->
                     <!-- Slide-start -->
                     <div class="swiper-slide tranding-slide">
                         <div class="tranding-slide-img">
-                            <img src="~/img/enzo.jpg" id="enzo" alt="Enzo">
+                            <img src="~/img/enzo.webp" id="enzo" alt="Enzo" loading="lazy">
                         </div>
                     </div>
                     <!-- Slide-end -->
                     <!-- Slide-start -->
                     <div class="swiper-slide tranding-slide">
                         <div class="tranding-slide-img">
-                            <img src="~/img/ygor.jpg" id="ygor" alt="Ygor">
+                            <img src="~/img/ygor.webp" id="ygor" alt="Ygor" loading="lazy">
                         </div>
                     </div>
                     <!-- Slide-end -->
                     <!-- Slide-start -->
                     <div class="swiper-slide tranding-slide">
                         <div class="tranding-slide-img">
-                            <img src="~/img/gustavo.jpg" id="gustavo" alt="Gustavo">
+                            <img src="~/img/gustavo.webp" id="gustavo" alt="Gustavo" loading="lazy">
                         </div>
                     </div>
                     <!-- Slide-end -->
@@ -79,7 +83,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <img src="~/img/bandaopio6.jpg" class="imgStory" alt="Foto da banda">
+                    <img src="~/img/bandaopio6.webp" class="imgStory w-100" alt="Foto da banda" loading="lazy">
                 </div>
             </div>
             <div class="row rowStory">
@@ -99,7 +103,7 @@
                         LEIA MAIS!
                     </a>
 
-                    <img src="~/img/neonfinger.png" class="imgFinger" alt="Finger pointing">
+                    <img src="~/img/neonfinger.webp" class="imgFinger" alt="Finger pointing">
                 </div>
 
             </div>
@@ -129,7 +133,7 @@
 
                 <a href="https://open.spotify.com/intl-pt/album/1fT5c6Rhyh0Rvwk20ueV3F?si=UHlJZbptRjC3pZHBRtrmbg" target="_blank" class="albuns-card col-6">
                     <div class="albuns-card-img">
-                        <img src="~/img/Ciclos & Dramas (Lado B).jpg" alt="">
+                        <img src="~/img/Ciclos & Dramas (Lado B).webp" alt="">
                     </div>
                     <div class="albuns-description">
                         <p>Ciclos & Dramas (Lado B)</p>
@@ -140,7 +144,7 @@
 
                 <a href="https://open.spotify.com/intl-pt/album/32FSBnr6JOdE5zC7Fi6cHs?si=wNO2hj2MRrCb1HXEA-_NNQ" target="_blank" class="albuns-card col-6">
                     <div class="albuns-card-img">
-                        <img src="~/img/PØNTØ FRACØ.jpg" alt="">
+                        <img src="~/img/PØNTØ FRACØ.webp" alt="">
                     </div>
                     <div class="albuns-description">
                         <p>PontØ FracØ</p>
@@ -151,7 +155,7 @@
 
                 <a href="https://open.spotify.com/intl-pt/artist/3TFDfV2km0JB0KRWyEXW5a?si=hWVImD1AQVKgMHGjouUu6w" target="_blank" class="albuns-card col-6">
                     <div class="albuns-card-img">
-                        <img src="~/img/Ciclos & Dramas (Lado A).jpg" alt="">
+                        <img src="~/img/Ciclos & Dramas (Lado A).webp" alt="">
                     </div>
                     <div class="albuns-description">
                         <p>Ciclos & Dramas (Lado B)</p>
@@ -161,7 +165,7 @@
 
                 <a href="https://open.spotify.com/intl-pt/artist/3TFDfV2km0JB0KRWyEXW5a?si=hWVImD1AQVKgMHGjouUu6w" target="_blank" class="albuns-card col-6">
                     <div class="albuns-card-img">
-                        <img src="~/img/PET.jpg" alt="">
+                        <img src="~/img/PET.webp" alt="">
                     </div>
                     <div class="albuns-description">
                         <p>PET</p>
@@ -171,7 +175,7 @@
 
                 <a href="https://open.spotify.com/intl-pt/artist/3TFDfV2km0JB0KRWyEXW5a?si=hWVImD1AQVKgMHGjouUu6w" target="_blank" class="albuns-card col-6">
                     <div class="albuns-card-img">
-                        <img src="~/img/This Is ØPIO.jpg" alt="">
+                        <img src="~/img/This Is ØPIO.webp" alt="">
                     </div>
                     <div class="albuns-description">
                         <p>This Is ØPIO</p>
@@ -231,5 +235,9 @@
 
 @* testing *@
 <div class="container-fluid full-height flex-column backgroundBody justify-content-center align-items-center">
-    <img src="~/img/backgroundBody.png" class="img-fluid-fit" alt="background-image">
+    <img src="~/img/backgroundBody.webp" class="img-fluid-fit" alt="background-image" loading="lazy">
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+

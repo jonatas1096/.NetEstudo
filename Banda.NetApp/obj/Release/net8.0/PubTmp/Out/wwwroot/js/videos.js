@@ -1,5 +1,5 @@
 ﻿
-
+console.log('CARREO GU')
 // All needed columns.
 const channelVideos = document.getElementById('channel-videos');
 const instagramVideos = document.getElementById('instagram-videos');
@@ -237,7 +237,6 @@ function favoriteArea() {
             { src: '/video/apertadinhos.com.br.mp4' },
             { src: '/video/felipeuberfodase.mp4' },
             { src: '/video/cachedoshow.mp4' },
-            // Adicione mais vídeos aqui
         ]
         loadVideosFromObject(videoLinks)
     })
@@ -299,3 +298,4 @@ function showSection(showElement, hideElement1, hideElement2) {
         hideElement2.style.display = 'none';
     }, 600));
 }
+
