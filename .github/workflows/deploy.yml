@@ -3,7 +3,7 @@ name: Deploy to VPS
 on:
   push:
     branches:
-      - master  # branch deploy
+      - master  # branch deploy option.
 
 jobs:
   deploy:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '8.0.x'  # Ajuste para a versão do .NET que você está usando
+          dotnet-version: '8.0.x'  # Dotnet version
 
       - name: Publish .NET Core app
         run: dotnet publish -c Release -o ./published
